@@ -56,19 +56,18 @@ body{
 
 .headerimg { 
 	background-repeat: no-repeat; 
-	height:391px;
+	height:550px;
 	position:absolute;
+	background-size: cover;
+	width: 980px;
+	background-position-y: -140px;
 	}
 .contain {
 	margin:0 auto 0 auto;
 	width:980px;
 	}
 .contain {
--moz-box-shadow: 0 0 100px 14px rgba(0,0,0,.5);
--webkit-box-shadow: 0 0 100px 14px rgba(0,0,0,.5);
-box-shadow: 0 0 100px 14px rgba(0,0,0,.5);
-border-radius: 7px;
-border-top: 1px solid rgba(255,255,255,.666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666);
+
 }
 #contain_within{
 	background-color: #444;
@@ -112,6 +111,11 @@ ul {
 	background-color: white;
 }
 
+#sponsors h2 {
+	color: black;
+	padding: 10px 0;
+}
+
 a.back {
 	background-image:url(../images/2011/backbutton.png);
 	background-repeat:no-repeat;
@@ -143,17 +147,18 @@ ul#nav li a:hover {
 #topheader{
 	width: 980px;
 	height: 834px;
-	background: url('../images/2013/header2013.png');
+	background-image: url('../images/2013/header2013.png');
+	background-position: 50% 0;
+	background-repeat: no-repeat;
 }
 
 /*slideshow*/
 #slide {
 	display:block;
-	float:right;
+	float:left;
 	height:400px;
 	width:600px;
-	margin-right: 9px;
-	margin-top: 424px;
+	margin-top: 320px;
 	}
 .mask {
 	height:454px;

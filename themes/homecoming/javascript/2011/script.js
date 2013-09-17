@@ -9,27 +9,27 @@ var slideshowSpeed = 3000;
 // which also includes some text and url's.
 var photos = [ {
 		
-		"image" : "/themes/homecoming/images/2011/image1.jpg"
+		"image" : "themes/homecoming/images/2011/image1.jpg"
 
 	}, {
 	
-		"image" : "/themes/homecoming/images/2011/image2.jpg"
+		"image" : "themes/homecoming/images/2011/image2.jpg"
 	
 	}, {
-		"image" : "/themes/homecoming/images/2011/image3.jpg"
+		"image" : "themes/homecoming/images/2011/image3.jpg"
 
 	}, {
 
-		"image" : "/themes/homecoming/images/2011/image4.jpg"
+		"image" : "themes/homecoming/images/2011/image4.jpg"
 
 	}, {
 
-		"image" : "/themes/homecoming/images/2011/image5.jpg"
+		"image" : "themes/homecoming/images/2011/image5.jpg"
 
 	}, {
-		"image" : "/themes/homecoming/images/2011/image6.jpg"
+		"image" : "themes/homecoming/images/2011/image6.jpg"
 	}, {
-		"image" : "/themes/homecoming/images/2011/image7.jpg"
+		"image" : "themes/homecoming/images/2011/image7.jpg"
 	}
 ];
 
