@@ -302,24 +302,20 @@
 							<% if HabitatImage %>
 							$HabitatImage          
 							<% end_if %>
+							<div style="padding: 10px 0;"><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=830&associateid=eflyer_homecoming_9/17/13?utm_campaign=newsletter&utm_source=eflyer_homecoming_9/17/13&utm_medium=email" target="_blank"><img src="http://homecoming.uiowa.edu/assets/2140-12-450x300-pixels-Homecoming-website-image.jpg" /></a></div>
 					</div>		
 					<div class="habitatlogo">
-                        <p class="habitatlogo"><a href="www.habitat.org">Habitat for Humanity</a></p>
+                        <p class="habitatlogo"><a href="http://www.habitat.org" target="_blank">Habitat for Humanity</a></p>
 					</div>	
 						<div id="choose">$Instructions
 						</div>
                     
-							<!---
-                     <div id="habitatinfo">
-                        <p><a href="http://homecoming.uiowa.edu/themes/homecoming/images/2011/habitat.pdf"></a></p>
-					</div>  
-						--->
-                    
- 					
+
 					<div class="clear"></div>
 					 <div id="morehabitat">$Instructions1</div>
 
 					<div class="clear"></div>
+
                   </div>	<!--	END OF .open	-->
 	</div>	<!--	END OF .outer-container	-->
 </div><!-- end of habitat -->
