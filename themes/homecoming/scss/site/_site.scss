@@ -1,0 +1,133 @@
+/* Base styles
+--------------------------------------------------------------- */
+html {
+	font-size: $base-font-size;
+	line-height: 1.6;
+}
+body {
+	background: #fff;
+	color: #444;
+	font-family: $body-font;
+	margin: 0;
+	padding: 0;
+}
+
+/* Layout
+--------------------------------------------------------------- */
+.container {
+	max-width: $break-large;
+	margin-right: auto;
+	margin-left: auto;
+	xpadding-left: 2em;
+	xpadding-right: 2em;
+}
+.container-padding {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+.main-content .container {
+  background-color: #fff;
+  margin-top: -15px;
+  padding-top: 15px;
+  padding-bottom: 1.5em;
+  position: relative;
+  box-shadow: 0 0 6px rgba(0,0,0,.2);
+}
+
+/* Hero Carousel
+--------------------------------------------------------------- */
+.hero {
+  background: url(http://placehold.it/1600x550&text=+) no-repeat center top;
+  xbackground-attachment: fixed;
+  height: 350px;
+}
+.home-hero {
+	height: 500px;
+}
+
+
+/* Events by Date
+--------------------------------------------------------------- */
+.eventsbydate li, .accouncements li {
+	border-bottom: 1px solid #ddd;
+	padding: 5px;
+	& a {
+		display: block;
+	}
+}
+
+/* Today's Events
+--------------------------------------------------------------- */
+.todays-events {
+  background-color: #f4f4f4;
+  margin-top: -15px;
+}
+.todays-events h3 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 12px;
+}
+.todays-events ul li {
+  float: left;
+  padding: 0 .6666%;
+  width: 33.333%;
+}
+
+/* Event Schedule
+--------------------------------------------------------------- */
+.event-wrap .event-img {
+	display: block;
+	float: left;
+	width: 40%;
+}
+.event-wrap .event-meta, .event-wrap .event-desc {
+	margin-left: 45%;
+}
+.event-meta dt {
+	float: left;
+	margin-right: 1em;
+}
+
+/* Button Schedule
+--------------------------------------------------------------- */
+.justify {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: justify;
+}
+.justify:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  
+}
+.justify .item {
+  vertical-align: top;
+  margin-bottom: 1em;
+  width: 48%;
+  text-align: center;
+  display: inline-block;
+  @media screen and (min-width: $break-small) {
+   width: 32%; 
+  }
+  @media screen and (min-width: $break-medium) {
+   width: 23%; 
+  }
+  @media screen and (min-width: $break-large) {
+   width: 15%; 
+  }
+}
+.item img {
+  width: 100%;
+  border-radius: 50%;
+}
+.filler {
+  height: 0;
+}
+.button-img, .button-img img {display: block;}
+
+
+
+
+
