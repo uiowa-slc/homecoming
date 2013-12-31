@@ -32,3 +32,4 @@ assets/
 division-project/
 division-bar
 vendor/composer/
+vendor/autoload.php
