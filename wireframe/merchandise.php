@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Parade | Student Life Marketing &amp; Design.</title>
+<title>Merchandise | Student Life Marketing &amp; Design.</title>
 <!-- Google Fonts -->
 <?php include 'inc/google-fonts.php'; ?>
 <!-- CSS -->
@@ -29,7 +29,7 @@
       <div class="row">
         <div class="col-md-9">
           <img src="http://placehold.it/800x380&text=photo" alt="" />
-          <h2>Parade</h2>
+          <h2>Merchandise</h2>
           <p>Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
           <p><strong>Start Time: 5:30pm</strong><br>
           Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
