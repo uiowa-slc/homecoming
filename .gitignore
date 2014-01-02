@@ -33,3 +33,6 @@ division-project/
 division-bar
 vendor/composer/
 vendor/autoload.php
+
+node_modules
+npm-debug.log
