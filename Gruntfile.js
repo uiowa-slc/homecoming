@@ -46,14 +46,14 @@ module.exports = function(grunt) {
 
     watch: {
       scripts: {
-        files: ['themes/homecoming/js/*.js'],
+        files: ['themes/homecoming/js/*.js', 'themes/homecoming/js/**/*.js'],
         tasks: ['concat', 'uglify'],
         options: {
           spawn: false,
         }
       },
       css: {
-        files: ['themes/homecoming/**/*.scss'],
+        files: ['themes/homecoming/scss/*.scss', 'themes/homecoming/scss/**/*.scss'],
         tasks: ['sass'],
         options: {
           spawn: false,
@@ -71,6 +71,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['concat', 'uglify', 'sass' , 'watch']);
+  grunt.registerTask('default', ['concat', 'uglify', 'sass']);
 
 };
