@@ -35,13 +35,13 @@
       </div><!-- end .row -->
       <ul class="justify">
         <li class="item button-item">
-          <a href="images/largebutton.gif" class="button-img gallery" title="2013">
+          <a href="{$themedir}/images/largebutton.gif" class="button-img gallery" title="2013">
             <img src="http://placehold.it/200x200&text=+" alt="">
           </a>
           <small class="button-year">Year</small>
         </li>
         <li class="item button-item">
-          <a href="images/largebutton.gif" class="button-img gallery" title="2013">
+          <a href="{$themedir}/images/largebutton.gif" class="button-img gallery" title="2013">
             <img src="http://placehold.it/200x200&text=+" alt="">
           </a>
           <small class="button-year">Year</small>
