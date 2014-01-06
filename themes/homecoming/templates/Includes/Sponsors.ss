@@ -1,17 +1,16 @@
+<% with $Page(sponsors) %>
 <h5 class="text-center uppercase">Sponsors</h5>
 <div class="flexslider-sponsor">
   <ul class="slides">
-    <li><img src="http://placehold.it/200x120&text=+" alt=""></li>
-    <li><img src="http://placehold.it/200x120&text=+" alt=""></li>
-    <li><img src="http://placehold.it/200x120&text=+" alt=""></li>
-    <li><img src="http://placehold.it/200x120&text=+" alt=""></li>
-    <li><img src="http://placehold.it/200x120&text=+" alt=""></li>
-    <li><img src="http://placehold.it/200x120&text=+" alt=""></li>
-    <li><img src="http://placehold.it/200x120&text=+" alt=""></li>
-    <li><img src="http://placehold.it/200x120&text=+" alt=""></li>
-    <li><img src="http://placehold.it/200x120&text=+" alt=""></li>
-    <li><img src="http://placehold.it/200x120&text=+" alt=""></li>
-    <li><img src="http://placehold.it/200x120&text=+" alt=""></li>
-    <li><img src="http://placehold.it/200x120&text=+" alt=""></li>
+    <% loop Children %>
+      <li>
+        <% if $SponsorUrl %>
+        <a href="http://$SponsorUrl"><img src="$SponsorPhoto.URL" alt="$Title"></a>
+        <% else %>
+        <img src="$SponsorPhoto.URL" alt="$Title">
+        <% end_if %>
+      </li>
+    <% end_loop %>
   </ul>
 </div>
+<% end_with %>
