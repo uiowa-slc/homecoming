@@ -21,8 +21,6 @@
         </p>
       </li>
     <% end_loop %>
-      <li class="filler"></li>
-      <li class="filler"></li>
     </ul>
   	<% end_with %>
   </section>

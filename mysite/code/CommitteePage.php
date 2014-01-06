@@ -10,7 +10,7 @@ class CommitteePage extends Page {
 	);
 
 	private static $has_one = array(
-		"Photo" => "Image",
+		"CommitteePhoto" => "Image",
 	);
 	
 	
@@ -24,7 +24,7 @@ class CommitteePage extends Page {
 		$fields->addFieldToTab("Root.Main", new TextField("Position", "Position"));
 		$fields->addFieldToTab("Root.Main", new TextField("EmailAddress", "Email address"));
 		$fields->addFieldToTab("Root.Main", new TextField("Phone", "Phone (XXX-XXX-XXXX)"));
-		$fields->addFieldToTab("Root.Main", new UploadField("Photo", "Photo"));
+		$fields->addFieldToTab("Root.Main", new UploadField("CommitteePhoto", "Photo"));
 		$fields->addFieldToTab("Root.Main", new HTMLEditorField("Content", "Description"));
 		
 		return $fields;

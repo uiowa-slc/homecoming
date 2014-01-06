@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-9">
       <h1>$Title</h1>
-      <img src="$Photo.URL" alt="$Name">
+      <img src="$CommitteePhoto.URL" alt="$Name">
       <h2>$Position</h2>
       <ul>
         <li>Email: <a href="mailto:$EmailAddress">$EmailAddress</a></li>
