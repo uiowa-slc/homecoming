@@ -6,7 +6,8 @@
 		"silverstripe/cms": "3.1.2",
 		"silverstripe/framework": "3.1.2",
 		"silverstripe-themes/simple": "*",
-		"silverstripe/event-calendar": "*"
+		"silverstripe/event-calendar": "*",
+		"silverstripe/tagfield": "dev-master"
 	},
 	"config": {
 		"process-timeout": 600	

@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "5bdb359fb0563a8629e84563d71154ee",
+    "hash": "28e393e0202b84b0005264220409fe8f",
     "packages": [
         {
             "name": "composer/installers",
@@ -251,6 +251,45 @@
                 "silverstripe"
             ],
             "time": "2013-11-12 18:43:44"
+        },
+        {
+            "name": "silverstripe/tagfield",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chillu/silverstripe-tagfield.git",
+                "reference": "df2a18a3e0fd92cba47290002f18ef71c0e42324"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chillu/silverstripe-tagfield/zipball/df2a18a3e0fd92cba47290002f18ef71c0e42324",
+                "reference": "df2a18a3e0fd92cba47290002f18ef71c0e42324",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "silverstripe/framework": "~3.1"
+            },
+            "type": "silverstripe-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ingo Schommer",
+                    "email": "ingo@silverstripe.com",
+                    "homepage": "http://chillu.com",
+                    "role": "tech-lead"
+                }
+            ],
+            "description": "Provides a SilverStripe form field for saving a string of tags into either a many_many relationship or a text property. ",
+            "keywords": [
+                "Forms",
+                "silverstripe",
+                "tags"
+            ],
+            "time": "2013-10-01 10:56:57"
         }
     ],
     "packages-dev": [
@@ -260,9 +299,9 @@
 
     ],
     "minimum-stability": "dev",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "silverstripe/tagfield": 20
+    },
     "platform": {
         "php": ">=5.3.2"
     },

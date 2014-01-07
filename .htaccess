@@ -213,3 +213,4 @@ ErrorDocument 500 /assets/error-500.html
 	RewriteRule .* framework/main.php?url=%1&%{QUERY_STRING} [L]
 </IfModule>
 ### SILVERSTRIPE END ###
+php_flag display_errors on

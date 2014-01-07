@@ -1,3 +1,24 @@
+      <% with $Page(schedule) %>
+
+        <% if $EventsToday %>
+          <h3>Events Today</h3>
+          <% loop $EventsToday %>
+            <li>$Title</li>
+          <% end_loop %>
+
+        <% else_if $UpcomingEvents %>
+          <h3>Events Later</h3>
+          <% loop $UpcomingEvents.Limit(3) %>
+            <li>$Title</li>
+          <% end_loop %>
+
+        <% else %>
+          <h3>No Events</h3>
+        <% end_if %>
+
+     <% end_with %>
+
+
 <h3>Today's Events</h3>
 <ul class="unstyled clearfix">
 <li>
