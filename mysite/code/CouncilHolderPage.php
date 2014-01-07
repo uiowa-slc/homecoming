@@ -1,5 +1,5 @@
 <?php
-class CommitteeHolderPage extends Page {
+class CouncilHolderPage extends Page {
 
 	private static $db = array(
 	);
@@ -8,7 +8,7 @@ class CommitteeHolderPage extends Page {
 	);
 
 }
-class CommitteeHolderPage_Controller extends Page_Controller {
+class CouncilHolderPage_Controller extends Page_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the

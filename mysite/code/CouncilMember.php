@@ -1,5 +1,5 @@
 <?php
-class CommitteePage extends Page {
+class CouncilMember extends Page {
 
 	private static $db = array(
 		"Name" => "Text",
@@ -10,7 +10,7 @@ class CommitteePage extends Page {
 	);
 
 	private static $has_one = array(
-		"CommitteePhoto" => "Image",
+		"CouncilPhoto" => "Image",
 	);
 	
 	
@@ -20,11 +20,10 @@ class CommitteePage extends Page {
 		$fields->removeByName("Content");
 		$fields->removeByName("Metadata");
 
-		$fields->addFieldToTab("Root.Main", new TextField("Name", "Name"));
 		$fields->addFieldToTab("Root.Main", new TextField("Position", "Position"));
 		$fields->addFieldToTab("Root.Main", new TextField("EmailAddress", "Email address"));
 		$fields->addFieldToTab("Root.Main", new TextField("Phone", "Phone (XXX-XXX-XXXX)"));
-		$fields->addFieldToTab("Root.Main", new UploadField("CommitteePhoto", "Photo"));
+		$fields->addFieldToTab("Root.Main", new UploadField("CouncilPhoto", "Photo"));
 		$fields->addFieldToTab("Root.Main", new HTMLEditorField("Content", "Description"));
 		
 		return $fields;
@@ -34,7 +33,7 @@ class CommitteePage extends Page {
 	//private static $allowed_children = array("");
 
 }
-class CommitteePage_Controller extends Page_Controller {
+class CouncilMember_Controller extends Page_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
