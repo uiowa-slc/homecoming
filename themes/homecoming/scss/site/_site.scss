@@ -128,6 +128,26 @@ body {
 .button-img, .button-img img {display: block;}
 
 
-
-
+/* Council Member
+--------------------------------------------------------------- */
+.council-member li {
+  border-bottom: 1px solid #eee;
+  padding: 20px 0 10px;
+}
+.council-member img {
+  float: left;
+}
+.council-email {
+  font-size: 75%;
+  margin:0;
+}
+.council-title {
+  margin-top: 0;
+}
+.council-title, .council-bio, .council-email {
+  margin-left: 170px;
+}
+.council-bio p {
+  font-size: 15px;
+}
 
