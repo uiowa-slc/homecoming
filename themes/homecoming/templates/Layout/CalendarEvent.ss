@@ -5,7 +5,6 @@
       <!-- $CalendarWidget
       $MonthJumper -->
 
-      <p><a href="$Parent.Link">&laquo; Back to $Parent.Title</a></p>
       <div class="vevent">
         <h1 class="summary">$Title</h1>
 
