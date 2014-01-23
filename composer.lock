@@ -3,20 +3,62 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "28e393e0202b84b0005264220409fe8f",
+    "hash": "583d140b13d6aeff02551a381c6a15fc",
     "packages": [
+        {
+            "name": "colymba/gridfield-bulk-editing-tools",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/colymba/GridFieldBulkEditingTools.git",
+                "reference": "0e307890402a1a6a87729d56005d9a1fa5bb5c9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/0e307890402a1a6a87729d56005d9a1fa5bb5c9e",
+                "reference": "0e307890402a1a6a87729d56005d9a1fa5bb5c9e",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~3.1"
+            },
+            "type": "silverstripe-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD Simplified"
+            ],
+            "authors": [
+                {
+                    "name": "Thierry Francois",
+                    "homepage": "http://colymba.com"
+                },
+                {
+                    "name": "GitHub contributors",
+                    "homepage": "https://github.com/colymba/GridFieldBulkEditingTools/contributors"
+                }
+            ],
+            "description": "SilverStripe 3 GridField component to upload images and edit records in bulk",
+            "homepage": "https://github.com/colymba/GridFieldBulkEditingTools",
+            "keywords": [
+                "Image upload",
+                "bulk upload",
+                "gridfield bulk upload",
+                "silverstripe"
+            ],
+            "time": "2014-01-17 10:56:46"
+        },
         {
             "name": "composer/installers",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "c87cfc35882eb50df3eef1734bfa52fbcd6c782c"
+                "reference": "53c31d1c216b64c1da999d5d25a97fcbf6810515"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/c87cfc35882eb50df3eef1734bfa52fbcd6c782c",
-                "reference": "c87cfc35882eb50df3eef1734bfa52fbcd6c782c",
+                "url": "https://api.github.com/repos/composer/installers/zipball/53c31d1c216b64c1da999d5d25a97fcbf6810515",
+                "reference": "53c31d1c216b64c1da999d5d25a97fcbf6810515",
                 "shasum": ""
             },
             "replace": {
@@ -46,7 +88,7 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "https://github.com/shama",
+                    "homepage": "http://dontkry.com",
                     "role": "Developer"
                 }
             ],
@@ -72,13 +114,14 @@
                 "mako",
                 "modulework",
                 "phpbb",
+                "piwik",
                 "ppi",
                 "silverstripe",
                 "symfony",
                 "wordpress",
                 "zend"
             ],
-            "time": "2013-12-24 18:04:46"
+            "time": "2014-01-14 16:42:06"
         },
         {
             "name": "silverstripe-themes/simple",

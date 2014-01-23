@@ -7,6 +7,19 @@ class ButtonArchivePage extends Page {
 	private static $has_one = array(
 	);
 
+	public function getCMSFields(){
+		$fields = parent::getCMSFields();
+
+		$gridFieldConfig = GridFieldConfig_RelationEditor::create();
+		$gridFieldConfig->addComponent(new GridFieldBulkImageUpload());
+		
+		$gridField = new GridField("Buttons", "Buttons", Button::get(), $gridFieldConfig);
+
+		$fields->addFieldToTab("Root.Main", $gridField, "Content");
+		
+		return $fields;
+	}
+
 }
 class ButtonArchivePage_Controller extends Page_Controller {
 
