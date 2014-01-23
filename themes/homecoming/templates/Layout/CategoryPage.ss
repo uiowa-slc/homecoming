@@ -13,7 +13,9 @@
           <div class="event-wrap clearfix">
             <h2 class="event-title"><a href="$Link">$Title</a></h2>
             <% if $EventImage %>
-              <a href="$Link" class="event-img"><img src="{$EventImage.SetWidth(300).URL}" alt="$Title"></a>
+              <a href="$Link" class="event-img">
+                <img src="{$EventImage.SetWidth(300).URL}" alt="$Title">
+              </a>
             <% end_if %>
             <dl class="event-meta">
               <dt>Date:</dt>

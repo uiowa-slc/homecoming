@@ -7,13 +7,13 @@
 
       <div class="vevent">
         <h1 class="summary">$Title</h1>
-
+        <% if $EventImage %><img src="{$EventImage.SetWidth(300).URL}" class="left" alt="$Title" /><% end_if %>
         <% with CurrentDate %>
           <p class="dates">$DateRange</p>
           <% if StartTime %><p class="">$TimeRange</p><% end_if %>
         <% end_with %>
         <p>$EventLocation</p>
-        <% if $EventImage %><img src="{$EventImage.SetWidth(300).URL}" class="left" alt="$Title" /><% end_if %>
+        
 
         $Content
       
@@ -27,6 +27,7 @@
           </ul>
         </div>
         <% end_if %>
+        
       </div>
       $Form
       $PageComments

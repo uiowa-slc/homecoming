@@ -16,7 +16,7 @@ class SponsorPage extends Page {
 		$fields->removeByName("Metadata");
 
 		$fields->addFieldToTab("Root.Main", new UploadField("SponsorPhoto", "Sponsor Photo"));
-		$fields->addFieldToTab("Root.Main", new TextField("SponsorUrl", "Sponsor URL (www.domain.com)"));
+		$fields->addFieldToTab("Root.Main", new TextField("SponsorUrl", "Sponsor URL (http://www.domain.com)"));
 		
 		return $fields;
 		

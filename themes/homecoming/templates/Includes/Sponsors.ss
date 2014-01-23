@@ -5,9 +5,9 @@
     <% loop Children %>
       <li>
         <% if $SponsorUrl %>
-        <a href="http://$SponsorUrl"><img src="$SponsorPhoto.URL" alt="$Title"></a>
+          <a href="$SponsorUrl"><img src="$SponsorPhoto.URL" alt="$Title"></a>
         <% else %>
-        <img src="$SponsorPhoto.URL" alt="$Title">
+          <img src="$SponsorPhoto.URL" alt="$Title">
         <% end_if %>
       </li>
     <% end_loop %>
