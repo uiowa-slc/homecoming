@@ -7,10 +7,10 @@
         <ul class="unstyled clearfix $Pos">
         <% loop $EventsToday %>
           <li>
-            <h4>$Title</h4>
             <a href="$Link" class="event-img">
               <img src="{$Event.EventImage.SetWidth(300).URL}" alt="$Title">
             </a>
+            <h4>$Title</h4>
             <p>$TimeRange<br>$Event.EventLocation</p>
             <p><a href="$Link">Learn More</a></p>
           </li>
@@ -22,11 +22,11 @@
         <ul class="unstyled clearfix $Pos">
         <% loop $UpcomingEvents.Limit(3) %>
           <li>
-            <h4>$Title</h4>
             <a href="$Link" class="event-img">
               <img src="{$Event.EventImage.SetWidth(300).URL}" alt="$Title">
             </a>
-            <p>$TimeRange<br>$Event.EventLocation</p>
+            <h4>$Title</h4>
+            <p>$DateRange<br>$TimeRange<br>$Event.EventLocation</p>
             <p><a href="$Link">Learn More</a></p>
           </li>
         <% end_loop %>

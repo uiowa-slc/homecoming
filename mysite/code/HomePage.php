@@ -5,7 +5,20 @@ class HomePage extends Page {
 	);
 
 	private static $has_one = array(
+		"HomePhoto" => "Image",
 	);
+
+	public function getCMSFields(){
+    $fields = parent::getCMSFields();
+    
+    // $fields->removeByName("Content");
+    // $fields->removeByName("Metadata");
+
+    $fields->addFieldToTab("Root.Main", new UploadField("HomePhoto", "Photo"));
+    
+    return $fields;
+    
+  }
 
 }
 class HomePage_Controller extends Page_Controller {
