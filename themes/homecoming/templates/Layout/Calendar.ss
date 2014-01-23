@@ -2,7 +2,6 @@
 <div class="container">
   <div class="row">
     <div class="col-md-9">
-
       <!-- <h2>$DateHeader</h2> -->
       <% if Events %>
       <div id="event-calendar-events">
