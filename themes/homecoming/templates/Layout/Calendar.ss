@@ -2,13 +2,28 @@
 <div class="container">
   <div class="row">
     <div class="col-md-9">
-      <!-- <h2>$DateHeader</h2> -->
-      <% if AllEvents %>
-      <div id="event-calendar-events">
-        <% include EventList %>
-      </div>
+      <% if $CurrentAction(show) %>
+
+        <% if Events %>
+          <div id="event-calendar-events">
+            <% loop Events %>
+             <% include EventList %>
+            <% end_loop %>
+          </div>
+        <% end_if %>
+
       <% else %>
-        <p><% _t('NOEVENTS','There are no events') %>.</p>
+
+        <% if AllEvents %>
+          <div id="event-calendar-events">
+            <% loop AllEvents %>
+             <% include EventList %>
+            <% end_loop %>
+          </div>
+          <% else %>
+            <p><% _t('NOEVENTS','There are no events') %>.</p>
+        <% end_if %>
+
       <% end_if %>
 
     </div><!-- end .col -->

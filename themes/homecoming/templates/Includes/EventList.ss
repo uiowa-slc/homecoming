@@ -1,4 +1,4 @@
-<% loop AllEvents %>
+
 <div class="event-wrap clearfix">
 
   <% with $Event %>
@@ -25,11 +25,5 @@
 
 </div>
 <hr>
-<% end_loop %>
-
-<% if MoreEvents %>
-  <a href="$MoreLink" class="calendar-view-more"><% _t('Calendar.VIEWMOREEVENTS','View more events...') %></a>
-<% end_if %>
-
 
 
