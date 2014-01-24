@@ -232,7 +232,16 @@ body {
 .filler {
   height: 0;
 }
+.button-item {
+  @include rem(13);
+}
 .button-img, .button-img img {display: block;}
+.button-year {
+  display: block;
+  @include rem(13);
+  margin: 5px 0;
+  text-align: center;
+}
 
 
 /* Council Member

@@ -10,8 +10,8 @@
   <ul class="justify">
     <% loop $Buttons %>
       <li class="item button-item">
-      <a href="$Photo.URL" class="button-img gallery" title="$Title">
-        <img src="$Photo.PaddedImage(200,200).URL" alt="$Title">
+      <a href="$Photo.URL" class="button-img gallery" title="$Year">
+        <img src="$Photo.PaddedImage(200,200).URL" alt="$Year">
       </a>
       <small class="button-year">$Year</small>
     </li>
