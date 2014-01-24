@@ -24,4 +24,10 @@ $(window).load(function() {
     move: 1
   });
 
+  // Hero Flexslider
+  $('.hero-slider').flexslider({
+    animation: "fade",
+    controlNav: false,
+    directionNav: false,
+  });
 });

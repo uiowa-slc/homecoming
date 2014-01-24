@@ -2,10 +2,21 @@
 class HomePage extends Page {
 
 	private static $db = array(
+		"CalloutOne" => "Text",
+		"CalloutTwo" => "Text",
+		"CalloutThree" => "Text",
+
+		"CalloutOneDesc" => "Text",
+		"CalloutTwoDesc" => "Text",
+		"CalloutThreeDesc" => "Text"
 	);
 
 	private static $has_one = array(
 		"HomePhoto" => "Image",
+		"CalloutOnePhoto" => "Image",
+		"CalloutTwoPhoto" => "Image",
+		"CalloutThreePhoto" => "Image",
+		"CalloutOneTree" => "SiteTree"
 	);
 
 	public function getCMSFields(){
@@ -15,6 +26,20 @@ class HomePage extends Page {
     // $fields->removeByName("Metadata");
 
     $fields->addFieldToTab("Root.Main", new UploadField("HomePhoto", "Photo"));
+
+    $fields->addFieldToTab("Root.CalloutOne", new TextField("CalloutOne", "Title"));
+    $fields->addFieldToTab("Root.CalloutOne", new TextField("CalloutOneDesc", "Description"));
+    $fields->addFieldToTab("Root.CalloutOne", new UploadField("CalloutOnePhoto", "Photo"));
+    $treedropdownfield = new TreeDropdownField("CalloutOneTreeID", "Select a Page:", "SiteTree");
+
+    $fields->addFieldToTab("Root.CalloutTwo", new TextField("CalloutTwo", "Title"));
+    $fields->addFieldToTab("Root.CalloutTwo", new TextField("CalloutTwoDesc", "Description"));
+    $fields->addFieldToTab("Root.CalloutTwo", new UploadField("CalloutTwoPhoto", "Photo"));
+
+    $fields->addFieldToTab("Root.CalloutThree", new TextField("CalloutThree", "Title"));
+    $fields->addFieldToTab("Root.CalloutThree", new TextField("CalloutThreeDesc", "Description"));
+    $fields->addFieldToTab("Root.CalloutThree", new UploadField("CalloutThreePhoto", "Photo"));
+
     
     return $fields;
     

@@ -31,9 +31,9 @@
         </div>
       </div>
       <div class="col-sm-4">
-        <h4>Support The Division</h4>
-        <p>Gifts to the Vice President for Student Life Development Fund allow us to continue and enhance our efforts to prepare students for a successful life in school and beyond.</p>
-        <a href="https://www.givetoiowa.org/GiveToIowa/WebObjects/GiveToIowa.woa/wa/goTo?area=studentlife" class="appt-btn">Give Online Now</a>
+        <h4>T-shirt and Buttons</h4>
+        <p>Show your school spirit and help celebrate Hawkeye Homecoming by buying your t-shirts and buttons now! All proceeds benefit Homecoming programming.</p>
+        <a href="#" class="appt-btn">Order Now</a>
       </div>
     </div>
     <hr>

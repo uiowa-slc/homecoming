@@ -39,12 +39,17 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 <![endif]-->
 </head>
 
-<body>
+<body class="$ClassName">
 
 	<% include Header %>
 	
-	<div class="hero home-hero">
-
+	<div class="hero">
+		<div class="hero-slider">
+			<ul class="slides">
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
 	</div>
 	
 	<section role="main" class="main-content">
