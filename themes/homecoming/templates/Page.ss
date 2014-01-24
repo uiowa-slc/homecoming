@@ -60,8 +60,7 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 	<!-- JS -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script> -->
-	<script src="{$ThemeDir}/js/plugins-ck.js"></script>
-	<script src="{$ThemeDir}/js/main-ck.js"></script>
+	<script src="{$ThemeDir}/js/build/production.min.js"></script>
 
 	<% include GoogleAnalytics %>
 

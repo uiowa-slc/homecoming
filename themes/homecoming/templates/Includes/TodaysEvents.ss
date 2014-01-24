@@ -3,31 +3,35 @@
     <% with $Page(schedule) %>
 
       <% if $EventsToday %>
-        <h3>Today's Events</h3>
-        <ul class="unstyled clearfix $Pos">
+        <h3><span>Today's Events</span></h3>
+        <ul>
         <% loop $EventsToday %>
-          <li>
+          <li class="justify-item">
             <a href="$Link" class="event-img">
-              <img src="{$Event.EventImage.SetWidth(300).URL}" alt="$Title">
+              <img src="{$Event.EventImage.SetWidth(320).URL}" alt="$Title">
             </a>
-            <h4>$Title</h4>
-            <p>$TimeRange<br>$Event.EventLocation</p>
-            <p><a href="$Link">Learn More</a></p>
+            <h4 class="todays-events-title"><a href="$Link">$Title</a></h4>
+            <div class="today-content">
+              <p><span class="time">$TimeRange</span><br>$Event.EventLocation</p>
+              <!-- <p><a href="$Link">Learn More</a></p> -->
+            </div>
           </li>
         <% end_loop %>
         </ul>
 
       <% else_if $UpcomingEvents %>
-        <h3>Upcoming Events</h3>
-        <ul class="unstyled clearfix $Pos">
+        <h3><span>Upcoming Events</span></h3>
+        <ul class="justify">
         <% loop $UpcomingEvents.Limit(3) %>
-          <li>
+          <li class="justify-item">
             <a href="$Link" class="event-img">
-              <img src="{$Event.EventImage.SetWidth(300).URL}" alt="$Title">
+              <img src="{$Event.EventImage.URL}" alt="$Title">
             </a>
-            <h4>$Title</h4>
-            <p>$DateRange<br>$TimeRange<br>$Event.EventLocation</p>
-            <p><a href="$Link">Learn More</a></p>
+            <h4 class="todays-events-title"><a href="$Link">$Title</a></h4>
+            <div class="today-content">
+              <p>$DateRange<br><span class="time">$TimeRange</span><br>$Event.EventLocation</p>
+              <!-- <p><a href="$Link">Learn More</a></p> -->
+            </div>
           </li>
         <% end_loop %>
         </ul>

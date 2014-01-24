@@ -11,14 +11,14 @@ module.exports = function(grunt) {
           'themes/homecoming/js/plugins/*.js',
           'themes/homecoming/js/main.js'
         ],
-        dest: 'themes/homecoming/js/build/main.js'
+        dest: 'themes/homecoming/js/build/production.js'
       }
     },
 
     uglify: {
       build: {
-        src: ['themes/homecoming/js/build/main.js'],
-        dest: 'themes/homecoming/js/build/main.min.js'
+        src: ['themes/homecoming/js/build/production.js'],
+        dest: 'themes/homecoming/js/build/production.min.js'
       }
     },
 

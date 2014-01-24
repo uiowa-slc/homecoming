@@ -12,6 +12,7 @@ $(window).load(function() {
 		slideshow: false,
     controlNav: false
 	});
+  
   // Sponsor Flexslider
   $('.flexslider-sponsor').flexslider({
     animation: "slide",
@@ -22,19 +23,5 @@ $(window).load(function() {
     itemWidth: 210,
     move: 1
   });
-
-	// /* FitVids */
-	// $(".media").fitVids();
-
-  // Tabs
-  $('#myTab a').click(function (e) {
-    e.preventDefault()
-    $(this).tab('show')
-  })
-  $('#myTab a:first').tab('show');
-
-  // Full Height Image
-  // var height = $(window).height();
-  // $('.hero').css({'height': (height)+'px'});
 
 });
