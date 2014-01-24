@@ -7,4 +7,5 @@ class Category extends DataObject {
 
 	private static $belongs_many_many = array('CalendarEvents'=>'CalendarEvent');
 
+
 }

@@ -18,10 +18,12 @@
               </a>
             <% end_if %>
             <dl class="event-meta">
-              <dt>Date:</dt>
-              <dd>$DateRange</dd>
-              <dt>Time:</dt>
-              <dd><% if AllDay %><% _t('ALLDAY','All Day') %><% else %><% if StartTime %>$TimeRange<% end_if %><% end_if %></dd>
+              <% loop DateTimes %>
+                <dt>Date:</dt>
+                <dd>$DateRange</dd>
+                <dt>Time:</dt>
+                <dd><% if AllDay %><% _t('ALLDAY','All Day') %><% else %><% if StartTime %>$TimeRange<% end_if %><% end_if %></dd>
+                <% end_loop %>
               <dt>Location:</dt>
               <dd>$EventLocation</dd>
             </dl>

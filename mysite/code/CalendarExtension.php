@@ -11,10 +11,13 @@ class CalendarExtension extends DataExtension {
 	public function EventsToday(){
 		$calendar = $this->owner;
 		$today = sfDate::getInstance()->date();
-		$events = $calendar->getEventList(
-                        $today,
-                        $today
-        );
+		$events = $calendar->getEventList($today,$today);
+		return $events;
+	}
+
+	public function AllEvents(){
+		$calendar = $this->owner;
+		$events = $calendar->getEventList('1900-01-01','3000-01-01');
 		return $events;
 	}
 

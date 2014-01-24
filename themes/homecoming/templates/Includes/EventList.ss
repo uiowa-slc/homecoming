@@ -1,9 +1,13 @@
-<% loop Events %>
+<% loop AllEvents %>
 <div class="event-wrap clearfix">
-  <h2 class="event-title"><a href="$Event.Link">$Event.Title</a></h2>
-  <% if $Event.EventImage %>
-    <a href="$Event.Link" class="event-img"><img src="{$Event.EventImage.SetWidth(300).URL}" alt="$Event.Title"></a>
-  <% end_if %>
+
+  <% with $Event %>
+    <h2 class="event-title"><a href="$Link">$Title</a></h2>
+    <% if $EventImage %>
+      <a href="$Link" class="event-img"><img src="{$EventImage.SetWidth(300).URL}" alt="$Title"></a>
+    <% end_if %>
+  <% end_with %>
+
   <dl class="event-meta">
     <dt>Date:</dt>
     <dd>$DateRange</dd>
@@ -12,9 +16,13 @@
     <dt>Location:</dt>
     <dd>$Event.EventLocation</dd>
   </dl>
-  <p class="event-desc">
-    <% with Event %>$Content.LimitCharacters(220)<% end_with %> <a href="$Event.Link"><% _t('MORE','Read more&hellip;') %></a>
-  </p>
+
+  <% with Event %>
+    <p class="event-desc">
+      $Content.LimitCharacters(220)<a href="$Link"><% _t('MORE','Read more&hellip;') %></a>
+    </p>
+  <% end_with %>
+
 </div>
 <hr>
 <% end_loop %>

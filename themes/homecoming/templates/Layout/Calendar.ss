@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-md-9">
       <!-- <h2>$DateHeader</h2> -->
-      <% if Events %>
+      <% if AllEvents %>
       <div id="event-calendar-events">
         <% include EventList %>
       </div>
