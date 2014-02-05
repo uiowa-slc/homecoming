@@ -53,13 +53,15 @@ body {
 }
 .HomePage .hero-slider li {
   height: 500px;
-  background-attachment: fixed;
+  xbackground-attachment: fixed;
 }
 .hero-slider li:nth-child(1) {
   background: url(../images/homecoming_bg3.jpg) no-repeat center top;
+  xbackground-attachment: fixed;
 }
 .hero-slider li:nth-child(2) {
   background: url(../images/homecoming_bg2.jpg) no-repeat center top;
+  xbackground-attachment: fixed;
 }
 
 
