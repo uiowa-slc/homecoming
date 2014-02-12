@@ -45,6 +45,9 @@ module.exports = function(grunt) {
     },
 
     watch: {
+      options: {
+        livereload: true,
+      },
       scripts: {
         files: ['themes/homecoming/js/*.js', 'themes/homecoming/js/**/*.js'],
         tasks: ['concat', 'uglify'],
@@ -58,6 +61,12 @@ module.exports = function(grunt) {
         options: {
           spawn: false,
         }
+      },
+      markup: {
+          files: ['themes/homecoming/templates/**/*.ss'],
+          options: {
+              livereload: true,
+          }
       }
     },
 

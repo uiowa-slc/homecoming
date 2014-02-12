@@ -1,15 +1,17 @@
 .header {
-  background-color: #fff;
-  padding: 15px 0;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left:-500px;
+  background-color: #222;
+  background-color: rgba(0,0,0,.75);
   box-shadow: 0 0 6px rgba(0,0,0,.2);
-  z-index: 5;
+  position: relative;
+  z-index: 10;
 }
+
 .logo {
   display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: 5;
   & img {
     display: block;
   }
@@ -21,8 +23,11 @@
   padding: 0;
   & li {
     float: left;
+    margin: 0;
     & a {
-      padding: 5px 10px;
+      color: #fff;
+      display: block;
+      padding: 18px 10px;
     }
   }
 }

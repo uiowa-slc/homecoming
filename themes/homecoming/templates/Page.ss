@@ -6,26 +6,26 @@
 <meta charset="utf-8">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home | Student Life Marketing &amp; Design.</title>
+<title>Home | Homecoming 2014</title>
 <!--
-                                                                                                                                                                   
-MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD        
-M:::::::M             M:::::::M                               D::::::::::::DDD     
-M::::::::M           M::::::::M                               D:::::::::::::::DD   
-M:::::::::M         M:::::::::M            +++++++            DDD:::::DDDDD:::::D  
-M::::::::::M       M::::::::::M            +:::::+              D:::::D    D:::::D 
+
+MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
+M:::::::M             M:::::::M                               D::::::::::::DDD
+M::::::::M           M::::::::M                               D:::::::::::::::DD
+M:::::::::M         M:::::::::M            +++++++            DDD:::::DDDDD:::::D
+M::::::::::M       M::::::::::M            +:::::+              D:::::D    D:::::D
 M:::::::::::M     M:::::::::::M            +:::::+              D:::::D     D:::::D
 M:::::::M::::M   M::::M:::::::M      +++++++:::::+++++++        D:::::D     D:::::D
 M::::::M M::::M M::::M M::::::M      +:::::::::::::::::+        D:::::D     D:::::D
 M::::::M  M::::M::::M  M::::::M      +:::::::::::::::::+        D:::::D     D:::::D
 M::::::M   M:::::::M   M::::::M      +++++++:::::+++++++        D:::::D     D:::::D
 M::::::M    M:::::M    M::::::M            +:::::+              D:::::D     D:::::D
-M::::::M     MMMMM     M::::::M            +:::::+              D:::::D    D:::::D 
-M::::::M               M::::::M            +++++++            DDD:::::DDDDD:::::D  
-M::::::M               M::::::M                               D:::::::::::::::DD   
-M::::::M               M::::::M                               D::::::::::::DDD     
-MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD        
-                                                                                   
+M::::::M     MMMMM     M::::::M            +:::::+              D:::::D    D:::::D
+M::::::M               M::::::M            +++++++            DDD:::::DDDDD:::::D
+M::::::M               M::::::M                               D:::::::::::::::DD
+M::::::M               M::::::M                               D::::::::::::DDD
+MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
+
                               http://studentlife.uiowa.edu/md/
 -->
 <!-- Google Fonts -->
@@ -40,9 +40,9 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 </head>
 
 <body class="$ClassName">
-
+	<% include DivisionBar %>
 	<% include Header %>
-	
+
 	<div class="hero">
 		<div class="hero-slider">
 			<ul class="slides">
@@ -51,11 +51,11 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 			</ul>
 		</div>
 	</div>
-	
+
 	<section role="main" class="main-content">
 		$Layout
 	</section>
-	
+
 		<% include TodaysEvents %>
 
 	<% include Sponsors %>
@@ -66,7 +66,7 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script> -->
 	<script src="{$ThemeDir}/js/build/production.min.js"></script>
-
+	<script src="../../division-bar/js/division-bar.js"></script>
 	<% include GoogleAnalytics %>
 
 </body>
