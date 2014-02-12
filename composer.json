@@ -8,10 +8,18 @@
 		"silverstripe-themes/simple": "*",
 		"silverstripe/event-calendar": "*",
 		"colymba/gridfield-bulk-editing-tools": "*",
-		"silverstripe/tagfield": "dev-master"
+		"silverstripe/tagfield": "dev-master",
+		"md/division-bar" : "*"
 	},
 	"config": {
 		"process-timeout": 600	
 	},
-	"minimum-stability": "dev"
+	"minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar"
+
+        }
+    ]
 }
