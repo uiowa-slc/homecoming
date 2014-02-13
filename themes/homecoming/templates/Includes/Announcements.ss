@@ -1,5 +1,5 @@
 <% with $Page(announcements) %>
-<div class="accouncements">
+<div class="announcements">
   <h5>Announcements</h5>
   <ul class="unstyled">
     <% loop Children %>

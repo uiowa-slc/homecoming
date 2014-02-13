@@ -9,7 +9,7 @@
           <% loop $EventsToday %>
             <li class="justify-item">
               <a href="$Link" class="event-img">
-                <img src="{$Event.EventImage.SetWidth(320).URL}" alt="$Title">
+                <img src="{$Event.EventImage.SetHeight(250).URL}" alt="$Title">
               </a>
               <h4 class="todays-events-title"><a href="$Link">$Title</a></h4>
               <div class="today-content">
@@ -26,11 +26,11 @@
         <section class="todays-events">
           <div class="container container-padding">
             <h3><span>Upcoming Events</span></h3>
-            <ul class="justify">
-            <% loop $UpcomingEvents.Limit(3) %>
+            <ul class="justify justify-4">
+            <% loop $UpcomingEvents.Limit(4) %>
               <li class="justify-item">
                 <a href="$Link" class="event-img">
-                  <img src="{$Event.EventImage.URL}" alt="$Title">
+                  <img src="{$Event.EventImage.CroppedImage(400,300).URL}" alt="$Title">
                 </a>
                 <h4 class="todays-events-title"><a href="$Link">$Title</a></h4>
                 <div class="today-content">
@@ -43,8 +43,7 @@
           </div>
         </section>
       <% else %>
-        
+
       <% end_if %>
 
    <% end_with %>
-  

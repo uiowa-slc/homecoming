@@ -44,12 +44,18 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 	<% include Header %>
 
 	<div class="hero">
-		<div class="hero-slider">
-			<ul class="slides">
-				<li></li>
-				<li></li>
-			</ul>
+		<div class="featuredimage">
+			<div class="loader"></div>
+			<div class="hero-slider">
+				<ul class="slides">
+					<li><img src="{$ThemeDir}/images/homecoming_bg4.jpg" alt=""></li>
+					<li><img src="{$ThemeDir}/images/homecoming_bg3.jpg" alt=""></li>
+				</ul>
+			</div>
 		</div>
+		<!-- <div class="hero-slider">
+			<img src="{$ThemeDir}/images/homecoming_bg4.jpg" alt="">
+		</div> -->
 	</div>
 
 	<section role="main" class="main-content">

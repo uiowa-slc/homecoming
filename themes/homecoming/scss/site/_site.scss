@@ -5,17 +5,18 @@ html {
 	line-height: 1.6;
 }
 body {
-	background: #ebebe6;
+	background: #ebebe6 url(../images/bg_swatch.svg);
 	color: #444;
 	font-family: $body-font;
 	margin: 0;
 	padding: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Layout
 --------------------------------------------------------------- */
 .container {
-	max-width: $break-xlarge;
+	max-width: $break-xxlarge;
 	margin-right: auto;
 	margin-left: auto;
   position: relative;
@@ -27,22 +28,100 @@ body {
 	padding-bottom: 2em;
 }
 .main-content .container {
-  background-color: #fff;
-  margin-top: -15px;
-  padding-top: 15px;
-  padding-bottom: 1.5em;
+  background-color: #fafafa;
+  margin-top: -50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  min-height: 700px;
+  padding: 60px;
   position: relative;
   box-shadow: 0 0 6px rgba(0,0,0,.2);
+  @media screen and (min-width: $break-xxlarge) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* Hero Carousel
 --------------------------------------------------------------- */
 .hero {
-  height: 350px;
-  margin-top: -104px;
+
 }
-.HomePage .hero {
-	height: 500px;
+.featuredimage {
+  padding-top: 38%;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0.8)), color-stop(10%, transparent));
+}
+.loader {
+  position: absolute;
+  background: url(../images/spinner.png);
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  top: 40%;
+  margin: -40px auto auto -40px;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -ms-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  -webkit-animation: spinnerRotate 1s infinite linear;
+  -moz-animation: spinnerRotate 1s infinite linear;
+  -ms-animation: spinnerRotate 1s infinite linear;
+  -o-animation: spinnerRotate 1s infinite linear;
+  animation: spinnerRotate 1s infinite linear;
+}
+@-webkit-keyframes spinnerRotate {
+  from {
+    -webkit-transform:rotate(0deg);
+  }
+  to {
+    -webkit-transform:rotate(360deg);
+  }
+}
+
+@-moz-keyframes spinnerRotate {
+  from {
+    -moz-transform:rotate(0deg);
+  }
+  to {
+    -moz-transform:rotate(360deg);
+  }
+}
+
+@-o-keyframes spinnerRotate {
+  from {
+    -o-transform:rotate(0deg);
+  }
+  to {
+    -o-transform:rotate(360deg);
+  }
+}
+
+@keyframes spinnerRotate {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+.hero-slider {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.hero-slider li img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0;
+}
+/*.HomePage .hero {
+	height: 550px;
 }
 .hero-slider ul {
   list-style: none;
@@ -58,25 +137,35 @@ body {
   background-position: center top;
 }
 .HomePage .hero-slider li {
-  height: 500px;
-}
-.hero-slider li:nth-child(1) {
+  height: 550px;
+}*/
+/*.hero-slider li:nth-child(1) {
   background-image: url(../images/homecoming_bg3.jpg);
 }
 .hero-slider li:nth-child(2) {
-  background-image: url(../images/homecoming_bg2.jpg);
-}
+  background-image: url(../images/homecoming_bg4.jpg);
+}*/
 
 
 /* Events by Date
 --------------------------------------------------------------- */
-.eventsbydate li, .accouncements li {
+.eventsbydate, .announcements {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1em;
+}
+.eventsbydate li, .announcements li {
 	border-bottom: 1px solid #ddd;
 	padding: 5px;
+  &:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
 	& a {
 		display: block;
 	}
 }
+
 
 /* Today's Events
 --------------------------------------------------------------- */
@@ -85,7 +174,7 @@ body {
   xbackground: #ebebe6 url(../images/diagonal.gif);
   border-top: 1px solid rgba(0,0,0,.05);
   border-bottom: 1px solid rgba(0,0,0,.05);
-  margin-top: -15px;
+  margin-top: -50px;
   padding: 2px 0;
 }
 .todays-events .container {
@@ -93,7 +182,7 @@ body {
   padding-bottom: 6em;
 }
 .todays-events h3 {
-  font-weight: bold;
+  xfont-weight: bold;
   margin-top: 0;
   margin-bottom: 1em;
   text-align: center;
@@ -104,11 +193,12 @@ body {
     &:before, &:after {
       content: "";
       position: absolute;
-      height: 5px;
-      border-bottom: 3px double #444;
-      border-bottom: 3px double rgba(0,0,0,.2);
-      top: 35%;
+      height: 2px;
+      border-top: 1px solid rgba(0,0,0,.12);
+      border-bottom: 1px solid rgba(255,255,255,.6);
+      top: 47%;
       width: 90%;
+
     }
     &:before {
       right: 100%;
@@ -135,11 +225,11 @@ body {
   @media screen and (min-width: $break-medium) {
     margin-bottom: 0;
     width: 32%;
-    min-height: 375px;
+    min-height: 385px;
   }
 }
 .today-content {
-  padding: 15px;
+  padding: 25px 15px;
   text-align: center;
   & p {
     margin: 0;
@@ -382,12 +472,22 @@ body {
 
 /* Sponsors
 ============================================================================ */
+.sponsors {
+  background: #fff;
+  padding: 1px 0;
+}
 .flexslider-sponsor {
-  margin: 5px 10px;
-  max-height: 120px;
+  padding: 5px 10px 10px;
   overflow: auto;
-  padding: 0;
   position: relative;
+  & ul {
+    overflow: hidden;
+    max-height: 120px;
+  }
+  & li {
+    float: left;
+    margin: 0;
+  }
   & li img {
     display: block;
   }
