@@ -26,8 +26,8 @@
         <section class="todays-events">
           <div class="container container-padding">
             <h3><span>Upcoming Events</span></h3>
-            <ul class="justify justify-4">
-            <% loop $UpcomingEvents.Limit(4) %>
+            <ul class="justify justify-3">
+            <% loop $UpcomingEvents.Limit(3) %>
               <li class="justify-item">
                 <a href="$Link" class="event-img">
                   <img src="{$Event.EventImage.CroppedImage(400,300).URL}" alt="$Title">

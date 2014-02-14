@@ -283,20 +283,7 @@ body {
   background-color: rgba(0,0,0,0);
 }
 
-/* Event Schedule
---------------------------------------------------------------- */
-.event-wrap .event-img {
-	display: block;
-	float: left;
-	width: 40%;
-}
-.event-wrap .event-meta, .event-wrap .event-desc {
-	margin-left: 45%;
-}
-.event-meta dt {
-	float: left;
-	margin-right: 1em;
-}
+
 
 /* Button Schedule
 --------------------------------------------------------------- */
@@ -454,7 +441,7 @@ body {
    width: 48%;
   }
   @media screen and (min-width: $break-medium) {
-   width: 33.3333%;
+   width: 32%;
   }
 }
 .justify-4 .justify-item {

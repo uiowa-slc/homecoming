@@ -23,21 +23,21 @@
 
 
 /* Plugins
--------------------------------------------*/ 
+-------------------------------------------*/
 @import "plugins/_flexslider";
 @import "plugins/_colorbox";
 
 
 /* Layout
--------------------------------------------*/ 
+-------------------------------------------*/
 @import "site/_home";
 @import "site/_header";
 @import "site/_footer";
 @import "site/_nav";
-
+@import "site/_calendar";
 
 /* Site specific styles
--------------------------------------------*/ 
+-------------------------------------------*/
 @import "site/_site";
 
 
