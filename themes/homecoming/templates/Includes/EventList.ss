@@ -1,5 +1,5 @@
 <!-- New -->
-<div class="events-list">
+<!-- <div class="events-list">
   <a href="$Link" class="blocklink mix event workshops-lectures mix_all visible">
     <% with $Event %>
     <div class="image align-center">
@@ -11,8 +11,6 @@
     </div>
     <% end_with %>
     <div class="content">
-      <!-- <h5 class="featured-event">Workshops &amp; Lectures</h5>
-      <h5 class="series">Evening Lectures in Genomics</h5> -->
       <h3>$Title</h3>
       <div class="event-meta">
         <p>$Event.EventLocation</p>
@@ -21,9 +19,9 @@
       </div>
     </div>
   </a>
-</div>
+</div> -->
 
-<!-- <div class="event-wrap clearfix">
+<div class="event-wrap clearfix">
   <% with $Event %>
     <h2 class="event-title"><a href="$Link">$Title</a></h2>
     <% if $EventImage %>
@@ -45,6 +43,6 @@
       $Content.LimitCharacters(220)<a href="$Link"><% _t('MORE','Read more&hellip;') %></a>
     </p>
   <% end_with %>
-</div> -->
+</div>
 
 

@@ -1,60 +1,94 @@
-
+/* ---------------------------------------------------------------
+Navigation
+--------------------------------------------------------------- */
 .main-nav-wrapper {
-  background-color: rgba(0,0,0,.5);
-  position: relative;
-  z-index: 1;
+	background: #e8e8e2;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e8e2), color-stop(100%,#dcdcd2));
+	background: -webkit-linear-gradient(top,  #e8e8e2 0%,#dcdcd2 100%);
+	background: linear-gradient(to bottom,  #e8e8e2 0%,#dcdcd2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e2', endColorstr='#dcdcd2',GradientType=0 );
+	border-top: 1px solid rgba(255,255,255,.5);
+	xborder-bottom: 1px solid #d1d1d1;
+	position: relative;
+	z-index: 1;
 }
 .main-nav {
-  list-style: none;
-  margin: 0;
-  margin-left: 110px;
-  padding: 0;
-  > li {
-    float: left;
-    position: relative;
-    margin: 0;
-    transition: all .2s ease-in-out;
-    & a {
-      color: #fff;
-      display: block;
-      padding: 10px 26px;
-      text-align: center;
-      transition: all .2s ease-in-out;
-      &:hover {
-        color: #000;
-      }
-    }
-  }
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-top: -1px;
+	> li {
+		border-left: 1px solid rgba(0,0,0,.1);
+		float: left;
+		position: relative;
+		margin: 0;
+		transition: all .1s ease-in-out;
+		> a {
+			color: #444;
+			display: block;
+			font-size: 14px;
+			font-weight: bold;
+			padding: 11px 16px 11px;
+			text-align: center;
+			transition: all .1s ease-in-out;
+		}
+		&:hover {
+			> a {
+				background-color: #222;
+				color: $yellow;
+				text-decoration: none;
+			}
+		}
+	}
+	> li:last-of-type {
+		border-right: 1px solid #d1d1d1;
+	}
+}
+/* current link */
+.main-nav .current>a {
+	background-color: #222;
+	color: $yellow;
+	text-decoration: none;
+}
+.main-nav .menu-5 {
+	margin-left: 152px;
 }
 
-/* dropdown */
+/* ---------------------------------------------------------------
+Second level drop-down menu
+--------------------------------------------------------------- */
 .level-2 {
-  background-color: rgba(0,0,0,.75);
-  position: absolute;
-  top: 100%;
-  left: 0;
-  max-height: 0;
-  overflow: hidden;
-  list-style:none;
-  margin: 0;
-  padding: 0;
-  width: 250px;
-  transition: all .2s linear;
-  & li {
-    display: block;
-    & a {
-      display: block;
-      text-align: left;
-    }
-  }
+	background-color: #222;
+	box-shadow: 0 4px 3px rgba(0,0,0,0.3);
+	position: absolute;
+	top: 100%;
+	left: -9999px;
+	max-height: 0;
+	overflow: hidden;
+	list-style:none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	transition: all .2s linear;
+	& li {
+		display: block;
+		margin: 0;
+		& a {
+			color: #fff;
+			display: block;
+			font-size: 13px;
+			padding: 10px 15px;
+			text-align: left;
+			&:hover {
+				background-color: #333;
+				text-decoration: none;
+			}
+		}
+	}
 }
-.main-nav > li:last-of-type ul {
-  right: 0;
-  left: auto;
-}
-.main-nav > li:hover {
-  background-color: $yellow;
-}
-.main-nav > li:hover ul {
-  max-height: 200px;
+.main-nav > li:hover .level-2 {
+	max-height: 200px;
+	padding: 10px 0;
+	right: 0;
+	left: auto;
 }

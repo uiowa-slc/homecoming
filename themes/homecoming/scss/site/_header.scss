@@ -1,35 +1,51 @@
 .header {
-  background-color: #222;
-  background-color: rgba(0,0,0,.75);
-  box-shadow: 0 0 6px rgba(0,0,0,.2);
-  position: absolute;
-  top: 43px;
-  width: 100%;
-  z-index: 1000;
+	background-color: rgba(243,243,238,.85);
+	box-shadow: 0 0 6px rgba(0,0,0,.5);
+	position: relative;
+	z-index: 1;
 }
-
 .logo {
-  display: block;
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  z-index: 5;
-  & img {
-    display: block;
-  }
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	& a {
+		position: absolute;
+		left: 50%;
+		margin-left: -69.5px;
+		display: inline;
+		padding: 0;
+		top: 2px;
+		width: 139px;
+		z-index: 10;
+	}
+	& img {
+		display: block;
+	}
+}
+/* ---------------------------------------------------------------
+Header Top
+--------------------------------------------------------------- */
+.header-top {
+	border-bottom: 1px solid #d1d1d1;
+	padding: 1.2em 0;
 }
 .audience-nav {
-  float: right;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  & li {
-    float: left;
-    margin: 0;
-    & a {
-      color: #fff;
-      display: block;
-      padding: 18px 10px;
-    }
-  }
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	& li {
+		float: left;
+		margin: 0 1.5em 0 0;
+		& a {
+			color: #333;
+			display: block;
+			font-size: 13px;
+		}
+	}
+}
+.header-date {
+	float: right;
+	font-size: 13px;
+	margin: 0;
 }
