@@ -58,11 +58,11 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 		</div> -->
 	</div>
 
-	<section role="main" class="main-content">
+	<section role="main" class="main">
 		$Layout
 	</section>
 
-		<% include TodaysEvents %>
+	<% include TodaysEvents %>
 
 	<% include Sponsors %>
 	<% include Footer %>

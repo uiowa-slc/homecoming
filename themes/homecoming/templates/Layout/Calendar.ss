@@ -1,34 +1,38 @@
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-9">
-      <% if $CurrentAction(show) %>
+<div class="container main-content">
+	<div class="content">
+		<div class="article">
+			<h1 class="page-title">$Title</h1>
+			$Content
+		</div>
+		<% if $CurrentAction(show) %>
 
-        <% if Events %>
-          <div id="event-calendar-events">
-            <% loop Events %>
-             <% include EventList %>
-            <% end_loop %>
-          </div>
-        <% end_if %>
+			<% if Events %>
+				<div class="event-list">
+					<% loop Events %>
+						<% include EventList %>
+					<% end_loop %>
+				</div>
+			<% end_if %>
 
-      <% else %>
+		<% else %>
 
-        <% if AllEvents %>
-          <div id="event-calendar-events">
-            <% loop AllEvents %>
-             <% include EventList %>
-            <% end_loop %>
-          </div>
-          <% else %>
-            <p><% _t('NOEVENTS','There are no events') %>.</p>
-        <% end_if %>
+			<% if AllEvents %>
+				<div class="event-list">
+					<% loop AllEvents %>
+						<% include EventList %>
+					<% end_loop %>
+				</div>
+				<% else %>
+					<p><% _t('NOEVENTS','There are no events') %>.</p>
+			<% end_if %>
 
-      <% end_if %>
+		<% end_if %>
 
-    </div><!-- end .col -->
-    <div class="col-md-3">
-      <% include EventsByDate %>
-      <% include Announcements %>
-  </div><!-- end .row -->
-</div><!-- end .container -->
+		<div class="sidebar">
+			<% include EventsByDate %>
+			<% include Announcements %>
+		</div>
+	</div>
+	$Breadcrumbs
+</div>

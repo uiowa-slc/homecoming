@@ -1,6 +1,6 @@
 <% with $Page(sponsors) %>
 <section class="sponsors">
-  <h5 class="text-center uppercase">Sponsors</h5>
+  <h5 class="title">Sponsors</h5>
   <div class="flexslider-sponsor">
     <ul class="slides">
       <% loop Children %>

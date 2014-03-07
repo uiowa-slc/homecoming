@@ -1,0 +1,35 @@
+.breadcrumbs {
+   background-color: #333;
+   font-size: 14px;
+   list-style:none;
+   margin: 0;
+   overflow: hidden;
+   padding-left: 30px;
+}
+.breadcrumbs li {
+   color: #fff;
+   float: left;
+   height: 45px;
+   line-height: 45px;
+   list-style: none;
+   margin: 0;
+   position: relative;
+   & a {
+      color: #fff;
+      padding-left: 5px;
+   }
+}
+.breadcrumbs li:after {
+   content: "\25B8";
+   display: inline-block;
+   padding: 0 6px 0 10px;
+}
+.breadcrumbs li:last-child:after {
+   content: "";
+}
+.breadcrumbs .active {
+   padding-left: 5px;
+}
+.breadcrumbs .home a {
+   color: #fff;
+}

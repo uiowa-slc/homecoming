@@ -1,11 +1,14 @@
-<div class="container">
+<div class="container main-content">
 	<div class="content">
-		<h1>$Title</h1>
-		$Content
-		$Form
+		<div class="article">
+			<h1 class="page-title">$Title</h1>
+			$Content
+			$Form
+		</div>
 		<div class="sidebar">
 			<% include EventsByDate %>
 			<% include Announcements %>
 		</div>
 	</div>
+	$Breadcrumbs
 </div>

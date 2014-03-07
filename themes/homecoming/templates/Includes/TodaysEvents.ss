@@ -4,7 +4,7 @@
 			<% if $EventsToday %>
 			<section class="todays-events">
 				<div class="container container-padding">
-					<h3><span>Today's Events</span></h3>
+					<h3 class="title"><span>Today's Events</span></h3>
 					<ul>
 					<% loop $EventsToday %>
 						<li class="justify-item">
@@ -25,7 +25,7 @@
 			<% else_if $UpcomingEvents %>
 				<section class="todays-events">
 					<div class="container container-padding">
-						<h3><span>Upcoming Events</span></h3>
+						<h3 class="title"><span>Upcoming Events</span></h3>
 						<ul class="justify justify-3">
 						<% loop $UpcomingEvents.Limit(3) %>
 							<li class="justify-item">
