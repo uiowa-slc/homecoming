@@ -20,8 +20,21 @@
 		<div class="container">
 			<nav role="navigation">
 				<h2 class="visuallyhidden">Navigation</h2>
-				<ul class="main-nav clearfix">
-					<% loop Menu(1) %>
+				<ul class="main-nav nav-left clearfix">
+					<% loop Menu(1).Limit(4) %>
+						<li class="menu-$Pos $LinkingMode"><a href="$Link">$MenuTitle</a>
+						<% if Children %>
+							<ul class="level-2">
+							<% loop Children %>
+								<li><a href="$Link">$MenuTitle</a></li>
+							<% end_loop %>
+							</ul>
+						<% end_if %>
+						</li>
+					<% end_loop %>
+				</ul>
+				<ul class="main-nav nav-right clearfix">
+					<% loop Menu(1).Limit(0,4) %>
 						<li class="menu-$Pos $LinkingMode"><a href="$Link">$MenuTitle</a>
 						<% if Children %>
 							<ul class="level-2">

@@ -28,7 +28,7 @@ Navigation
 			display: block;
 			font-size: 14px;
 			font-weight: bold;
-			padding: 11px 15px 11px;
+			padding: 11px 21px 11px;
 			text-align: center;
 			transition: all .1s ease-in-out;
 		}
@@ -44,6 +44,16 @@ Navigation
 		border-right: 1px solid #d1d1d1;
 	}
 }
+
+/* Left */
+.nav-left {
+	float: left;
+}
+.nav-right {
+	float: right;
+}
+
+
 /* current link */
 .main-nav .current>a {
 	background-color: #222;
