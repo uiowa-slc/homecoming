@@ -5,7 +5,7 @@
 			$Content
 			$Form
 
-			<ul class="justify">
+			<ul class="justify button-archive">
 			<% loop $Buttons %>
 				<li class="item button-item">
 					<a href="$Photo.URL" class="button-img gallery" title="$Year">
