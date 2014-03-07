@@ -1,6 +1,6 @@
 <div class="container main-content">
   <div class="content">
-    <img src="http://placehold.it/678x380&text=photo" alt="" />
+    <img src="http://placehold.it/738x380&text=photo" alt="" />
     <div class="article">
       <h1 class="page-title">$Title</h1>
       $Content

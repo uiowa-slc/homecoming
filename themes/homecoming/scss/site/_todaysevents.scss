@@ -19,7 +19,7 @@ Today's Events
 .todays-events .title {
    font-size: 18px;
    margin-top: 0;
-   margin-bottom: 1.5em;
+   margin-bottom: 2em;
    text-align: center;
    text-transform: uppercase;
    & span {
@@ -52,7 +52,7 @@ Today's Events
 }
 .todays-events ul li {
    background-color: #fff;
-   border-bottom: 3px solid $yellow;
+   border-bottom: 4px solid $yellow;
    @include rem(13);
    margin-bottom: 1em;
    overflow: hidden;

@@ -5,7 +5,7 @@
     <% loop Children %>
       <li>
         <a href="$Link">$Title</a>
-        <small>$Created.NiceUS</small>
+        <!-- <small>$Created.NiceUS</small> -->
       </li>
     <% end_loop %>
   </ul>

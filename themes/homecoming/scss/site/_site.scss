@@ -67,14 +67,14 @@ Hero Carousel
 	margin-top: -103px;
 }
 .featuredimage {
-	padding-top: 28%;
+	padding-top: 30%;
 	background: transparent;
 	position: relative;
 	overflow: hidden;
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0.8)), color-stop(10%, transparent));
 }
 .HomePage .featuredimage {
-	padding-top: 38%;
+	padding-top: 40%;
 }
 .loader {
 	position: absolute;
@@ -173,17 +173,12 @@ Hero Carousel
 Events by Date
 --------------------------------------------------------------- */
 .eventsbydate, .announcements {
-	xbackground: #fff;
-	xborder: 1px solid #ddd;
-	xpadding: 1em;
+
 }
 .eventsbydate li, .announcements li {
 	border-bottom: 1px solid #ddd;
-	padding: 5px;
-	&:last-of-type {
-		border-bottom: none;
-		margin-bottom: 0;
-	}
+	padding: 10px 0;
+	margin-bottom: 0;
 	& a {
 		display: block;
 	}
@@ -246,7 +241,9 @@ Button Schedule
 Council Members
 --------------------------------------------------------------- */
 .council-list {
-	margin-top: 3em;
+	border-top: 4px solid $yellow;
+	margin-top: 2em;
+	padding-top: 30px;
 }
 .council-member {
   border-bottom: 1px solid #eee;
