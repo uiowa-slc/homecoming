@@ -1,45 +1,45 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-9">
-      <h1>$Title</h1>
-      $Content
-      $Form
-      <!-- for debug:
-      <h2>Using Category: $Category.Title </h2> -->
+<div class="container main-content">
+	<div class="content">
+		<div class="article">
+			<h1 class="page-title">$Title</h1>
+			$Content
+			$Form
+		</div>
+		<% with $Category %>
+			<div class="event-list">
+				<% loop $CalendarEvents %>
+					<div class="clearfix list-item">
+						<% if $EventImage %>
+							<a href="$Link" class="img">
+								<img src="{$EventImage.CroppedImage(200,200).URL}" alt="$Title">
+							</a>
+						<% end_if %>
+						<div class="list-content">
+							<h2 class="title"><a href="$Link">$Title</a></h2>
+							<p class="meta">
+							<% loop DateTimes %>
+								$DateRange<br>
+								<% if AllDay %>
+									<% _t('ALLDAY','All Day') %>
+								<% else %>
+								<% if StartTime %>
+									$TimeRange<br>
+									<% end_if %>
+								<% end_if %>
+							<% end_loop %>
+								$EventLocation
+							</p>
+							<a href="$Link" class="btn btn-default">View Event Information</a>
+						</div>
+					</div>
+				<% end_loop %>
+			</div>
+		<% end_with %>
 
-      <% with $Category %>
-
-        <% loop $CalendarEvents %>
-          <div class="event-wrap clearfix">
-            <h2 class="event-title"><a href="$Link">$Title</a></h2>
-            <% if $EventImage %>
-              <a href="$Link" class="event-img">
-                <img src="{$EventImage.SetWidth(300).URL}" alt="$Title">
-              </a>
-            <% end_if %>
-            <dl class="event-meta">
-              <% loop DateTimes %>
-                <dt>Date:</dt>
-                <dd>$DateRange</dd>
-                <dt>Time:</dt>
-                <dd><% if AllDay %><% _t('ALLDAY','All Day') %><% else %><% if StartTime %>$TimeRange<% end_if %><% end_if %></dd>
-                <% end_loop %>
-              <dt>Location:</dt>
-              <dd>$EventLocation</dd>
-            </dl>
-            <p class="event-desc">
-              $Content.LimitCharacters(220) <a href="$Link"><% _t('MORE','Read more&hellip;') %></a>
-            </p>
-          </div>
-          <hr>
-        <% end_loop %>
-
-      <% end_with %>
-
-    </div><!-- end .col -->
-    <div class="col-md-3">
-      <% include EventsByDate %>
-      <% include Announcements %>
-    </div>
-  </div><!-- end .row -->
-</div><!-- end .container -->
+		<div class="sidebar">
+			<% include EventsByDate %>
+			<% include Announcements %>
+		</div>
+	</div>
+	$Breadcrumbs
+</div>

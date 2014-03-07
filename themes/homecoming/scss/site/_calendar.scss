@@ -2,7 +2,9 @@
 Schedule
 --------------------------------------------------------------- */
 .event-list {
-  padding: 30px 35px;
+  border-top: 4px solid $yellow;
+  padding: 30px 0;
+  margin: 0 35px;
 }
 .list-item {
   border-bottom: 1px solid #eee;
@@ -15,6 +17,8 @@ Schedule
   padding-bottom: 0;
 }
 .list-item .img {
+  border-radius: 3px;
+  overflow: hidden;
   display: block;
   float: left;
   & img {
