@@ -50,11 +50,11 @@ button {
 /* Default ========== */
 
 .btn-default {
-  color: #333333;
-  background-color: #ffffff;
-  border-color: #cccccc;
+  color: #333;
+  background-color: #fafafa;
+  border-color: #ccc;
   &:hover, &:focus, &:active {
-    color: #333333;
+    color: #333;
     background-color: #ebebeb;
     border-color: #adadad;
   }
