@@ -25,7 +25,7 @@
 			<!-- <p class="list-desc">$Content.LimitCharacters(220)</p> -->
 		<% end_with %>
 
-		<a href="$Link" class="btn btn-default">View Event Information</a>
+		<a href="$Link" class="btn btn-default"><span class="glyphicon glyphicon-circle-arrow-right"></span> View Event Information</a>
 	</div>
 </div><!-- end .list-item -->
 
