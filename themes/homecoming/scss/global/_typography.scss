@@ -15,29 +15,27 @@ h1,h2,h3,h4,h5,h6 {
     font-family: $heading-font;
     margin: 1em 0 0.5em;
     line-height: 1.1;
-    font-weight: bold;
+    font-weight: 600;
     text-rendering: optimizelegibility;
 }
 h1 {
-    @include rem(45);
+    font-size: 45px;
     margin: .75em 0 .5em;
 }
 h2 {
-    @include rem(36);
+    font-size: 36px;
 }
 h3 {
-    @include rem(30);
+    font-size: 30px;
 }
 h4 {
-    @include rem(22);
+    font-size: 24px;
 }
 h5 {
-    @include rem(17);
-    font-weight: 600;
+    font-size: 20px;
 }
 h6 {
-    @include rem(16);
-    font-weight: 600;
+    font-size: 18px;
 }
 h1 + h2,
 h2 + h3,
@@ -46,7 +44,7 @@ h4 + h5,
 h5 + h6 {margin-top:0;}
 
 .lede {
-    @include rem($base-font * 1.2);
+    font-size: ($base-font * 1.2) + px;
 }
 
 ul,ol {
@@ -74,7 +72,7 @@ dd {
 code, pre {
     padding: 0 3px 2px;
     font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-    font-size: em(12);
+    font-size: 12px;
     color: #333;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;

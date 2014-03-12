@@ -237,12 +237,12 @@ Button Schedule
 	margin-top: 35px;
 }
 .button-item {
-	@include rem(13);
+	font-size: 13px;
 }
 .button-img, .button-img img {display: block;}
 .button-year {
 	display: block;
-	@include rem(13);
+	font-size: 13px;
 	margin: 5px 0;
 	text-align: center;
 }
@@ -415,7 +415,7 @@ Sponsors
 	}
 }
 .sponsors .title {
-	font-size: 18px;
+	font-size: 20px;
 	margin: 1em 0;
 	text-align: center;
 	text-transform: uppercase;

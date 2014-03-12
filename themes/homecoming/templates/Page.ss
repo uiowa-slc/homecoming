@@ -29,7 +29,7 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
                               http://studentlife.uiowa.edu/md/
 -->
 <!-- Google Fonts -->
-<% include GoogleFonts %>
+<% include Typekit %>
 <!-- CSS -->
 <link rel="stylesheet" href="{$ThemeDir}/css/master.css">
 <!-- JS -->

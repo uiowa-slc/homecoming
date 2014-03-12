@@ -29,6 +29,7 @@ module.exports = function(grunt) {
         },
         files: {
           'themes/homecoming/css/master.css': 'themes/homecoming/scss/master.scss',
+          'themes/homecoming/css/editor.css': 'themes/homecoming/scss/editor.scss'
         }
       }
     },

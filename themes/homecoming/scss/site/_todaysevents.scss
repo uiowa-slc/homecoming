@@ -13,11 +13,8 @@ Today's Events
    padding-top: 4em;
    padding-bottom: 6em;
 }
-.sponsors .title {
-   font-size: 18px;
-}
 .todays-events .title {
-   font-size: 18px;
+   font-size: 20px;
    margin-top: 0;
    margin-bottom: 2em;
    text-align: center;
@@ -53,7 +50,7 @@ Today's Events
 .todays-events ul li {
    background-color: #fff;
    border-bottom: 4px solid $yellow;
-   @include rem(13);
+   font-size: 13px;
    margin-bottom: 1em;
    overflow: hidden;
    @media screen and (min-width: $break-medium) {
@@ -63,11 +60,17 @@ Today's Events
 }
 .today-imgwrapper {
    display: block;
+   overflow: hidden;
    position: relative;
    & img {
       display: block;
       width: 100%;
+      -webkit-transition: all 2s ease-in-out;
+      -webkit-transform: scale(1.05);
    }
+}
+.todays-events a:hover .today-imgwrapper img {
+   -webkit-transform: scale(1);
 }
 .today-imgwrapper:before {
    content: '';
@@ -76,6 +79,7 @@ Today's Events
    height: 100%;
    background-color: rgba(0,0,0,.3);
    -webkit-transition: all .25s ease-in-out;
+   z-index: 1;
 }
 .todays-events a:hover .today-imgwrapper:before {
    background-color: rgba(0,0,0,0);
@@ -91,7 +95,7 @@ Today's Events
 }
 .today-title {
    color: #1a1a1a;
-   font-size: 22px;
+   font-size: 25px;
    line-height: 1.4;
    margin: 0;
 }
