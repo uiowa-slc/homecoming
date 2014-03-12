@@ -4,6 +4,7 @@
 	font-size: 16px;
 	line-height: 1.6;
 	padding: 2px 6px;
+	-webkit-font-smoothing: antialiased;
 }
 .typography p,
 .typography blockquote,
@@ -47,6 +48,26 @@
 }
 .typography h6 {
 	font-size: 18px;
+}
+
+.typography ul,
+.typography ol {
+    padding: 0;
+    margin-left: 24px;
+}
+.typography ul ul,
+.typography ul ol,
+.typography ol ol,
+.typography ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.typography hr {
+    clear: both;
+    margin: 1.5em 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
 }
 
 
