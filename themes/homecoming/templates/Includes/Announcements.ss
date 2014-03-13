@@ -1,6 +1,6 @@
 <% with $Page(announcements) %>
 <div class="announcements">
-  <h5>Announcements</h5>
+  <h5 class="title">Announcements</h5>
   <ul class="unstyled">
     <% loop Children %>
       <li>

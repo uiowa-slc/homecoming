@@ -176,15 +176,27 @@ Hero Carousel
 /* ---------------------------------------------------------------
 Events by Date
 --------------------------------------------------------------- */
+.eventsbydate {
+	margin-bottom: 2em;
+}
 .eventsbydate, .announcements {
-
+	border-top: 4px solid $yellow;
+}
+.eventsbydate .title, .announcements .title {
+	text-transform: uppercase;
 }
 .eventsbydate li, .announcements li {
-	border-bottom: 1px solid #ddd;
-	padding: 10px 0;
+	border-bottom: 1px solid #e5e5e5;
 	margin-bottom: 0;
 	& a {
+		color: #444;
 		display: block;
+		padding: 10px 0;
+		transition: all .2s ease-in-out;
+		&:hover {
+			background-color: rgba(255,255,255,.6);
+			padding-left: 5px;
+		}
 	}
 }
 

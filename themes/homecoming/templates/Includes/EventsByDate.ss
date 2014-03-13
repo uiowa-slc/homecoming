@@ -1,5 +1,5 @@
 <div class="eventsbydate">
-  <h5>Events by Date</h5>
+  <h5 class="title">Events by Date</h5>
   <ul class="unstyled">
     <% with $Page(schedule) %>
       <% loop AllDates %>
@@ -8,4 +8,3 @@
     <% end_with %>
   </ul>
 </div>
-<br>
