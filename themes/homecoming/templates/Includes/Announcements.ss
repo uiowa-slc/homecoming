@@ -3,8 +3,7 @@
   <h5 class="title">Announcements</h5>
   <ul class="unstyled">
     <% loop Children %>
-      <li>
-        <a href="$Link">$Title</a>
+      <li><span class="glyphicon glyphicon-chevron-right"></span><a href="$Link">$Title</a>
         <!-- <small>$Created.NiceUS</small> -->
       </li>
     <% end_loop %>
