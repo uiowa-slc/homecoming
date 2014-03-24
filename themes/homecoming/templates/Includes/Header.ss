@@ -1,26 +1,28 @@
 <!-- Header -->
 <header class="header clearfix" role="banner">
-	<h1 class="logo">
-		<a href="{$BaseHref}">
-			<img src="{$ThemeDir}/images/homecoming-logo.png" alt="Iowa Homecoming">
-		</a>
-	</h1>
 	<div class="header-top">
 		<div class="container clearfix">
-			<ul class="audience-nav">
-				<li><a href="students/">Students</a></li>
-				<li><a href="faculty-and-staff/">Faculty &amp; Staff</a></li>
-				<li><a href="alumni-and-friends/">Alumni &amp; Friends</a></li>
-			</ul>
-			<p class="header-date">Sept. 29 - Oct. 6, 2014</p>
+			<h1 class="logo">
+				<a href="{$BaseHref}">
+					<img src="{$ThemeDir}/images/homecoming-logo.png" alt="Iowa Homecoming">
+				</a>
+			</h1>
+			<div class="audience-wrapper">
+				<ul class="audience-nav">
+					<li><a href="students/">Students</a></li>
+					<li><a href="faculty-and-staff/">Faculty &amp; Staff</a></li>
+					<li><a href="alumni-and-friends/">Alumni &amp; Friends</a></li>
+				</ul>
+				<p class="header-date">Sept. 29 - Oct. 6, 2014</p>
+			</div>
 		</div>
 	</div>
 	<!-- Navigation -->
-	<div class="main-nav-wrapper">
+	<div class="nav-holder">
 		<div class="container">
-			<nav role="navigation">
-				<h2 class="visuallyhidden">Navigation</h2>
-				<ul class="main-nav nav-left clearfix">
+			<nav role="navigation" class="nav-main-wrapper clearfix hide-print">
+				<h2 class="nav-title"><a href="/#">Menu <span></span></a></h2>
+				<ul class="nav-main nav-left clearfix">
 					<% loop Menu(1).Limit(4) %>
 						<li class="$LinkingMode"><a href="$Link">$MenuTitle</a>
 						<% if Children %>
@@ -33,7 +35,7 @@
 						</li>
 					<% end_loop %>
 				</ul>
-				<ul class="main-nav nav-right clearfix">
+				<ul class="nav-main nav-right clearfix">
 					<% loop Menu(1).Limit(0,4) %>
 						<li class="$LinkingMode"><a href="$Link">$MenuTitle</a>
 						<% if Children %>

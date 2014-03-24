@@ -3,7 +3,7 @@ $(window).load(function() {
 	// add js class to body if javascript enabled
 	$('html').removeClass('no-js');
 
-  // Colorbox 
+  // Colorbox
   jQuery('.button-item .gallery').colorbox({rel:'gallery'});
 
 
@@ -12,7 +12,7 @@ $(window).load(function() {
 		slideshow: false,
     controlNav: false
 	});
-  
+
   // Sponsor Flexslider
   $('.flexslider-sponsor').flexslider({
     animation: "slide",
@@ -30,4 +30,10 @@ $(window).load(function() {
     controlNav: false,
     directionNav: false,
   });
+
+
+  $('.nav-title a').click(function() {
+    $('.nav-main-wrapper').toggleClass('expand');
+    return false;
+  })
 });

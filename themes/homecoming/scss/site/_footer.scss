@@ -8,6 +8,10 @@
   padding: 3em 0 1em;
   position: relative;
 }
+.footer .container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
 .footer p {
   @media screen and (min-width: $break-small) {
     @include rem(12);

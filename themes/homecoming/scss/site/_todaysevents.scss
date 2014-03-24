@@ -6,12 +6,19 @@ Today's Events
    border-top: 1px solid rgba(0,0,0,.11);
    box-shadow: inset 0 1px 0 rgba(255,255,255,.5);
    border-bottom: 1px solid rgba(0,0,0,.05);
-   margin-top: -25px;
-   padding: 2px 0;
+   padding: 2px 1em;
+   @media screen and (min-width: $break-large) {
+      margin-top: -25px;
+      padding: 2px 0;
+   }
 }
 .todays-events .container {
-   padding-top: 4em;
+   padding-top: 2em;
+   padding-bottom: 2em;
+   @media screen and (min-width: $break-large) {
+      padding-top: 4em;
    padding-bottom: 6em;
+   }
 }
 .todays-events .title {
    font-size: 20px;

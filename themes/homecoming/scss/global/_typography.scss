@@ -19,17 +19,29 @@ h1,h2,h3,h4,h5,h6 {
     text-rendering: optimizelegibility;
 }
 h1 {
-    font-size: 50px;
+    font-size: 40px;
     margin: .75em 0 .5em;
+    @media screen and (min-width: $break-medium) {
+        font-size: 50px;
+    }
 }
 h2 {
-    font-size: 38px;
+    font-size: 28px;
+    @media screen and (min-width: $break-medium) {
+        font-size: 38px;
+    }
 }
 h3 {
-    font-size: 30px;
+    font-size: 22px;
+    @media screen and (min-width: $break-medium) {
+        font-size: 30px;
+    }
 }
 h4 {
-    font-size: 24px;
+    font-size: 18px;
+    @media screen and (min-width: $break-medium) {
+        font-size: 24px;
+    }
 }
 h5 {
     font-size: 20px;

@@ -29,7 +29,7 @@
 							<% end_loop %>
 								$EventLocation
 							</p>
-							<a href="$Link" class="btn btn-default">View Event Information</a>
+							<a href="$Link" class="btn btn-default"><span class="glyphicon glyphicon-circle-arrow-right"></span> View Event Information</a>
 						</div>
 					</div>
 				<% end_loop %>
