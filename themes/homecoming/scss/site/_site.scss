@@ -106,8 +106,10 @@ Hero Carousel
 --------------------------------------------------------------- */
 .hero {
 	display: none;
-	@media screen and (min-width: $break-medium) {
+	@media screen and (min-width: $break-small) {
 		display: block;
+	}
+	@media screen and (min-width: $break-medium) {
 		margin-top: -108px;
 	}
 }

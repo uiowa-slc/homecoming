@@ -6,11 +6,9 @@
 }
 .header-top {
 	padding: .5em;
-	@media screen and (min-width: $break-small) {
-		padding: 1.2em 0;
-	}
 	@media screen and (min-width: $break-medium) {
 		border-bottom: 1px solid #d1d1d1;
+		padding: 1.2em 0;
 	}
 }
 .logo {
@@ -20,14 +18,14 @@
 	& img {
 		display: block;
 		width: 120px;
-		@media screen and (min-width: $break-small) {
+		@media screen and (min-width: $break-medium) {
 			width: auto;
 		}
 	}
 }
 .logo a {
 	float: left;
-	@media screen and (min-width: $break-small) {
+	@media screen and (min-width: $break-medium) {
 		float: none;
 		position: absolute;
 		left: 50%;
@@ -44,7 +42,7 @@ Header Top
 --------------------------------------------------------------- */
 .audience-wrapper {
 	margin-left: 145px;
-	@media screen and (min-width: $break-small) {
+	@media screen and (min-width: $break-medium) {
 		margin-left: 0;
 		padding-left: 1em;
 		padding-right: 1em;
@@ -61,7 +59,7 @@ Header Top
 }
 .audience-nav li {
 	margin: 0;
-	@media screen and (min-width: $break-small) {
+	@media screen and (min-width: $break-medium) {
 		float: left;
 		margin: 0 1.5em 0 0;
 	}
@@ -71,7 +69,7 @@ Header Top
 		font-size: 14px;
 		padding: 3px 0;
 		text-decoration: underline;
-		@media screen and (min-width: $break-small) {
+		@media screen and (min-width: $break-medium) {
 			padding: 0;
 		}
 	}
@@ -79,7 +77,7 @@ Header Top
 .header-date {
 	font-size: 14px;
 	margin: 0;
-	@media screen and (min-width: $break-small) {
+	@media screen and (min-width: $break-medium) {
 		float: right;
 	}
 }
