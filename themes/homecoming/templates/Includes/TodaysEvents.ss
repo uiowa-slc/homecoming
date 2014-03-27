@@ -6,7 +6,7 @@
 					<div class="container container-padding">
 						<h3 class="title"><span>Today's Events</span></h3>
 						<ul class="justify justify-3">
-						<% loop $UpcomingEvents.Limit(3) %>
+						<% loop $EventsToday.Limit(3) %>
 							<li class="justify-item">
 								<a href="$Link">
 									<div class="today-imgwrapper">
@@ -24,6 +24,7 @@
 				</section>
 
 			<% else_if $UpcomingEvents %>
+			<p>hello</p>
 				<section class="todays-events">
 					<div class="container container-padding">
 						<h3 class="title"><span>Upcoming Events</span></h3>
