@@ -6,19 +6,31 @@
 			$Form
 			<div class="row">
 				<div class="col-sm-6 col-lg-4 clearfix">
-					<h5>$CalloutOne</h5>
-					<img src="http://placehold.it/100x100&text=+" alt="" class="left">
-					<p class="small">$CalloutOneDesc</p>
+					<div class="home-callout">
+						<h5 class="title"><a href="$CalloutOneTree.Link">$CalloutOne</a></h5>
+						<a href="$CalloutOneTree.Link">
+							<img src="http://placehold.it/100x100&text=+" alt="$CalloutOne">
+						</a>
+						<p class="home-callout-content">$CalloutOneDesc</p>
+					</div>
 				</div>
 				<div class="col-sm-6 col-lg-4 clearfix">
-					<h5>$CalloutTwo</h5>
-					<img src="http://placehold.it/100x100&text=+" alt="" class="left">
-					<p class="small">$CalloutTwoDesc</p>
+					<div class="home-callout">
+						<h5 class="title"><a href="$CalloutTwoTree.Link">$CalloutTwo</a></h5>
+						<a href="$CalloutOneTree.Link">
+							<img src="http://placehold.it/100x100&text=+" alt="$CalloutTwo">
+						</a>
+						<p class="home-callout-content">$CalloutTwoDesc</p>
+					</div>
 				</div>
 				<div class="col-sm-6 col-lg-4 clearfix">
-					<h5>$CalloutThree</h5>
-					<img src="http://placehold.it/100x100&text=+" alt="" class="left">
-					<p class="small">$CalloutThreeDesc</p>
+					<div class="home-callout">
+						<h5 class="title"><a href="$CalloutThreeTree.Link">$CalloutThree</a></h5>
+						<a href="$CalloutOneTree.Link">
+							<img src="http://placehold.it/100x100&text=+" alt="$CalloutThree">
+						</a>
+						<p class="home-callout-content">$CalloutThreeDesc</p>
+					</div>
 				</div>
 			</div>
 		</div>
