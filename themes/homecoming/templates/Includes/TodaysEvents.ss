@@ -25,7 +25,7 @@
 				</section>
 
 			<% else_if $UpcomingEvents %>
-			<p>hello</p>
+
 				<section class="todays-events">
 					<div class="container container-padding">
 						<h3 class="title"><span>Upcoming Events</span></h3>
