@@ -1,6 +1,8 @@
 <div class="container main-content">
   <div class="content">
-    <img src="http://placehold.it/738x380&text=photo" alt="" />
+    <% if $ParadePhoto %>
+      <img src="$ParadePhoto.URL" alt="$Name">
+    <% end_if %>
     <div class="article">
       <h1 class="page-title">$Title</h1>
       $Content

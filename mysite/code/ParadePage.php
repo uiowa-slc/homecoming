@@ -5,7 +5,19 @@ class ParadePage extends Page {
 	);
 
 	private static $has_one = array(
+		"ParadePhoto" => "Image",
 	);
+
+	public function getCMSFields(){
+		$fields = parent::getCMSFields();
+
+		$fields->removeByName("Metadata");
+
+		$fields->addFieldToTab("Root.Main", new UploadField("ParadePhoto", "Photo"));
+
+		return $fields;
+
+	}
 
 }
 class ParadePage_Controller extends Page_Controller {
