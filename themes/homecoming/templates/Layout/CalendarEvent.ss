@@ -1,11 +1,12 @@
 <div class="container main-content">
 	<div class="content">
-		<% if $EventImage %>
-			<div class="event-img">
-				<img src="{$EventImage.CroppedImage(738,460).URL}" alt="$Title"  />
-			</div>
-		<% end_if %>
+
 		<div class="article">
+			<% if $EventImage %>
+				<div class="event-img">
+					<img src="{$EventImage.CroppedImage(738,460).URL}" alt="$Title"  />
+				</div>
+			<% end_if %>
 			<h1 class="page-title">$Title</h1>
 			<% with CurrentDate %>
 				<p>
