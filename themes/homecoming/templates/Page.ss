@@ -49,7 +49,7 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 			<div class="hero-slider">
 				<ul class="slides">
 					<li><img src="{$ThemeDir}/images/homecoming_bg4.jpg" alt=""></li>
-					<li><img src="{$ThemeDir}/images/homecoming_bg3.jpg" alt=""></li>
+					<!-- <li><img src="{$ThemeDir}/images/homecoming_bg3.jpg" alt=""></li> -->
 				</ul>
 			</div>
 		</div>

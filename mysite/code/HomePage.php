@@ -25,7 +25,7 @@ class HomePage extends Page {
     $fields = parent::getCMSFields();
 
     // $fields->removeByName("Content");
-    // $fields->removeByName("Metadata");
+    $fields->removeByName("Metadata");
 
     $fields->addFieldToTab("Root.Main", new UploadField("HomePhoto", "Photo"));
 

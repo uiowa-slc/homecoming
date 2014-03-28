@@ -5,7 +5,19 @@ class Page extends SiteTree {
 	);
 
 	private static $has_one = array(
+		"PagePhoto" => "Image",
 	);
+
+	public function getCMSFields(){
+		$fields = parent::getCMSFields();
+
+		$fields->removeByName("Metadata");
+
+		$fields->addFieldToTab("Root.Main", new UploadField("PagePhoto", "Photo"));
+
+		return $fields;
+
+	}
 
 }
 class Page_Controller extends ContentController {
