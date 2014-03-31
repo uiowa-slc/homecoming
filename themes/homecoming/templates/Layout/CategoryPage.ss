@@ -4,6 +4,7 @@
 			<h1 class="page-title">$Title</h1>
 			$Content
 			$Form
+			<h3 class="category-events-title">Events</h3>
 		</div>
 		<% with $Category %>
 			<div class="event-list">
