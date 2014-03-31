@@ -17,7 +17,7 @@
 				<div class="col-sm-6 col-lg-4 clearfix">
 					<div class="home-callout">
 						<h5 class="title"><a href="$CalloutTwoTree.Link">$CalloutTwo</a></h5>
-						<a href="$CalloutOneTree.Link">
+						<a href="$CalloutTwoTree.Link">
 							<img src="http://placehold.it/100x100&text=+" alt="$CalloutTwo">
 						</a>
 						<p class="home-callout-content">$CalloutTwoDesc</p>
@@ -26,7 +26,7 @@
 				<div class="col-sm-6 col-lg-4 clearfix">
 					<div class="home-callout">
 						<h5 class="title"><a href="$CalloutThreeTree.Link">$CalloutThree</a></h5>
-						<a href="$CalloutOneTree.Link">
+						<a href="$CalloutThreeTree.Link">
 							<img src="http://placehold.it/100x100&text=+" alt="$CalloutThree">
 						</a>
 						<p class="home-callout-content">$CalloutThreeDesc</p>
