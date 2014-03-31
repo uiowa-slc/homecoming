@@ -15,23 +15,23 @@ class Button extends DataObject {
       'Thumbnail'
 
    );
-  
-  function getThumbnail() { 
-      return $this->Photo()->CMSThumbnail(); 
+
+  function getThumbnail() {
+      return $this->Photo()->CMSThumbnail();
     }
 
   public function getCMSFields(){
     $fields = parent::getCMSFields();
-    
+
     $fields->removeByName("Content");
     $fields->removeByName("Metadata");
 
-    $fields->addFieldToTab("Root.Main", new UploadField("ButtonPhoto", "Photo"));
-    
+    //$fields->addFieldToTab("Root.Main", new UploadField("ButtonPhoto", "Photo"));
+
     return $fields;
-    
+
   }
-  
+
   //private static $allowed_children = array("");
 
 }

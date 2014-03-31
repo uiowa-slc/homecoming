@@ -212,33 +212,6 @@ Events by Date
 
 
 /* ---------------------------------------------------------------
-Button Archive
---------------------------------------------------------------- */
-.item img {
-	width: 100%;
-	border-radius: 50%;
-}
-
-
-.button-archive {
-	margin-top: 3em;
-	border-top: 4px solid $yellow;
-  	padding-top: 30px;
-	margin-top: 35px;
-}
-.button-item {
-	font-size: 13px;
-}
-.button-img, .button-img img {display: block;}
-.button-year {
-	display: block;
-	font-size: 13px;
-	margin: 5px 0;
-	text-align: center;
-}
-
-
-/* ---------------------------------------------------------------
 Council Members
 --------------------------------------------------------------- */
 .council-list {
@@ -331,6 +304,43 @@ Justify
 .justify .filler {
 	height: 0 !important;
 	margin: 0 !important;
+}
+
+
+/* ---------------------------------------------------------------
+Button Archive
+--------------------------------------------------------------- */
+.item img {
+	width: 100%;
+	border-radius: 50%;
+}
+.button-archive {
+	margin-top: 3em;
+	border-top: 4px solid $yellow;
+  	padding-top: 30px;
+	margin-top: 35px;
+}
+.button-item {
+	font-size: 13px;
+	width: 48%;
+	@media screen and (min-width: $break-small) {
+		width: 32%;
+	}
+	@media screen and (min-width: $break-medium) {
+		width: 24%;
+	}
+	@media screen and (min-width: $break-large) {
+		width: 18%;
+	}
+}
+.button-img, .button-img img {
+	display: block;
+}
+.button-year {
+	display: block;
+	font-size: 13px;
+	margin: 5px 0;
+	text-align: center;
 }
 
 
