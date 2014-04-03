@@ -3,37 +3,51 @@ $(window).load(function() {
 	// add js class to body if javascript enabled
 	$('html').removeClass('no-js');
 
-  // Colorbox
-  jQuery('.button-item .gallery').colorbox({rel:'gallery'});
+	// FancyBox
+	$(".fancybox").fancybox({
+		wrapCSS    : 'fancybox-custom',
+		closeClick : true,
+		openEffect : 'none',
+		helpers : {
+			title : {
+				type : 'inside'
+			},
+			overlay : {
+				css : {
+					'background' : 'rgba(238,238,238,0.85)'
+				}
+			}
+		}
+	});
 
 
 	// Flexslider
 	$('.flexslider').flexslider({
 		slideshow: false,
-    controlNav: false
+		controlNav: false
 	});
 
-  // Sponsor Flexslider
-  $('.flexslider-sponsor').flexslider({
-    animation: "slide",
-    easing: "swing",
-    slideshow: true,
-    animationLoop: true,
-    controlNav: false,
-    itemWidth: 210,
-    move: 1
-  });
+	// Sponsor Flexslider
+	$('.flexslider-sponsor').flexslider({
+		animation: "slide",
+		easing: "swing",
+		slideshow: true,
+		animationLoop: true,
+		controlNav: false,
+		itemWidth: 210,
+		move: 1
+	});
 
-  // Hero Flexslider
-  $('.hero-slider').flexslider({
-    animation: "fade",
-    controlNav: false,
-    directionNav: false,
-  });
+	// Hero Flexslider
+	$('.hero-slider').flexslider({
+		animation: "fade",
+		controlNav: false,
+		directionNav: false,
+	});
 
 
-  $('.nav-title a').click(function() {
-    $('.nav-main-wrapper').toggleClass('expand');
-    return false;
-  })
+	$('.nav-title a').click(function() {
+		$('.nav-main-wrapper').toggleClass('expand');
+		return false;
+	})
 });

@@ -35,7 +35,6 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 <!-- JS -->
 <!--[if lt IE 9]>
     <script src="{$ThemeDir}/js/plugins/html5shiv.js"></script>
-    <script src="{$ThemeDir}/js/plugins/respond.min.js"></script>
 <![endif]-->
 </head>
 
@@ -49,13 +48,10 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 			<div class="hero-slider">
 				<ul class="slides">
 					<li><img src="{$ThemeDir}/images/homecoming_bg4.jpg" alt=""></li>
-					<!-- <li><img src="{$ThemeDir}/images/homecoming_bg3.jpg" alt=""></li> -->
+					<li><img src="{$ThemeDir}/images/homecoming_bg3.jpg" alt=""></li>
 				</ul>
 			</div>
 		</div>
-		<!-- <div class="hero-slider">
-			<img src="{$ThemeDir}/images/homecoming_bg4.jpg" alt="">
-		</div> -->
 	</div>
 
 	<section role="main" class="main">
@@ -69,8 +65,7 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 
 
 	<!-- JS -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script> -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script src="{$ThemeDir}/js/build/production.min.js"></script>
 	<script src="division-bar/js/division-bar.js"></script>
 	<% include GoogleAnalytics %>

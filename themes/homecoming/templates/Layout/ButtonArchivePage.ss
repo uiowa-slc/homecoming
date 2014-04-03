@@ -8,7 +8,7 @@
 			<ul class="justify button-archive">
 			<% loop $Buttons %>
 				<li class="justify-item button-item">
-					<a href="$Photo.URL" class="button-img gallery" title="$Year">
+					<a href="$Photo.PaddedImage(800,800).URL" class="button-img fancybox" title="$Year" rel="group">
 						<img src="$Photo.PaddedImage(200,200).URL" alt="$Year">
 					</a>
 					<small class="button-year">$Year</small>
