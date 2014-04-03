@@ -12,7 +12,7 @@ class ButtonArchivePage extends Page {
 
 		$gridFieldConfig = GridFieldConfig_RelationEditor::create();
 		$gridFieldConfig->addComponent(new GridFieldBulkImageUpload());
-		
+		$gridFieldConfig->addComponent(new GridFieldBulkManager());
 		$gridField = new GridField("Buttons", "Buttons", Button::get(), $gridFieldConfig);
 
 		$fields->addFieldToTab("Root.Main", $gridField, "Content");
