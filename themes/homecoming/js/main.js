@@ -4,19 +4,44 @@ $(window).load(function() {
 	$('html').removeClass('no-js');
 
 	// FancyBox
-	$(".fancybox").fancybox({
-		wrapCSS    : 'fancybox-custom',
-		closeClick : true,
-		openEffect : 'none',
+	// $(".fancybox").fancybox({
+	// 	wrapCSS    : 'fancybox-custom',
+	// 	closeClick : true,
+	// 	openEffect : 'none',
+	// 	helpers : {
+	// 		title : {
+	// 			type : 'inside'
+	// 		},
+	// 		overlay : {
+	// 			css : {
+	// 				'background' : 'rgba(238,238,238,0.85)'
+	// 			}
+	// 		}
+	// 	}
+	// });
+
+	$('.fancybox').fancybox({
+		//prevEffect : 'none',
+		//nextEffect : 'none',
+
+		//closeBtn  : false,
+		//arrows    : false,
+
+		nextClick : true,
+
 		helpers : {
 			title : {
-				type : 'inside'
+	 			type : 'inside'
+	 		},
+			thumbs : {
+				width  : 50,
+				height : 50
 			},
 			overlay : {
-				css : {
-					'background' : 'rgba(238,238,238,0.85)'
-				}
-			}
+	 			css : {
+	 				'background' : 'rgba(238,238,238,0.85)'
+	 			}
+	 		}
 		}
 	});
 
