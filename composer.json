@@ -9,7 +9,8 @@
 		"silverstripe/event-calendar": "*",
 		"colymba/gridfield-bulk-editing-tools": "*",
 		"silverstripe/tagfield": "dev-master",
-		"md/division-bar" : "*"
+		"md/division-bar" : "*",
+		"unclecheese/betterbuttons" : "*"
 	},
 	"config": {
 		"process-timeout": 600	
