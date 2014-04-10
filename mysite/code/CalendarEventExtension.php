@@ -6,7 +6,7 @@ class CalendarEventExtension extends DataExtension {
 	);
 
 	private static $has_one = array(
-	"EventImage" => "Image"
+
 	);
 
 	private static $many_many = array (
@@ -21,17 +21,17 @@ class CalendarEventExtension extends DataExtension {
 		}
 
 		asort($categoriesMap);
-		
+
 		$tagField = ListboxField::create('Categories', 'Categories')
 			->setMultiple(true)
 			->setSource($categoriesMap)
 			->setAttribute(
-				'data-placeholder', 
+				'data-placeholder',
 				'Add Tags'
 			);
 
 		  $fields->addFieldToTab("Root.Main", new TextField("EventLocation", "Location"));
-		  $fields->addFieldToTab("Root.Main", new UploadField("EventImage", "Image"));
+
 		  $fields->addFieldToTab("Root.Main", $tagField, "Content");
 
 	}
