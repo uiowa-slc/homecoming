@@ -1,49 +1,6 @@
 /* ---------------------------------------------------------------
 Navigation
 --------------------------------------------------------------- */
-/*.main-nav-wrapper {
-	background: #e8e8e2;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e8e2), color-stop(100%,#dcdcd2));
-	background: -webkit-linear-gradient(top,  #e8e8e2 0%,#dcdcd2 100%);
-	background: linear-gradient(to bottom,  #e8e8e2 0%,#dcdcd2 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e2', endColorstr='#dcdcd2',GradientType=0 );
-	border-top: 1px solid rgba(255,255,255,.5);
-	xborder-bottom: 1px solid #d1d1d1;
-	position: relative;
-	z-index: 1;
-}
-.main-nav {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	margin-top: -1px;
-	> li {
-		border-left: 1px solid rgba(0,0,0,.1);
-		float: left;
-		position: relative;
-		margin: 0;
-		transition: all .1s ease-in-out;
-		> a {
-			color: #444;
-			display: block;
-			font-size: 14px;
-			font-weight: bold;
-			padding: 11px 21px 11px;
-			text-align: center;
-			transition: all .1s ease-in-out;
-		}
-		&:hover {
-			> a {
-				background-color: #222;
-				color: $yellow;
-				text-decoration: none;
-			}
-		}
-	}
-	> li:last-of-type {
-		border-right: 1px solid #d1d1d1;
-	}
-}*/
 
 /* Left */
 .nav-left, .nav-right {
@@ -55,6 +12,18 @@ Navigation
 .nav-right {
 	@media screen and (min-width: $break-medium) {
 		float: right;
+	}
+}
+.nav-right > .parent > a:after {
+	@media screen and (min-width: $break-medium) {
+		content: "\e114";
+		display: inline-block;
+		font-family: 'Glyphicons Halflings';
+		font-size: 11px;
+		font-style: normal;
+		font-weight: 400;
+		position: relative;
+		right: -5px;
 	}
 }
 
@@ -91,8 +60,17 @@ Second level drop-down menu
 	display: block;
 	margin: 0;
 	& a {
-		padding-left: 25px;
+		border-bottom: 1px solid #ddd;
+		display: block;
+		font-size: 14px;
+		padding: .8em 0 .8em 15px;
+		position: relative;
+		text-align: left;
+		-webkit-transition: all .2s linear;
+		-moz-transition: all .2s linear;
+		transition: all .2s linear;
 		@media screen and (min-width: $break-medium) {
+			border-bottom-color: #333;
 			color: #fff;
 			display: block;
 			font-size: 13px;
@@ -108,10 +86,11 @@ Second level drop-down menu
 	}
 }
 .nav-main > li:hover .level-2 {
-	max-height: 200px;
-	padding: 10px 0;
-	left: 0;
-	left: auto;
+	@media screen and (min-width: $break-medium) {
+		max-height: 200px;
+		left: 0;
+		left: auto;
+	}
 }
 .nav-main > li:last-of-type:hover .level-2 {
 	left: auto;
@@ -257,9 +236,9 @@ New
 	font-size: 14px;
 	padding: .8em 0 .8em 15px;
 	position: relative;
-	-webkit-transition: font-size .3s linear;
-	-moz-transition: font-size .3s linear;
-	transition: font-size .3s linear;
+	-webkit-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	transition: all .1s linear;
 	@media screen and (max-width: 767px) {
 		text-align: left; /* for internet explorer */
 	}

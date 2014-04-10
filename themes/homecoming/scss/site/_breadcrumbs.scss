@@ -19,6 +19,9 @@
       padding-left: 5px;
    }
 }
+.main .breadcrumbs li {
+   margin-bottom: 0;
+}
 .breadcrumbs li:after {
    color: $yellow;
    content: "\25B8";
