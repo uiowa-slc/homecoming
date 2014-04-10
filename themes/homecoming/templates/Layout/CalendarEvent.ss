@@ -2,7 +2,7 @@
 	<div class="content">
 
 		<div class="article">
-			<% if $EventImage %>
+			<% if $PagePhoto %>
 				<div class="event-img">
 					<img src="{$PagePhoto.CroppedImage(738,460).URL}" alt="$Title"  />
 				</div>
