@@ -11,7 +11,7 @@
 				<ul class="audience-nav">
 					<li><a href="students/">Students</a></li>
 					<li><a href="faculty-and-staff/">Faculty &amp; Staff</a></li>
-					<li><a href="alumni-and-friends/">Alumni &amp; Friends</a></li>
+					<li><a href="alumni-and-friends/">Alumni &amp; Public</a></li>
 				</ul>
 				<p class="header-date">Oct. 4 - Oct. 11, 2014</p>
 			</div>
