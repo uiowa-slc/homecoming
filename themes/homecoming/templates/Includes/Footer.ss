@@ -19,21 +19,21 @@
               <li><a href="#">Participate</a></li>
               <li><a href="#">Merchandise</a></li>
               <li><a href="#">About</a></li>
-            </ul> 
+            </ul>
           </div>
           <div class="col-sm-6">
             <ul class="footer-nav">
               <li><a href="#">Students</a></li>
               <li><a href="#">Faculty &amp; Staff</a></li>
               <li><a href="#">Alumni &amp; Friends</a></li>
-            </ul> 
+            </ul>
           </div>
         </div>
       </div>
       <div class="col-sm-4">
         <h4>T-shirt and Buttons</h4>
         <p>Show your school spirit and help celebrate Hawkeye Homecoming by buying your t-shirts and buttons now! All proceeds benefit Homecoming programming.</p>
-        <a href="#" class="appt-btn">Order Now</a>
+        <a href="/merchandise" class="appt-btn">Order Now</a>
       </div>
     </div>
     <hr>
