@@ -5,7 +5,6 @@ class CouncilMember extends Page {
 		"Name" => "Text",
 		"Position" => "Text",
 		"EmailAddress" => "Text",
-		"Phone" => "Text",
 
 	);
 
@@ -23,7 +22,6 @@ class CouncilMember extends Page {
 
 		$fields->addFieldToTab("Root.Main", new TextField("Position", "Position"));
 		$fields->addFieldToTab("Root.Main", new TextField("EmailAddress", "Email address"));
-		$fields->addFieldToTab("Root.Main", new TextField("Phone", "Phone (XXX-XXX-XXXX)"));
 		$fields->addFieldToTab("Root.Main", new UploadField("CouncilPhoto", "Photo"));
 		$fields->addFieldToTab("Root.Main", new HTMLEditorField("Content", "Description"));
 
