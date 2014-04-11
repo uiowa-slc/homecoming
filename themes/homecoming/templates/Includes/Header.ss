@@ -13,7 +13,7 @@
 					<li><a href="faculty-and-staff/">Faculty &amp; Staff</a></li>
 					<li><a href="alumni-and-friends/">Alumni &amp; Friends</a></li>
 				</ul>
-				<p class="header-date">Sept. 29 - Oct. 6, 2014</p>
+				<p class="header-date">Oct. 4 - Oct. 11, 2014</p>
 			</div>
 		</div>
 	</div>
