@@ -10,9 +10,9 @@
 			<div class="event-list">
 				<% loop $CalendarEvents %>
 					<div class="clearfix list-item">
-						<% if $EventImage %>
+						<% if $PagePhoto %>
 							<a href="$Link" class="img">
-								<img src="{$EventImage.CroppedImage(200,200).URL}" alt="$Title">
+								<img src="{$PagePhoto.CroppedImage(200,200).URL}" alt="$Title">
 							</a>
 						<% end_if %>
 						<div class="list-content">
