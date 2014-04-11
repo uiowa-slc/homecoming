@@ -121,6 +121,8 @@ Hero Carousel
 	display: none;
 	@media screen and (min-width: $break-small) {
 		display: block;
+		position: relative;
+		z-index: 5;
 	}
 	@media screen and (min-width: $break-medium) {
 		margin-top: -108px;
@@ -208,6 +210,9 @@ Events by Date
 	transition: all .2s ease-in-out;
 	position: absolute;
 	margin-top: -6px;
+}
+.eventsbydate li:hover .glyphicon, .announcements li:hover .glyphicon {
+	color: $yellow;
 }
 
 
