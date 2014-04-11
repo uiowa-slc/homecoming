@@ -10,7 +10,7 @@
 							<li class="justify-item">
 								<a href="$Link">
 									<div class="today-imgwrapper">
-										<img src="{$Event.EventImage.CroppedImage(400,250).URL}" alt="$Title" class="today-img">
+										<img src="{$Event.PagePhoto.CroppedImage(400,250).URL}" alt="$Title" class="today-img">
 									</div>
 									<div class="today-content">
 										<p class="today-date">$DateRange</p>
@@ -34,7 +34,7 @@
 							<li class="justify-item">
 								<a href="$Link">
 									<div class="today-imgwrapper">
-										<img src="{$Event.EventImage.CroppedImage(400,250).URL}" alt="$Title" class="today-img">
+										<img src="{$Event.PagePhoto.CroppedImage(400,250).URL}" alt="$Title" class="today-img">
 									</div>
 									<div class="today-content">
 										<p class="today-date">$DateRange</p>
