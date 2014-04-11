@@ -12,24 +12,25 @@ class CouncilMember extends Page {
 	private static $has_one = array(
 		"CouncilPhoto" => "Image",
 	);
-	
-	
+
+
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
-		
+
 		$fields->removeByName("Content");
 		$fields->removeByName("Metadata");
+		$fields->removeByName("PagePhoto");
 
 		$fields->addFieldToTab("Root.Main", new TextField("Position", "Position"));
 		$fields->addFieldToTab("Root.Main", new TextField("EmailAddress", "Email address"));
 		$fields->addFieldToTab("Root.Main", new TextField("Phone", "Phone (XXX-XXX-XXXX)"));
 		$fields->addFieldToTab("Root.Main", new UploadField("CouncilPhoto", "Photo"));
 		$fields->addFieldToTab("Root.Main", new HTMLEditorField("Content", "Description"));
-		
+
 		return $fields;
-		
+
 	}
-	
+
 	//private static $allowed_children = array("");
 
 }
