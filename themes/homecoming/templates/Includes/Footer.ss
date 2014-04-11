@@ -10,14 +10,14 @@
 			</div>
 			<div class="col-sm-4">
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-xs-6">
 						<ul class="footer-nav">
 							<% loop Menu(1) %>
 								<li><a href="$Link">$MenuTitle</a></li>
 							<% end_loop %>
 						</ul>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-xs-6">
 						<ul class="footer-nav">
 							<li><a href="/students/">Students</a></li>
 							<li><a href="/faculty-and-staff/">Faculty &amp; Staff</a></li>

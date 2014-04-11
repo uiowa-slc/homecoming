@@ -232,13 +232,17 @@ Council Members
 .council-img {
 	border-radius: 3px;
 	overflow: hidden;
-	float: left;
 	& img {
 		display: block;
 	}
+	@media (min-width: $break-small) {
+		float: left;
+	}
 }
 .council-content {
-	margin-left: 220px;
+	@media (min-width: $break-small) {
+		margin-left: 220px;
+	}
 }
 .council-title {
 	font-size: 30px;
