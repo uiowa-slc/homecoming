@@ -2302,7 +2302,7 @@ $(window).load(function() {
 	$('.hero-slider').flexslider({
 		animation: "fade",
 		controlNav: false,
-		directionNav: false,
+		directionNav: false
 	});
 
 
