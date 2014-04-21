@@ -33,10 +33,6 @@ $(window).load(function() {
 			title : {
 	 			type : 'inside'
 	 		},
-			thumbs : {
-				width  : 50,
-				height : 50
-			},
 			overlay : {
 	 			css : {
 	 				'background' : 'rgba(238,238,238,0.85)'
