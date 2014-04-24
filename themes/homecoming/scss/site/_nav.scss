@@ -87,14 +87,14 @@ Second level drop-down menu
 }
 .nav-main > li:hover .level-2 {
 	@media screen and (min-width: $break-medium) {
-		height: 100px;
+		max-height: 200px;
 		left: 0;
 		left: auto;
 	}
 }
 .lt-ie9 .nav-main li.hover .level-2 {
 	@media screen and (min-width: $break-medium) {
-		height: 200px;
+		max-height: 200px;
 		left: 0;
 		left: auto;
 	}
