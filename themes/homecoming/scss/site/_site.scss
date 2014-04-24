@@ -158,7 +158,9 @@ Hero Carousel
 	top: 0;
 	width: 100%;
 }
-
+.lt-ie9 .hero-slider {
+	background-color: red;
+}
 .hero-slider li img {
 	position: absolute;
 	width: 100%;
