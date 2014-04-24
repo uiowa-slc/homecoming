@@ -92,7 +92,7 @@ Second level drop-down menu
 		left: auto;
 	}
 }
-.lt-ie9 .nav-main > li > a:hover .level-2 {
+.lt-ie9 .nav-main li.parent a:hover .level-2 {
 	@media screen and (min-width: $break-medium) {
 		max-height: 200px;
 		left: 0;
