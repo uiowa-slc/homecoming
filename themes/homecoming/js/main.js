@@ -3,22 +3,6 @@ $(window).load(function() {
 	// add js class to body if javascript enabled
 	$('html').removeClass('no-js');
 
-	// FancyBox
-	// $(".fancybox").fancybox({
-	// 	wrapCSS    : 'fancybox-custom',
-	// 	closeClick : true,
-	// 	openEffect : 'none',
-	// 	helpers : {
-	// 		title : {
-	// 			type : 'inside'
-	// 		},
-	// 		overlay : {
-	// 			css : {
-	// 				'background' : 'rgba(238,238,238,0.85)'
-	// 			}
-	// 		}
-	// 	}
-	// });
 
 	$('.fancybox').fancybox({
 		//prevEffect : 'none',
@@ -65,6 +49,9 @@ $(window).load(function() {
 		controlNav: false,
 		directionNav: false
 	});
+
+	// Lazy load images
+	$(".unveil").unveil();
 
 
 	$('.nav-title a').click(function() {
