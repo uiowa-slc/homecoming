@@ -45,7 +45,6 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 
 	<div class="hero">
 		<div class="featuredimage">
-			<div class="loader"></div>
 			<div class="hero-slider">
 				<ul class="slides">
 					<li><img src="{$ThemeDir}/images/homecoming_bg4.jpg" alt=""></li>
