@@ -11,7 +11,7 @@
 					<li class="clearfix council-member">
 						<% if $CouncilPhoto %>
 							<div class="council-img">
-								<img src="$CouncilPhoto.SetWidth(200).URL" alt="$Title">
+								<img class="unveil" src="{$ThemeDir}/images/loader.gif" data-src="$CouncilPhoto.SetWidth(200).URL" alt="$Title">
 							</div>
 						<% end_if %>
 						<div class="council-content">

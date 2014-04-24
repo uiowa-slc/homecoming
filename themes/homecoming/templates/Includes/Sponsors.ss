@@ -6,9 +6,9 @@
       <% loop Children %>
         <li>
           <% if $SponsorUrl %>
-            <a href="$SponsorUrl"><img src="$SponsorPhoto.PaddedImage(210, 120).URL" alt="$Title"></a>
+            <a href="$SponsorUrl"><img class="unveil" src="{$ThemeDir}/images/loader.gif" data-src="$SponsorPhoto.PaddedImage(210, 120).URL" alt="$Title"></a>
           <% else %>
-            <img src="$SponsorPhoto.PaddedImage(210, 120).URL" alt="$Title">
+            <img class="unveil" src="{$ThemeDir}/images/loader.gif" data-src="$SponsorPhoto.PaddedImage(210, 120).URL" alt="$Title">
           <% end_if %>
         </li>
       <% end_loop %>
