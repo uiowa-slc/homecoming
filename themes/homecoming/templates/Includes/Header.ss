@@ -2,7 +2,7 @@
 <header class="header clearfix" role="banner">
 	<div class="header-top">
 		<div class="container clearfix">
-			<h1 class="logo">
+			<h1 class="logo clearfix">
 				<a href="{$BaseHref}">
 					<img src="{$ThemeDir}/images/homecoming-logo.png" alt="Iowa Homecoming">
 				</a>
