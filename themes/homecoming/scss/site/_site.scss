@@ -165,6 +165,12 @@ Hero Carousel
 	height: auto;
 	left: 0;
 }
+.lt-ie9 .hero-slider li img {
+	position: relative;
+	width: 100%;
+	height: auto;
+	left: 0;
+}
 .slides li {
 	margin-bottom: 0;
 }
