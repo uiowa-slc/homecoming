@@ -129,14 +129,29 @@ Hero Carousel
 	}
 }
 .featuredimage {
-	padding-top: 30%;
+	padding-top: 40%;
 	background: transparent;
 	position: relative;
 	overflow: hidden;
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0.8)), color-stop(10%, transparent));
+	@media (min-width: $break-medium) {
+		padding-top: 40%;
+	}
+	@media (min-width: $break-large) {
+		padding-top: 33%;
+	}
+	@media (min-width: $break-xlarge) {
+		padding-top: 26%;
+	}
+	@media (min-width: $break-xxlarge) {
+		padding-top: 20%;
+	}
 }
 .HomePage .featuredimage {
 	padding-top: 40%;
+	@media (min-width: $break-xxlarge) {
+		padding-top: 33%;
+	}
 }
 .hero-slider {
 	position: absolute;

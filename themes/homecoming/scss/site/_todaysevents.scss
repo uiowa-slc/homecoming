@@ -78,11 +78,11 @@ Today's Events
 		display: block;
 		width: 100%;
 		-webkit-transition: all 2s ease-in-out;
-		-webkit-transform: scale(1.05);
+		-webkit-transform: scale(1);
 	}
 }
 .todays-events a:hover .today-imgwrapper img {
-	-webkit-transform: scale(1);
+	-webkit-transform: scale(1.05);
 }
 .today-imgwrapper:before {
 	content: '';
