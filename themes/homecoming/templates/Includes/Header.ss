@@ -24,7 +24,7 @@
 				<h2 class="nav-title"><a href="/#">Menu <span></span></a></h2>
 				<ul class="nav-main nav-left clearfix">
 					<% loop Menu(1).Limit(4) %>
-						<li class="$LinkingMode <% if Children %>parent<% end_if %>"><a href="$Link">$MenuTitle</a>
+						<li class="$FirstLast <% if Children %>parent<% end_if %>"><a href="$Link">$MenuTitle</a>
 						<% if Children %>
 							<ul class="level-2">
 							<% loop Children %>
@@ -37,7 +37,7 @@
 				</ul>
 				<ul class="nav-main nav-right clearfix">
 					<% loop Menu(1).Limit(0,4) %>
-						<li class="$LinkingMode <% if Children %>parent<% end_if %>"><a href="$Link">$MenuTitle</a>
+						<li class="$FirstLast <% if Children %>parent<% end_if %>"><a href="$Link">$MenuTitle</a>
 						<% if Children %>
 							<ul class="level-2">
 							<% loop Children %>
