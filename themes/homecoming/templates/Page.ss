@@ -34,7 +34,8 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 <link rel="stylesheet" href="{$ThemeDir}/css/master.css">
 <!-- JS -->
 <!--[if lt IE 9]>
-    <script src="{$ThemeDir}/js/plugins/html5shiv.js"></script>
+   <script src="{$ThemeDir}/js/plugins/html5shiv.js"></script>
+   <script src="{$ThemeDir}/js/plugins/respond.min.js"></script>
 <![endif]-->
 </head>
 
