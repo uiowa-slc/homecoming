@@ -2189,4 +2189,17 @@ $(window).load(function() {
 		$('.nav-main-wrapper').toggleClass('expand');
 		return false;
 	})
+
+
+	$( '.nav-main li.parent' ).hover(function() {
+	   $( this ).addClass( "hover" );
+	  		}, function() {
+	   $( this ).removeClass( "hover" );
+  	});
+
+  	$( '.nav-main li.last.parent' ).hover(function() {
+	   $( this ).addClass( "hover-last" );
+	  		}, function() {
+	   $( this ).removeClass( "hover-last" );
+  	});
 });
