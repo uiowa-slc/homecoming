@@ -43,19 +43,12 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 	<% include DivisionBar %>
 	<% include Header %>
 
-	<!-- <div class="hero">
-		<div class="featuredimage">
-			<div class="hero-slider">
-				<ul class="slides">
-					<li><img src="{$ThemeDir}/images/homecoming_bg4.jpg" alt=""></li>
-					<li></li>
-				</ul>
-			</div>
+
+	<div class="hero-wrapper">
+		<div class="slider fade slick-hero">
+			<div><img src="{$ThemeDir}/images/homecoming_bg3.jpg" alt=""></div>
+			<div><img src="{$ThemeDir}/images/homecoming_bg4.jpg" alt=""></div>
 		</div>
-	</div> -->
-	<div class="slider fade slick-hero">
-		<div><img src="{$ThemeDir}/images/homecoming_bg3.jpg" alt=""></div>
-		<div><img src="{$ThemeDir}/images/homecoming_bg4.jpg" alt=""></div>
 	</div>
 
 	<section role="main" class="main">

@@ -118,7 +118,6 @@ Layout
 Hero Carousel
 --------------------------------------------------------------- */
 .slick-hero {
-
 	@media screen and (min-width: $break-medium) {
 		max-height: 400px;
 		overflow: hidden;
@@ -126,22 +125,26 @@ Hero Carousel
 		z-index: 5;
 	}
 }
-.hero {
-	display: none;
-	@media screen and (min-width: $break-small) {
-		display: block;
-		position: relative;
-		z-index: 5;
-	}
+.HomePage .slick-hero {
 	@media screen and (min-width: $break-medium) {
-		margin-top: -108px;
+		max-height: 500px;
 	}
 }
-.lt-ie9 .hero {
+.slick-hero img {
+	width: 100%;
+}
+.hero-wrapper {
+	@media screen and (min-width: $break-medium) {
+		margin-top: -105px;
+	}
+}
+.lt-ie9 .hero-wrapper {
 	@media screen and (min-width: $break-medium) {
 		margin-top: 0;
 	}
 }
+
+
 .featuredimage {
 	padding-top: 40%;
 	background: #000;
