@@ -3858,7 +3858,9 @@ Hero Carousel
 @media screen and (min-width: 768px) {
   .slick-hero {
     max-height: 400px;
-    overflow: hidden; } }
+    overflow: hidden;
+    position: relative;
+    z-index: 5; } }
 
 .hero {
   display: none; }
