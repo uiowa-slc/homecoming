@@ -32,7 +32,6 @@ $(window).load(function() {
 
 	// Sponsors Carousel
 	$('.slick-sponsors').slick({
-		lazyLoad: 'ondemand',
 		infinite: true,
 		speed: 300,
 		slidesToShow: 5,
