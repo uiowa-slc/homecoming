@@ -4,7 +4,7 @@
   <div class="">
     <div class="slick-sponsors">
       <% loop Children %>
-        <div
+        <div>
           <% if $SponsorUrl %>
             <a href="$SponsorUrl"><img data-lazy="$SponsorPhoto.PaddedImage(210, 120).URL" alt="$Title"></a>
           <% else %>
