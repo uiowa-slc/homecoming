@@ -1,18 +1,19 @@
 <% with $Page(sponsors) %>
 <section class="sponsors">
   <h5 class="title">Sponsors</h5>
-  <div class="flexslider-sponsor">
-    <ul class="slides">
+  <div class="">
+    <div class="slick-sponsors">
       <% loop Children %>
-        <li>
+        <div
           <% if $SponsorUrl %>
-            <a href="$SponsorUrl"><img class="unveil" src="{$ThemeDir}/images/loader.gif" data-src="$SponsorPhoto.PaddedImage(210, 120).URL" alt="$Title"></a>
+            <a href="$SponsorUrl"><img data-lazy="$SponsorPhoto.PaddedImage(210, 120).URL" alt="$Title"></a>
           <% else %>
-            <img class="unveil" src="{$ThemeDir}/images/loader.gif" data-src="$SponsorPhoto.PaddedImage(210, 120).URL" alt="$Title">
+            <img data-lazy="$SponsorPhoto.PaddedImage(210, 120).URL" alt="$Title">
           <% end_if %>
-        </li>
+        </div>
       <% end_loop %>
-    </ul>
+    </div>
   </div>
 </section>
+
 <% end_with %>

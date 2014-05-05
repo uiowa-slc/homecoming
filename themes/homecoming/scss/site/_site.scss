@@ -117,6 +117,12 @@ Layout
 /* ---------------------------------------------------------------
 Hero Carousel
 --------------------------------------------------------------- */
+.slick-hero {
+	@media screen and (min-width: $break-medium) {
+		max-height: 400px;
+		overflow: hidden;
+	}
+}
 .hero {
 	display: none;
 	@media screen and (min-width: $break-small) {
@@ -398,23 +404,13 @@ Sponsors
 --------------------------------------------------------------- */
 .sponsors {
 	background: #fff;
-	padding: 1px 0;
+	padding: 1px 50px;
 }
-.flexslider-sponsor {
-	padding: 5px 10px 10px;
-	overflow: auto;
-	position: relative;
-	& ul {
-		overflow: hidden;
-		max-height: 120px;
-	}
-	& li {
-		float: left;
-		margin: 0;
-	}
-	& li img {
-		display: block;
-	}
+.slick-sponsors {
+
+}
+.slick-sponsors .slick-slide img {
+	margin: 0 auto;
 }
 .sponsors .title {
 	font-size: 20px;

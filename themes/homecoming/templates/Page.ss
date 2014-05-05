@@ -43,15 +43,19 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 	<% include DivisionBar %>
 	<% include Header %>
 
-	<div class="hero">
+	<!-- <div class="hero">
 		<div class="featuredimage">
 			<div class="hero-slider">
 				<ul class="slides">
 					<li><img src="{$ThemeDir}/images/homecoming_bg4.jpg" alt=""></li>
-					<li><img src="{$ThemeDir}/images/homecoming_bg3.jpg" alt=""></li>
+					<li></li>
 				</ul>
 			</div>
 		</div>
+	</div> -->
+	<div class="slider fade slick-hero">
+		<div><img src="{$ThemeDir}/images/homecoming_bg3.jpg" alt=""></div>
+		<div><img src="{$ThemeDir}/images/homecoming_bg4.jpg" alt=""></div>
 	</div>
 
 	<section role="main" class="main">
@@ -66,7 +70,8 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 
 	<!-- JS -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<script src="{$ThemeDir}/js/build/production.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="{$ThemeDir}/js/min/production-min.js"></script>
 	<script src="division-bar/js/division-bar.js"></script>
 	<% include GoogleAnalytics %>
 
