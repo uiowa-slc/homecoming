@@ -6,6 +6,9 @@ class CouncilHolderPage extends Page {
 
 	private static $has_one = array(
 	);
+	private static $allowed_children = array(
+		'CouncilMember'
+	);
 
 }
 class CouncilHolderPage_Controller extends Page_Controller {
