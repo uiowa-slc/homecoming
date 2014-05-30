@@ -1,7 +1,7 @@
 <% with $Page(announcements) %>
 	<% if Children %>
 	<div class="announcements">
-	  <h5 class="title">Announcements</h5>
+	  <h3 class="title">Announcements</h3>
 	  <ul class="unstyled">
 	    <% loop Children %>
 	      <li><span class="glyphicon glyphicon-chevron-right"></span><a href="$Link">$Title</a>

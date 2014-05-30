@@ -3959,6 +3959,7 @@ Events by Date
   border-top: 4px solid #ffce39; }
 
 .eventsbydate .title, .announcements .title {
+  font-size: 20px;
   text-transform: uppercase; }
 
 .eventsbydate li, .announcements li {
