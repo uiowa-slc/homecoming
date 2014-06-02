@@ -9,7 +9,7 @@ class ButtonAdmin extends ModelAdmin {
         $form = parent::getEditForm($id, $fields);
         $gridField = $form->Fields()->fieldByName($this->sanitiseClassName($this->modelClass));
         $gridField->getConfig()->addComponent(new GridFieldFilterHeader());
-        $gridField->getConfig()->addComponent(new GridFieldBulkImageUpload());
+        $gridField->getConfig()->addComponent(new GridFieldBulkUpload());
         $gridField->getConfig()->addComponent(new GridFieldBulkManager());
 
         return $form;
