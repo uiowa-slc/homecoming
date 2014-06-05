@@ -29,6 +29,6 @@ class CalendarExtension extends DataExtension {
 		$datesArrayList->removeDuplicates('StartDate');
 
 		return $datesArrayList;
-
 	}
+
 }

@@ -2,11 +2,14 @@
 <div class="container main-content">
 	<div class="content">
 		<div class="article">
-			<h1 class="page-title">$Title</h1>
+			<% if $CurrentAction(show) && Events %>
+				<h1 class="page-title">Schedule: $DateHeader</h1>
+			<% else %>
+				<h1 class="page-title">$Title</h1>
+			<% end_if %>
 			$Content
 		</div>
 		<% if $CurrentAction(show) %>
-
 			<% if Events %>
 				<div class="event-list">
 					<% loop Events %>
