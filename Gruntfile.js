@@ -1,73 +1,72 @@
 module.exports = function(grunt) {
 
+  var globalConfig = {
+    themeDir: 'themes/homecoming'
+  };
+
   // Project configuration.
   grunt.initConfig({
 
+    globalConfig: globalConfig,
     pkg: grunt.file.readJSON('package.json'),
-
-    concat: {
-      dist: {
-        src: [
-          'themes/homecoming/js/plugins/*.js',
-          'themes/homecoming/js/main.js'
-        ],
-        dest: 'themes/homecoming/js/build/production.js'
-      }
-    },
-
-    uglify: {
-      build: {
-        src: ['themes/homecoming/js/build/production.js'],
-        dest: 'themes/homecoming/js/build/production.min.js'
-      }
-    },
+    
+    //compile the sass
 
     sass: {
-      dist: {
-        options: {
-          style: 'compressed'
-        },
+      dist: { 
         files: {
-          'themes/homecoming/css/master.css': 'themes/homecoming/scss/master.scss',
-          'themes/homecoming/css/editor.css': 'themes/homecoming/scss/editor.scss'
+          '<%=globalConfig.themeDir %>/css/master.css' : '<%=globalConfig.themeDir %>/scss/master.scss'
+        },                  // Target
+        options: {              // Target options
+          style: 'compressed',
+          sourcemap: 'true',
+          loadPath: ['division-project/scss']
         }
       }
     },
 
-    imagemin: {
-      dynamic: {
-        files: [{
-          expand: true,
-          cwd: 'themes/homecoming/images/',
-          src: ['**/*.{png,jpg,gif}'],
-          dest: 'themes/homecoming/images/'
-        }]
+    //concat all the files into the build folder
+
+    concat: {
+      js:{
+        src: ['division-project/bower_components/jquery/jquery.js',
+          'division-project/bower_components/jquery.equalheights/jquery.equalheights.js',
+          'division-project/bower_components/fitvids/jquery.fitvids.js',
+          'division-project/bower_components/flexslider/jquery.flexslider.js',
+          'division-bar/js/division-bar.js',
+          '<%=globalConfig.themeDir %>/js/*.js', 
+          'division-project/js/*.js'],
+        dest: '<%=globalConfig.themeDir %>/build/build-src.js'
       }
     },
 
-    watch: {
+    //minify those concated files
+    //toggle mangle to leave variable names intact
+
+    uglify: {
       options: {
-        livereload: true,
+        mangle: true
       },
+      my_target:{
+        files:{
+        '<%=globalConfig.themeDir %>/build/build.js': ['<%=globalConfig.themeDir %>/build/build-src.js'],
+        }
+      }
+    },
+    watch: {
       scripts: {
-        files: ['themes/homecoming/js/*.js', 'themes/homecoming/js/**/*.js'],
+        files: ['<%=globalConfig.themeDir %>/js/*.js', '<%=globalConfig.themeDir %>/js/**/*.js'],
         tasks: ['concat', 'uglify'],
         options: {
-          spawn: false,
+          spawn: true,
         }
       },
       css: {
-        files: ['themes/homecoming/scss/*.scss', 'themes/homecoming/scss/**/*.scss'],
+        files: ['<%=globalConfig.themeDir %>/scss/*.scss', '<%=globalConfig.themeDir %>/scss/**/*.scss', 'division-project/scss/*.scss','division-project/scss/**/*.scss'],
         tasks: ['sass'],
         options: {
-          spawn: false,
+          spawn: true,
         }
-      },
-      markup: {
-          files: ['themes/homecoming/templates/**/*.ss'],
-          options: {
-              livereload: true,
-          }
       }
     },
 
@@ -77,10 +76,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-simple-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'watch']);
+  // Note: order of tasks is very important
+  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'watch']);
 
 };

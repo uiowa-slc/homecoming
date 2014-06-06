@@ -53,12 +53,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "eb9b5b6f59fbaaa6aa7c8fabd2d66e60f376eaa2"
+                "reference": "11f7f8e82cbe1538721b72aa14bbd8007dde96e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/eb9b5b6f59fbaaa6aa7c8fabd2d66e60f376eaa2",
-                "reference": "eb9b5b6f59fbaaa6aa7c8fabd2d66e60f376eaa2",
+                "url": "https://api.github.com/repos/composer/installers/zipball/11f7f8e82cbe1538721b72aa14bbd8007dde96e1",
+                "reference": "11f7f8e82cbe1538721b72aa14bbd8007dde96e1",
                 "shasum": ""
             },
             "replace": {
@@ -67,7 +67,7 @@
             },
             "require-dev": {
                 "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "3.7.*"
+                "phpunit/phpunit": "4.1.*"
             },
             "type": "composer-installer",
             "extra": {
@@ -89,7 +89,7 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "http://dontkry.com",
+                    "homepage": "https://github.com/shama",
                     "role": "Developer"
                 }
             ],
@@ -97,12 +97,14 @@
             "homepage": "http://composer.github.com/installers/",
             "keywords": [
                 "Craft",
+                "Dolibarr",
                 "Hurad",
                 "MODX Evo",
                 "OXID",
                 "WolfCMS",
                 "agl",
                 "annotatecms",
+                "bitrix",
                 "cakephp",
                 "codeigniter",
                 "concrete5",
@@ -119,6 +121,7 @@
                 "mako",
                 "mediawiki",
                 "modulework",
+                "moodle",
                 "phpbb",
                 "piwik",
                 "ppi",
@@ -131,7 +134,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-05-07 15:43:15"
+            "time": "2014-06-04 16:59:54"
         },
         {
             "name": "md/division-bar",
@@ -139,12 +142,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar.git",
-                "reference": "a5845dfa6c766ed9fce8d19e7302c5404af70cd3"
+                "reference": "54d310c04df438f65954cef1e71ef11e22757fea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/a5845dfa6c766ed9fce8d19e7302c5404af70cd3",
-                "reference": "a5845dfa6c766ed9fce8d19e7302c5404af70cd3",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/54d310c04df438f65954cef1e71ef11e22757fea",
+                "reference": "54d310c04df438f65954cef1e71ef11e22757fea",
                 "shasum": ""
             },
             "require": {
@@ -163,7 +166,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-bar/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-bar/issues"
             },
-            "time": "2014-04-17 14:30:01"
+            "time": "2014-06-06 17:39:37"
         },
         {
             "name": "silverstripe-themes/simple",
@@ -254,12 +257,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-event-calendar.git",
-                "reference": "50c587dbc5002cf4588375207fe66cbf003b42fb"
+                "reference": "34aafaf212d4ee98756769e45737a78f2d212a7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-event-calendar/zipball/50c587dbc5002cf4588375207fe66cbf003b42fb",
-                "reference": "50c587dbc5002cf4588375207fe66cbf003b42fb",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-event-calendar/zipball/34aafaf212d4ee98756769e45737a78f2d212a7d",
+                "reference": "34aafaf212d4ee98756769e45737a78f2d212a7d",
                 "shasum": ""
             },
             "require": {
@@ -289,7 +292,7 @@
                 "events",
                 "silverstripe"
             ],
-            "time": "2014-05-21 21:46:33"
+            "time": "2014-05-28 10:13:41"
         },
         {
             "name": "silverstripe/framework",
@@ -385,12 +388,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git",
-                "reference": "ecd189fd2b60e1e815d8efa6bd0187586c9c5a15"
+                "reference": "fac8934f5a38cff5c28cfa4c7aeeb66b4fe2739e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/ecd189fd2b60e1e815d8efa6bd0187586c9c5a15",
-                "reference": "ecd189fd2b60e1e815d8efa6bd0187586c9c5a15",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/fac8934f5a38cff5c28cfa4c7aeeb66b4fe2739e",
+                "reference": "fac8934f5a38cff5c28cfa4c7aeeb66b4fe2739e",
                 "shasum": ""
             },
             "require": {
@@ -414,7 +417,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2014-05-08 08:38:37"
+            "time": "2014-06-03 20:45:12"
         }
     ],
     "packages-dev": [
