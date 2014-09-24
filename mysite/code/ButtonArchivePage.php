@@ -11,7 +11,7 @@ class ButtonArchivePage extends Page {
 		$fields = parent::getCMSFields();
 
 		$gridFieldConfig = GridFieldConfig_RelationEditor::create();
-		$gridFieldConfig->addComponent(new GridFieldBulkImageUpload());
+		$gridFieldConfig->addComponent(new GridFieldBulkUpload());
 		$gridFieldConfig->addComponent(new GridFieldBulkManager());
 		$gridField = new GridField("Buttons", "Buttons", Button::get(), $gridFieldConfig);
 
