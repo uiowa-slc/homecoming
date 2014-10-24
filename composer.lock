@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/colymba/GridFieldBulkEditingTools.git",
-                "reference": "188346d52003e4a741bca2167e772c324854f72f"
+                "reference": "f0840f453cb641b5eebd73397d32727d72d6e543"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/188346d52003e4a741bca2167e772c324854f72f",
-                "reference": "188346d52003e4a741bca2167e772c324854f72f",
+                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/f0840f453cb641b5eebd73397d32727d72d6e543",
+                "reference": "f0840f453cb641b5eebd73397d32727d72d6e543",
                 "shasum": ""
             },
             "require": {
@@ -46,7 +46,7 @@
                 "gridfield bulk upload",
                 "silverstripe"
             ],
-            "time": "2014-09-15 07:38:24"
+            "time": "2014-10-10 16:05:43"
         },
         {
             "name": "composer/installers",
@@ -54,12 +54,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "1273cbb768f63b6436994df1b51724f8930505eb"
+                "reference": "09e2192a7cd08008e273355fddd38942d8de2992"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/1273cbb768f63b6436994df1b51724f8930505eb",
-                "reference": "1273cbb768f63b6436994df1b51724f8930505eb",
+                "url": "https://api.github.com/repos/composer/installers/zipball/09e2192a7cd08008e273355fddd38942d8de2992",
+                "reference": "09e2192a7cd08008e273355fddd38942d8de2992",
                 "shasum": ""
             },
             "replace": {
@@ -138,7 +138,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-09-20 03:53:04"
+            "time": "2014-10-15 03:40:33"
         },
         {
             "name": "md/division-bar",
@@ -146,12 +146,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar.git",
-                "reference": "40b10008641a727d6ad05c2005e17a7b50e07393"
+                "reference": "586402c87fac3b917fe8593560e88dcdcbe84e8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/40b10008641a727d6ad05c2005e17a7b50e07393",
-                "reference": "40b10008641a727d6ad05c2005e17a7b50e07393",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/586402c87fac3b917fe8593560e88dcdcbe84e8c",
+                "reference": "586402c87fac3b917fe8593560e88dcdcbe84e8c",
                 "shasum": ""
             },
             "require": {
@@ -170,7 +170,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-bar/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-bar/issues"
             },
-            "time": "2014-06-18 14:30:05"
+            "time": "2014-10-20 19:41:10"
         },
         {
             "name": "silverstripe-themes/simple",
@@ -261,12 +261,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-event-calendar.git",
-                "reference": "646ef92b2d703864470d69d0c68b079b57198721"
+                "reference": "7435c0be7e852a17247c23de804886ecd76dfbf9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-event-calendar/zipball/646ef92b2d703864470d69d0c68b079b57198721",
-                "reference": "646ef92b2d703864470d69d0c68b079b57198721",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-event-calendar/zipball/7435c0be7e852a17247c23de804886ecd76dfbf9",
+                "reference": "7435c0be7e852a17247c23de804886ecd76dfbf9",
                 "shasum": ""
             },
             "require": {
@@ -296,7 +296,7 @@
                 "events",
                 "silverstripe"
             ],
-            "time": "2014-09-14 21:18:48"
+            "time": "2014-10-12 21:40:47"
         },
         {
             "name": "silverstripe/framework",
@@ -392,12 +392,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git",
-                "reference": "6206ecba9e9c606883e091bb366928c89bf8cb9a"
+                "reference": "feabffc4976a16f9860cc2768921833a6d97c102"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/6206ecba9e9c606883e091bb366928c89bf8cb9a",
-                "reference": "6206ecba9e9c606883e091bb366928c89bf8cb9a",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/feabffc4976a16f9860cc2768921833a6d97c102",
+                "reference": "feabffc4976a16f9860cc2768921833a6d97c102",
                 "shasum": ""
             },
             "require": {
@@ -411,8 +411,7 @@
             "authors": [
                 {
                     "name": "Uncle Cheese",
-                    "email": "unclecheese@leftandmain.com",
-                    "homepage": "http://leftandmain.com"
+                    "email": "unclecheese@leftandmain.com"
                 }
             ],
             "description": "Adds new form actions and buttons to GridField detail form for usability enhancements.",
@@ -421,7 +420,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2014-07-16 11:26:46"
+            "time": "2014-10-12 23:46:11"
         }
     ],
     "packages-dev": [],
