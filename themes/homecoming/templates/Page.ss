@@ -1,7 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <!--[if lt IE 9]>         <html lang="en" class="lt-ie9 no-js"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <% base_tag %>
 <meta charset="utf-8">
 <meta name="description" content="">
@@ -35,8 +36,8 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 <link rel="stylesheet" href="division-bar/css/_division-bar.css" />
 <!-- JS -->
 <!--[if lt IE 9]>
-   <script src="{$ThemeDir}/js/plugins/html5shiv.js"></script>
-   <script src="{$ThemeDir}/js/plugins/respond.min.js"></script>
+   <script src="{$ThemeDir}/js/ie/html5shiv.js"></script>
+   <script src="{$ThemeDir}/js/ie/respond.min.js"></script>
 <![endif]-->
 </head>
 
@@ -65,7 +66,7 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 	<!-- JS -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script src="{$ThemeDir}/js/min/production-min.js"></script>
+	<script src="{$ThemeDir}/js/build/production.min.js"></script>
 	<script src="division-bar/js/division-bar.js"></script>
 	<% include GoogleAnalytics %>
 

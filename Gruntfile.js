@@ -1,72 +1,83 @@
 module.exports = function(grunt) {
 
-  var globalConfig = {
-    themeDir: 'themes/homecoming'
-  };
-
   // Project configuration.
   grunt.initConfig({
 
-    globalConfig: globalConfig,
     pkg: grunt.file.readJSON('package.json'),
-    
-    //compile the sass
 
-    sass: {
-      dist: { 
-        files: {
-          '<%=globalConfig.themeDir %>/css/master.css' : '<%=globalConfig.themeDir %>/scss/master.scss'
-        },                  // Target
-        options: {              // Target options
-          style: 'compressed',
-          sourcemap: 'true',
-          loadPath: ['division-project/scss']
-        }
-      }
+    /**
+    * Set project object
+    */
+    project: {
+      src: 'themes/homecoming',
+      scss: ['<%= project.src %>/scss'],
+      css: ['<%= project.src %>/css'],
+      js: ['<%= project.src %>/js']
     },
-
-    //concat all the files into the build folder
 
     concat: {
-      js:{
-        src: ['division-project/bower_components/jquery/jquery.js',
-          'division-project/bower_components/jquery.equalheights/jquery.equalheights.js',
-          'division-project/bower_components/fitvids/jquery.fitvids.js',
-          'division-project/bower_components/flexslider/jquery.flexslider.js',
-          'division-bar/js/division-bar.js',
-          '<%=globalConfig.themeDir %>/js/*.js', 
-          'division-project/js/*.js'],
-        dest: '<%=globalConfig.themeDir %>/build/build-src.js'
+      dist: {
+        src: [
+          '<%= project.src %>/js/plugins/*.js',
+          '<%= project.src %>/js/main.js'
+        ],
+        dest: '<%= project.src %>/js/build/production.js'
       }
     },
 
-    //minify those concated files
-    //toggle mangle to leave variable names intact
-
     uglify: {
-      options: {
-        mangle: true
-      },
-      my_target:{
-        files:{
-        '<%=globalConfig.themeDir %>/build/build.js': ['<%=globalConfig.themeDir %>/build/build-src.js'],
+      build: {
+        src: ['<%= project.src %>/js/build/production.js'],
+        dest: '<%= project.src %>/js/build/production.min.js'
+      }
+    },
+
+    sass: {
+      dist: {
+        options: {
+          style: 'compressed'
+        },
+        files: {
+          '<%= project.src %>/css/master.css': '<%= project.src %>/scss/master.scss',
+          '<%= project.src %>/css/editor.css': '<%= project.src %>/scss/editor.scss'
         }
       }
     },
+
+    imagemin: {
+      dynamic: {
+        files: [{
+          expand: true,
+          cwd: '<%= project.src %>/images/',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: '<%= project.src %>/images/'
+        }]
+      }
+    },
+
     watch: {
+      options: {
+        livereload: true,
+      },
       scripts: {
-        files: ['<%=globalConfig.themeDir %>/js/*.js', '<%=globalConfig.themeDir %>/js/**/*.js'],
+        files: ['<%= project.src %>/js/*.js', '<%= project.src %>/js/**/*.js'],
         tasks: ['concat', 'uglify'],
         options: {
-          spawn: true,
+          spawn: false,
         }
       },
       css: {
-        files: ['<%=globalConfig.themeDir %>/scss/*.scss', '<%=globalConfig.themeDir %>/scss/**/*.scss', 'division-project/scss/*.scss','division-project/scss/**/*.scss'],
+        files: ['<%= project.src %>/scss/*.scss', '<%= project.src %>/scss/**/*.scss'],
         tasks: ['sass'],
         options: {
-          spawn: true,
+          spawn: false,
         }
+      },
+      markup: {
+          files: ['<%= project.src %>/templates/**/*.ss'],
+          options: {
+              livereload: true,
+          }
       }
     },
 
@@ -76,11 +87,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-simple-watch');
 
   // Default task(s).
-  // Note: order of tasks is very important
-  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'watch']);
+  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'watch']);
 
 };
