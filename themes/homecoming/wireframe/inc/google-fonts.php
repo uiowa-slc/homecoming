@@ -1,1 +1,0 @@
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,700' rel='stylesheet' type='text/css'>
