@@ -26,7 +26,7 @@ class HomePage extends Page {
 
     // $fields->removeByName("Content");
     $fields->removeByName("Metadata");
-
+    $fields->removeByName("PagePhoto");
     $fields->addFieldToTab("Root.Main", new UploadField("HomePhoto", "Photo"));
 
     $fields->addFieldToTab("Root.CalloutOne", new TextField("CalloutOne", "Title"));
