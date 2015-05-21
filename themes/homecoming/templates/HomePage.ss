@@ -48,7 +48,10 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 
 
 	<div class="hero-wrapper">
-		<img src="{$ThemeDir}/images/homecoming_bg3new.jpg" alt="">
+		<div class="slider fade slick-hero">
+			<div><img src="{$ThemeDir}/images/homecoming_bg4new.jpg" alt=""></div>
+			<div><img src="{$ThemeDir}/images/homecoming_bg3new.jpg" alt=""></div>
+		</div>
 	</div>
 
 	<section class="main" id="main-content" tabindex="-1" role="main">
@@ -65,7 +68,7 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="{$ThemeDir}/js/build/production.min.js"></script>
-
+	<script src="division-bar/js/division-bar.js"></script>
 	<% include GoogleAnalytics %>
 
 </body>

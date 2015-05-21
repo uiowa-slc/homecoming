@@ -14,7 +14,7 @@ Navigation
 		float: right;
 	}
 }
-.nav-right > .parent > a:after {
+.main-nav > li.parent > a:after {
 	@media screen and (min-width: $break-medium) {
 		content: "\e114";
 		display: inline-block;
@@ -29,83 +29,10 @@ Navigation
 
 
 /* current link */
-.nav-main .current > a {
+.main-nav .current > a {
 	background-color: #222;
 	color: $yellow;
 	text-decoration: none;
-}
-
-
-
-/* ---------------------------------------------------------------
-Second level drop-down menu
---------------------------------------------------------------- */
-.level-2 {
-	list-style: none;
-	margin: 0;
-	@media screen and (min-width: $break-medium) {
-		background-color: #222;
-		box-shadow: 0 4px 3px rgba(0,0,0,0.3);
-		position: absolute;
-		top: 100%;
-		left: -9999px;
-		max-height: 0;
-		overflow: hidden;
-		padding: 0;
-		width: 200px;
-		transition: all .2s linear;
-	}
-}
-.level-2 li {
-	display: block;
-	margin: 0;
-	& a {
-		border-bottom: 1px solid #ddd;
-		display: block;
-		font-size: 14px;
-		padding: .8em 0 .8em 15px;
-		position: relative;
-		text-align: left;
-		-webkit-transition: all .2s linear;
-		-moz-transition: all .2s linear;
-		transition: all .2s linear;
-		@media screen and (min-width: $break-medium) {
-			border-bottom-color: #333;
-			color: #fff;
-			display: block;
-			font-size: 13px;
-			padding: 10px 15px;
-			text-align: left;
-		}
-		&:hover {
-			@media screen and (min-width: $break-medium) {
-				background-color: #333;
-				text-decoration: none;
-			}
-		}
-	}
-}
-.nav-main > li:hover .level-2 {
-	@media screen and (min-width: $break-medium) {
-		max-height: 200px;
-		left: 0;
-		left: auto;
-	}
-}
-.lt-ie9 .nav-main li.hover .level-2 {
-	@media screen and (min-width: $break-medium) {
-		max-height: 200px;
-		left: 0;
-		left: auto;
-	}
-}
-.nav-main > li.last:hover .level-2 {
-	left: auto;
-	right: 0;
-}
-.lt-ie9 .nav-main li.hover-last .level-2 {
-	left: auto;
-	right: 0;
 }
 
 
@@ -217,18 +144,27 @@ New
 		content: '';
 	}
 }
-.nav-main {
-	border-right: 1px solid rgba(0,0,0,.1);
-	list-style: none;
-	margin: 0 auto;
-	padding: 0;
+
+
+
+
+/* ---------------------------------------------------------------
+
+--------------------------------------------------------------- */
+.main-nav {
+	border-right: 1px solid rgba(0,0,0,0.1);
 	@media screen and (min-width: $break-medium) {
 		border-top: none;
 		text-align: center;
 	}
 }
-.nav-main > li {
-	margin-bottom: 0;
+.main-nav, .main-nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.main-nav li {
+	position: relative;
 	@media screen and (min-width: $break-medium) {
 		border-left: 1px solid rgba(0,0,0,.1);
 		float: left;
@@ -240,15 +176,12 @@ New
 		}
 	}
 }
-.nav-main > li > a {
+.main-nav li a {
 	border-bottom: 1px solid #ddd;
 	display: block;
 	font-size: 14px;
 	padding: .8em 0 .8em 15px;
 	position: relative;
-	-webkit-transition: all .1s linear;
-	-moz-transition: all .1s linear;
-	transition: all .1s linear;
 	@media screen and (max-width: 767px) {
 		text-align: left; /* for internet explorer */
 	}
@@ -266,20 +199,86 @@ New
 	@media screen and (min-width: $break-large) {
 		font-size: 17px;
 	}
-	@media screen and (min-width: $break-xlarge) {
-
-	}
 }
-
-
-/* Hover State */
-.nav-main a:hover, .nav-main a:focus {
+/* Top level hover state, preserve hover state when hovering dropdown  */
+.main-nav li > a:hover,
+.main-nav li > a:focus,
+.main-nav li:focus > a,
+.main-nav li:hover > a {
 	background: #eee;
 	@media screen and (min-width: $break-medium) {
 		background-color: #222;
 		color: $yellow;
 		text-decoration: none;
 	}
+}
+/* current link */
+.main-nav .active > a {
+	background-color: #222;
+	color: $yellow;
+	text-decoration: none;
+}
 
+/* ---------------------------------------------------------------
+Dropdowns
+--------------------------------------------------------------- */
+.main-nav ul {
+	display: none;
+	@media (min-width: $break-medium) {
+		display: block;
+		box-shadow: 0 4px 3px rgba(0,0,0,0.3);
+		position: absolute;
+		top: 40px;
+		left: -9999px;
+		width: 200px;
+		background: #222;
+	}
+}
 
+.main-nav li:hover ul,
+.main-nav li:focus ul,
+ul.show-menu {
+	left: 0;
+}
+.main-nav ul li {
+	float: none;
+	position: static;
+	width: auto;
+}
+.main-nav ul a {
+	display: block;
+	border-bottom: 1px solid #ddd;
+	display: block;
+	font-size: 14px;
+	padding: .8em 0 .8em 15px;
+	position: relative;
+	text-align: left;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	transition: all .2s linear;
+	@media screen and (min-width: $break-medium) {
+		border-bottom-color: #333;
+		color: #fff;
+		display: block;
+		font-size: 13px;
+		padding: 10px 15px;
+		text-align: left;
+	}
+	&:hover {
+		@media screen and (min-width: $break-medium) {
+			background-color: #333;
+			text-decoration: none;
+		}
+	}
+}
+.main-nav > li.last:hover ul {
+  left: auto;
+  right: 0;
+}
+.main-nav li.active a {
+	@media (max-width: $break-medium - 1) {
+		background-color: #eee;
+		color: $link;
+		font-weight: bold;
+	}
 }

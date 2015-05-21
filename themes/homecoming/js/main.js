@@ -63,32 +63,6 @@ $(window).load(function() {
 		]
 	});
 
-
-	// Flexslider
-	// $('.flexslider').flexslider({
-	//		slideshow:false,
-	//		controlNav:false
-	// });
-
-
-	// Hero Flexslider
-	//	$('.hero-slider').flexslider({
-	//		animation:"fade",
-	//		controlNav:false,
-	//		directionNav:false
-	// });
-
-	// Sponsor Flexslider
-	// $('.flexslider-sponsor').flexslider({
-	// animation:"slide",
-	// easing:"swing",
-	// slideshow:true,
-	// animationLoop:true,
-	// controlNav:false,
-	// itemWidth:210,
-	// move:1
-	// });
-
 	// Lazy load images
 	$(".unveil").unveil();
 

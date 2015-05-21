@@ -12,6 +12,7 @@
       $Form
     </div><!-- end .col -->
     <div class="col-md-3">
+      <% include SideNav %>
       <% include EventsByDate %>
       <% include Announcements %>
     </div>

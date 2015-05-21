@@ -33,6 +33,7 @@
 		<% end_if %>
 
 		<div class="sidebar">
+			<% include SideNav %>
 			<% include EventsByDate %>
 			<% include Announcements %>
 		</div>

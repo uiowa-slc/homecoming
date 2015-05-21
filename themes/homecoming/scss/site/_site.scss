@@ -117,92 +117,20 @@ Layout
 /* ---------------------------------------------------------------
 Hero Carousel
 --------------------------------------------------------------- */
-.slick-hero {
+.hero-wrapper {
+	display: none;
 	@media screen and (min-width: $break-medium) {
-		max-height: 400px;
+		display: block;
+		max-height: 350px;
 		overflow: hidden;
 		position: relative;
 		z-index: 5;
 	}
 }
-.HomePage .slick-hero {
-	@media screen and (min-width: $break-medium) {
-		max-height: 500px;
-	}
-}
-.slick-hero img {
+.hero-wrapper img {
 	width: 100%;
-}
-.hero-wrapper {
-	@media screen and (min-width: $break-medium) {
-		margin-top: -105px;
-	}
-}
-.lt-ie9 .hero-wrapper {
-	@media screen and (min-width: $break-medium) {
-		margin-top: 0;
-	}
 }
 
-
-.featuredimage {
-	padding-top: 40%;
-	background: #000;
-	position: relative;
-	overflow: hidden;
-	@media (min-width: $break-medium) {
-		padding-top: 40%;
-	}
-	@media (min-width: $break-large) {
-		padding-top: 33%;
-	}
-	@media (min-width: $break-xlarge) {
-		padding-top: 26%;
-	}
-	@media (min-width: $break-xxlarge) {
-		padding-top: 20%;
-	}
-}
-.lt-ie9 .featuredimage {
-	@media (min-width: $break-medium) {
-		padding-top: 32%;
-	}
-	@media (min-width: $break-large) {
-		padding-top: 26%;
-	}
-	@media (min-width: $break-xlarge) {
-		padding-top: 20%;
-	}
-	@media (min-width: $break-xxlarge) {
-		padding-top: 20%;
-	}
-}
-.HomePage .featuredimage {
-	padding-top: 40%;
-	@media (min-width: $break-xxlarge) {
-		padding-top: 33%;
-	}
-}
-.hero-slider {
-	position: absolute;
-	top: 0;
-	width: 100%;
-}
-.hero-slider li img {
-	position: absolute;
-	width: 100%;
-	height: auto;
-	left: 0;
-}
-.lt-ie9 .hero-slider li img {
-	position: relative;
-	width: 100%;
-	height: auto;
-	left: 0;
-}
-.slides li {
-	margin-bottom: 0;
-}
 
 
 /* ---------------------------------------------------------------
@@ -484,4 +412,37 @@ Admin Login form fields
 		background-color: #eee;
 		border-color: #adadad;
 	}
+}
+
+/* ---------------------------------------------------------------
+Skip Link
+--------------------------------------------------------------- */
+#skiplink {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	transition: .25s;
+}
+#skiplink:active, #skiplink:focus {
+	background: #fff;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
+	clip: auto;
+	height: auto;
+	left: 10px;
+	margin: 0;
+	outline: 0;
+	outline-offset: -2px;
+	overflow: visible;
+	padding: 10px;
+	top: 10px;
+	width: auto;
+	z-index: 100;
+}
+#main-content {
+	outline: 0;
 }

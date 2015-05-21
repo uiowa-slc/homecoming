@@ -1,0 +1,71 @@
+/* ---------------------------------------------------------------
+Section Title
+--------------------------------------------------------------- */
+.section-title {
+	font-size: 40px;
+	font-weight: normal;
+	margin-top: 0;
+	text-transform: none;
+	& a {
+		color: #333;
+	}
+}
+
+/* ---------------------------------------------------------------
+Side Navigation
+--------------------------------------------------------------- */
+.side-navigation {
+	@media (min-width: $break-medium) {
+		margin-bottom: 3em;
+	}
+}
+.sec-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.side-navigation .sec-nav li {
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 0;
+	line-height: 1.4;
+	position: relative;
+}
+.sec-nav li a {
+	color: #444;
+	display: block;
+	padding: 10px 0 10px 0;
+	transition: all .2s ease-in-out;
+}
+.sec-nav li.active a {
+	font-weight: bold;
+}
+.sec-nav li a:hover, .sec-nav li a:focus {
+	background-color: rgba(255,255,255,0.5);
+	padding-left: 5px;
+}
+
+/* Second level */
+.sec-nav .second-level {
+	margin-bottom: 1em;
+}
+.sec-nav .second-level > li > a {
+	font-size: 14px;
+	line-height: 1.3;
+	padding: 12px;
+	@media (min-width: $break-medium) {
+		font-size: 16px;
+		padding: 5px 0;
+	}
+}
+
+/* ---------------------------------------------------------------
+Mobile Styles (Naver)
+--------------------------------------------------------------- */
+.naver.enabled .naver-container {
+	padding: 0;
+}
+.subnavigation .block {
+	@media (max-width: $break-large -1) {
+		margin-top: 0;
+	}
+}

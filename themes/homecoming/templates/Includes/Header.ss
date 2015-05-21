@@ -17,38 +17,5 @@
 			</div>
 		</div>
 	</div>
-	<!-- Navigation -->
-	<div class="nav-holder">
-		<div class="container">
-			<nav role="navigation" class="nav-main-wrapper clearfix hide-print">
-				<h2 class="nav-title"><a href="/#">Menu <span></span></a></h2>
-				<ul class="nav-main nav-left clearfix">
-					<% loop Menu(1).Limit(4) %>
-						<li class="$FirstLast <% if Children %>parent<% end_if %>"><a href="$Link">$MenuTitle</a>
-						<% if Children %>
-							<ul class="level-2">
-							<% loop Children %>
-								<li><a href="$Link">$MenuTitle</a></li>
-							<% end_loop %>
-							</ul>
-						<% end_if %>
-						</li>
-					<% end_loop %>
-				</ul>
-				<ul class="nav-main nav-right clearfix">
-					<% loop Menu(1).Limit(0,4) %>
-						<li class="$FirstLast <% if Children %>parent<% end_if %>"><a href="$Link">$MenuTitle</a>
-						<% if Children %>
-							<ul class="level-2">
-							<% loop Children %>
-								<li><a href="$Link">$MenuTitle</a></li>
-							<% end_loop %>
-							</ul>
-						<% end_if %>
-						</li>
-					<% end_loop %>
-				</ul>
-			</nav>
-		</div>
-	</div>
+	<% include MainNav %>
 </header>
