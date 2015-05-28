@@ -1,5 +1,5 @@
 <div class="container main-content">
-  <div class="content">
+  <div class="content clearfix">
     <% if $ParadePhoto %>
       <img src="$ParadePhoto.URL" alt="$Name">
     <% end_if %>

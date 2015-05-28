@@ -1,5 +1,5 @@
 <div class="container main-content full-width">
-	<div class="content">
+	<div class="content clearfix">
 		<div class="article">
 			<h1 class="page-title">$Title</h1>
 			$Content

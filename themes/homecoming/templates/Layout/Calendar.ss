@@ -1,6 +1,6 @@
 
 <div class="container main-content">
-	<div class="content">
+	<div class="content clearfix">
 		<div class="article">
 			<% if $CurrentAction(show) && Events %>
 				<h1 class="page-title">Schedule: $DateHeader</h1>
@@ -8,29 +8,28 @@
 				<h1 class="page-title">$Title</h1>
 			<% end_if %>
 			$Content
-		</div>
-		<% if $CurrentAction(show) %>
-			<% if Events %>
-				<div class="event-list">
-					<% loop Events %>
-						<% include EventList %>
-					<% end_loop %>
-				</div>
-			<% end_if %>
+			<% if $CurrentAction(show) %>
+				<% if Events %>
+					<div class="event-list">
+						<% loop Events %>
+							<% include EventList %>
+						<% end_loop %>
+					</div>
+				<% end_if %>
+			<% else %>
 
-		<% else %>
-
-			<% if AllEvents %>
-				<div class="event-list">
-					<% loop AllEvents %>
-						<% include EventList %>
-					<% end_loop %>
-				</div>
+				<% if AllEvents %>
+					<div class="event-list">
+						<% loop AllEvents %>
+							<% include EventList %>
+						<% end_loop %>
+					</div>
 				<% else %>
 					<p><% _t('NOEVENTS','There are no events') %>.</p>
-			<% end_if %>
+				<% end_if %>
 
-		<% end_if %>
+			<% end_if %>
+		</div>
 
 		<div class="sidebar">
 			<% include SideNav %>

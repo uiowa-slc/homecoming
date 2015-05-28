@@ -39,6 +39,13 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
    <script src="{$ThemeDir}/js/ie/html5shiv.js"></script>
    <script src="{$ThemeDir}/js/ie/respond.min.js"></script>
 <![endif]-->
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
 </head>
 
 <body class="$ClassName">
@@ -48,7 +55,7 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 
 
 	<div class="hero-wrapper">
-		<img src="{$ThemeDir}/images/homecoming_bg3new.jpg" alt="">
+		<img src="{$ThemeDir}/images/homecoming-slide-1.jpg" alt="">
 	</div>
 
 	<section class="main" id="main-content" tabindex="-1" role="main">

@@ -49,8 +49,9 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 
 	<div class="hero-wrapper">
 		<div class="slider fade slick-hero">
-			<div><img src="{$ThemeDir}/images/homecoming_bg4new.jpg" alt=""></div>
-			<div><img src="{$ThemeDir}/images/homecoming_bg3new.jpg" alt=""></div>
+			<div><img src="{$ThemeDir}/images/homecoming-slide-1.jpg" alt=""></div>
+			<div><img src="{$ThemeDir}/images/homecoming-slide-3.jpg" alt=""></div>
+			<div><img src="{$ThemeDir}/images/homecoming-slide-2.jpg" alt=""></div>
 		</div>
 	</div>
 

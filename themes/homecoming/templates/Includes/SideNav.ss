@@ -7,31 +7,8 @@
 					<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>><a href="$Link">$MenuTitle</a></li>
 				<% end_with %>
 				<% loop Menu(2) %>
-					<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>><a href="$Link">$MenuTitle</a>
-
-					<%-- third level nav option 1 --%>
-						<% if $LinkOrSection = "section" && Children %>
-							<ul class="second-level">
-								<% loop Children %>
-									<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>>
-										<a href="$Link">$MenuTitle</a>
-										<% if $LinkOrSection = "section" && Children %>
-											<ul class="third-level">
-												<% loop Children %>
-													<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>>
-														<a href="$Link">$MenuTitle</a>
-													</li>
-												<% end_loop %>
-											</ul>
-										<% end_if %>
-
-									</li>
-								<% end_loop %>
-							</ul>
-						<% end_if %>
-
-					<%-- end third level nav option 1 --%>
-
+					<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>>
+						<a href="$Link">$MenuTitle</a>
 					</li>
 				<% end_loop %>
 

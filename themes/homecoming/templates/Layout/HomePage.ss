@@ -1,5 +1,5 @@
 <div class="container main-content">
-	<div class="content">
+	<div class="content clearfix">
 		<div class="article">
 			<% if $HomePhoto %><img src="$HomePhoto.URL" alt=""><% end_if %>
 			$Content
