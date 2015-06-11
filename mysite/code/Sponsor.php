@@ -14,12 +14,14 @@ class SponsorPage extends Page {
 
 		$fields->removeByName("Content");
 		$fields->removeByName("Metadata");
+		$fields->removeByName("PagePhoto");
+
 
 		$fields->addFieldToTab("Root.Main", new UploadField("SponsorPhoto", "Sponsor Photo"));
 		$fields->addFieldToTab("Root.Main", new TextField("SponsorUrl", "Sponsor URL (http://www.domain.com)"));
-		
+
 		return $fields;
-		
+
 	}
 
 }
