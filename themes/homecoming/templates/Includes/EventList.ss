@@ -1,6 +1,6 @@
 <div class="clearfix list-item">
 	<a href="$Link" class="img">
-		<img class="unveil" src="{$ThemeDir}/images/loader.gif" data-src="{$Event.PagePhoto.CroppedImage(200,200).URL}" alt="$Title">
+		<img class="unveil" src="{$ThemeDir}/images/loader.gif" data-src="{$Event.PagePhoto.Fill(200,200).URL}" alt="$Title">
 	</a>
 	<div class="list-content">
 		<h2 class="title"><a href="$Link">$Title</a></h2>
