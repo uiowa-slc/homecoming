@@ -3,12 +3,12 @@
 	"description": "The SilverStripe Framework Installer",
 	"require": {
 		"php": ">=5.3.2",
-		"silverstripe/cms": "3.1.13",
-		"silverstripe/framework": "3.1.13",
+		"silverstripe/cms": "3.1.*@stable",
+		"silverstripe/framework": "3.1.*@stable",
 		"silverstripe-themes/simple": "*",
 		"silverstripe/event-calendar": "*",
 		"colymba/gridfield-bulk-editing-tools": "*",
-		"silverstripe/tagfield": "dev-master",
+		"silverstripe/tagfield": "*",
 		"md/division-bar" : "*",
 		"unclecheese/betterbuttons" : "*"
 	},
