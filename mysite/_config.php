@@ -12,8 +12,6 @@ require_once ("conf/ConfigureFromEnv.php");
 Calendar::add_extension('CalendarExtension');
 CalendarEvent::add_extension('CalendarEventExtension');
 
-Director::forceSSL();
-
 // Set the site locale
 i18n::set_locale('en_US');
 if (Director::isLive()) {
