@@ -1,8 +1,8 @@
-
 /* Configuration
 -------------------------------------------*/
 @import "_config";
 
+@import "../../../division-bar/scss/division-bar";
 
 /* Global Settings
 -------------------------------------------*/
@@ -11,24 +11,23 @@
 @import "global/_typography";
 @import "global/_global";
 
-
 /* Element Imports
 -------------------------------------------*/
 @import "elements/_button-bootstrap";
 @import "elements/_form-bootstrap";
 @import "elements/_grid-bootstrap";
+
 /*@import "elements/_grid-simple";*/
 @import "elements/_tables";
 @import "elements/_glyphicons-bootstrap";
-/*@import "elements/_nav-bootstrap";*/
 
+/*@import "elements/_nav-bootstrap";*/
 
 /* Plugins
 -------------------------------------------*/
 @import "plugins/_slick.scss";
 @import "plugins/jquery.fancybox";
 @import "plugins/jquery.fancybox-buttons";
-
 
 /* Layout
 -------------------------------------------*/
@@ -44,7 +43,6 @@
 /* Site specific styles
 -------------------------------------------*/
 @import "site/_site";
-
 
 /* Print
 -------------------------------------------*/
