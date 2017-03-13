@@ -13,7 +13,7 @@
 					<li><a href="faculty-and-staff/">Faculty &amp; Staff</a></li>
 					<li><a href="alumni-and-friends/">Alumni &amp; Public</a></li>
 				</ul>
-				<p class="header-date">Sept. 24 - Oct. 1, 2016</p>
+				<p class="header-date">Oct. 1 - Oct. 7, 2017</p>
 			</div>
 		</div>
 	</div>
