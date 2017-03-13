@@ -51,16 +51,16 @@
         },
         {
             "name": "composer/installers",
-            "version": "dev-master",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "fda8fe5c90d7612927f4533dab7d54df6d345028"
+                "reference": "d78064c68299743e0161004f2de3a0204e33b804"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/fda8fe5c90d7612927f4533dab7d54df6d345028",
-                "reference": "fda8fe5c90d7612927f4533dab7d54df6d345028",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d78064c68299743e0161004f2de3a0204e33b804",
+                "reference": "d78064c68299743e0161004f2de3a0204e33b804",
                 "shasum": ""
             },
             "require": {
@@ -102,16 +102,12 @@
             "keywords": [
                 "Craft",
                 "Dolibarr",
-                "Eliasis",
                 "Hurad",
                 "ImageCMS",
-                "Kanboard",
                 "MODX Evo",
                 "Mautic",
-                "Maya",
                 "OXID",
                 "Plentymarkets",
-                "Porto",
                 "RadPHP",
                 "SMF",
                 "Thelia",
@@ -134,11 +130,9 @@
                 "fuelphp",
                 "grav",
                 "installer",
-                "itop",
                 "joomla",
                 "kohana",
                 "laravel",
-                "lavalite",
                 "lithium",
                 "magento",
                 "mako",
@@ -153,7 +147,6 @@
                 "roundcube",
                 "shopware",
                 "silverstripe",
-                "sydes",
                 "symfony",
                 "typo3",
                 "wordpress",
@@ -161,7 +154,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2017-03-13 09:27:45"
+            "time": "2016-08-13 20:53:52"
         },
         {
             "name": "johngrogg/ics-parser",
