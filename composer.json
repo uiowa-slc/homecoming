@@ -10,7 +10,7 @@
 		"colymba/gridfield-bulk-editing-tools": "*",
 		"silverstripe/tagfield": "*",
 		"md/division-bar" : "*",
-		"unclecheese/betterbuttons" : "*"
+		"unclecheese/betterbuttons" : "1.3.*"
 	},
 	"config": {
 		"process-timeout": 600	
