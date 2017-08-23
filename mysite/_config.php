@@ -18,3 +18,5 @@ Authenticator::set_default_authenticator('SAMLAuthenticator');
 if(Director::isLive()) {
 	Director::forceSSL();
 }
+
+SiteConfig::add_extension('SiteConfigExtension');

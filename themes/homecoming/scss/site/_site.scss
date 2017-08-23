@@ -2,11 +2,11 @@
 Base styles
 --------------------------------------------------------------- */
 html {
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1.5;
 	@media screen and (min-width: $break-small) {
-		font-size: 17px;
-		line-height: 1.5;
+		font-size: 18px;
+		line-height: 1.6;
 	}
 }
 body {
@@ -26,7 +26,7 @@ Division Bar
 	z-index: 30;
 }
 .division-topbar .wrapper {
-	max-width: 1040px;
+	max-width: $break-xlarge;
 	@media screen and (min-width: $break-medium) {
 		padding-left: 1em;
 		padding-right: 1em;
@@ -37,7 +37,7 @@ Division Bar
 Layout
 --------------------------------------------------------------- */
 .container {
-	max-width: $break-large;
+	max-width: $break-xlarge;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 0;
@@ -68,9 +68,6 @@ Layout
 		padding: 30px;
 		width: 30%;
 		float: right;
-	}
-	@media screen and (min-width: $break-large) {
-		width: 300px;
 	}
 }
 .main-content {
@@ -180,6 +177,7 @@ Events by Date
 .eventsbydate .title, .announcements .title {
 	font-size: 20px;
 	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 .eventsbydate li, .announcements li {
 	border-bottom: 1px solid #e5e5e5;
@@ -239,20 +237,16 @@ Council Members
 	}
 	@media (min-width: $break-small) {
 		float: left;
-	}
-}
-.council-content {
-	@media (min-width: $break-small) {
-		margin-left: 220px;
+		margin: 0 1.2em 1.2em 0;
 	}
 }
 .council-title {
-	font-size: 30px;
+	font-size: 34px;
 	line-height: 1.3;
 	margin: 0 0 2px;
 }
 .council-pos {
-	font-size: 13px;
+	font-size: 15px;
 	margin: 0;
 }
 .council-bio p {
@@ -370,6 +364,7 @@ Sponsors
 	margin: 1em 0;
 	text-align: center;
 	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 .full-image .content-image img {
