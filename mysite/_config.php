@@ -14,6 +14,7 @@ CalendarEvent::add_extension('CalendarEventExtension');
 
 // Set the site locale
 i18n::set_locale('en_US');
+Authenticator::unregister('MemberAuthenticator');
 Authenticator::set_default_authenticator('SAMLAuthenticator');
 if(Director::isLive()) {
 	Director::forceSSL();
