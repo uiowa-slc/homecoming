@@ -39,7 +39,7 @@
                 "MIT"
             ],
             "description": "Child process management",
-            "time": "2015-09-04 02:46:41"
+            "time": "2015-09-04T02:46:41+00:00"
         },
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -81,7 +81,7 @@
                 "gridfield bulk upload",
                 "silverstripe"
             ],
-            "time": "2018-04-20 03:25:11"
+            "time": "2018-04-20T03:25:11+00:00"
         },
         {
             "name": "composer/installers",
@@ -201,7 +201,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2018-04-05 19:08:21"
+            "time": "2018-04-05T19:08:21+00:00"
         },
         {
             "name": "jeremeamia/SuperClosure",
@@ -249,7 +249,7 @@
                 "serialize",
                 "tokenizer"
             ],
-            "time": "2015-01-10 01:09:28"
+            "time": "2015-01-10T01:09:28+00:00"
         },
         {
             "name": "johngrogg/ics-parser",
@@ -316,7 +316,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-analytics/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-analytics/issues"
             },
-            "time": "2017-10-26 17:44:03"
+            "time": "2017-10-26T17:44:03+00:00"
         },
         {
             "name": "md/division-bar",
@@ -348,7 +348,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-bar/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-bar/issues"
             },
-            "time": "2016-10-14 20:47:47"
+            "time": "2016-10-14T20:47:47+00:00"
         },
         {
             "name": "md/uiowa-bar",
@@ -380,7 +380,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar/issues"
             },
-            "time": "2018-04-02 20:09:24"
+            "time": "2018-04-02T20:09:24+00:00"
         },
         {
             "name": "mustangostang/spyc",
@@ -475,7 +475,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2014-07-23 18:24:17"
+            "time": "2014-07-23T18:24:17+00:00"
         },
         {
             "name": "onelogin/php-saml",
@@ -620,7 +620,7 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2018-03-21 12:34:28"
+            "time": "2018-03-21T12:34:28+00:00"
         },
         {
             "name": "silverstripe/activedirectory",
@@ -680,7 +680,7 @@
             "support": {
                 "source": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-activedirectory/tree/3"
             },
-            "time": "2017-11-10 16:08:11"
+            "time": "2017-11-10T16:08:11+00:00"
         },
         {
             "name": "silverstripe/cms",
@@ -782,7 +782,7 @@
                 "events",
                 "silverstripe"
             ],
-            "time": "2018-01-29 22:29:29"
+            "time": "2018-01-29T22:29:29+00:00"
         },
         {
             "name": "silverstripe/framework",
@@ -922,7 +922,7 @@
                 "reports",
                 "silverstripe"
             ],
-            "time": "2018-01-16 12:13:58"
+            "time": "2018-01-16T12:13:58+00:00"
         },
         {
             "name": "silverstripe/siteconfig",
@@ -968,7 +968,7 @@
                 "silverstripe",
                 "siteconfig"
             ],
-            "time": "2018-01-09 13:53:43"
+            "time": "2018-01-09T13:53:43+00:00"
         },
         {
             "name": "silverstripe/tagfield",
@@ -1010,7 +1010,7 @@
                 "silverstripe",
                 "tag"
             ],
-            "time": "2017-03-30 16:11:29"
+            "time": "2017-03-30T16:11:29+00:00"
         },
         {
             "name": "symbiote/silverstripe-multivaluefield",
@@ -1049,7 +1049,7 @@
                 "formfield",
                 "silverstripe"
             ],
-            "time": "2018-02-02 08:14:33"
+            "time": "2018-02-02T08:14:33+00:00"
         },
         {
             "name": "symbiote/silverstripe-queuedjobs",
@@ -1093,7 +1093,7 @@
                 "jobs",
                 "silverstripe"
             ],
-            "time": "2018-03-20 16:41:06"
+            "time": "2018-03-20T16:41:06+00:00"
         },
         {
             "name": "unclecheese/betterbuttons",
@@ -1129,7 +1129,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2017-01-20 08:51:05"
+            "time": "2017-01-20T08:51:05+00:00"
         },
         {
             "name": "zendframework/zend-authentication",
@@ -1191,7 +1191,7 @@
                 "ZendFramework",
                 "zf"
             ],
-            "time": "2018-04-12 21:10:42"
+            "time": "2018-04-12T21:10:42+00:00"
         },
         {
             "name": "zendframework/zend-eventmanager",
@@ -1199,12 +1199,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-eventmanager.git",
-                "reference": "969821ae236411f1540fa9a0267246ef07b02189"
+                "reference": "27eb1489df583456fac8c77c95059dde09ff38d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-eventmanager/zipball/969821ae236411f1540fa9a0267246ef07b02189",
-                "reference": "969821ae236411f1540fa9a0267246ef07b02189",
+                "url": "https://api.github.com/repos/zendframework/zend-eventmanager/zipball/27eb1489df583456fac8c77c95059dde09ff38d8",
+                "reference": "27eb1489df583456fac8c77c95059dde09ff38d8",
                 "shasum": ""
             },
             "require": {
@@ -1213,7 +1213,7 @@
             "require-dev": {
                 "container-interop/container-interop": "^1.1.0",
                 "phpbench/phpbench": "^0.13",
-                "phpunit/phpunit": "^6.0.7 || ^5.7.14",
+                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2",
                 "zendframework/zend-coding-standard": "~1.0.0",
                 "zendframework/zend-stdlib": "^2.7.3 || ^3.0"
             },
@@ -1245,7 +1245,7 @@
                 "events",
                 "zf2"
             ],
-            "time": "2017-10-09 10:07:30"
+            "time": "2018-04-25T15:35:22+00:00"
         },
         {
             "name": "zendframework/zend-ldap",
@@ -1298,7 +1298,7 @@
                 "ldap",
                 "zf"
             ],
-            "time": "2018-04-25 06:23:46"
+            "time": "2018-04-25T06:23:46+00:00"
         },
         {
             "name": "zendframework/zend-session",
@@ -1365,7 +1365,7 @@
                 "session",
                 "zf"
             ],
-            "time": "2018-02-22 16:28:39"
+            "time": "2018-02-22T16:28:39+00:00"
         },
         {
             "name": "zendframework/zend-stdlib",
@@ -1411,7 +1411,7 @@
                 "stdlib",
                 "zf"
             ],
-            "time": "2018-04-12 18:09:10"
+            "time": "2018-04-12T18:09:10+00:00"
         }
     ],
     "packages-dev": [],
