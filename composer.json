@@ -9,6 +9,7 @@
 		"silverstripe/event-calendar": "*",
 		"colymba/gridfield-bulk-editing-tools": "*",
 		"silverstripe/tagfield": "*",
+		"md/uiowa-bar" : "*",
 		"md/division-bar" : "*",
 		"unclecheese/betterbuttons" : "1.3.*",
 		"silverstripe/activedirectory" : "3.*",
@@ -24,6 +25,10 @@
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar"
 
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-uiowa-bar"
         },
         {
             "type": "vcs",

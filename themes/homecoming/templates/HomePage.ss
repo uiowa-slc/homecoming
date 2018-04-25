@@ -42,7 +42,8 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 
 <body class="$ClassName">
 	<a id="skiplink" href="#main-content">Skip to main content</a>
-	<% include DivisionBar %>
+<%-- 	<% include DivisionBar %>--%>
+	<% include UiowaBar %>
 	<% include Header %>
 
 
