@@ -8,27 +8,6 @@
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><% if $ClassName == 'HomePage' %>Homecoming at Iowa<% else %>$Title | Homecoming at Iowa<% end_if %></title>
-<!--
-
-MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
-M:::::::M             M:::::::M                               D::::::::::::DDD
-M::::::::M           M::::::::M                               D:::::::::::::::DD
-M:::::::::M         M:::::::::M            +++++++            DDD:::::DDDDD:::::D
-M::::::::::M       M::::::::::M            +:::::+              D:::::D    D:::::D
-M:::::::::::M     M:::::::::::M            +:::::+              D:::::D     D:::::D
-M:::::::M::::M   M::::M:::::::M      +++++++:::::+++++++        D:::::D     D:::::D
-M::::::M M::::M M::::M M::::::M      +:::::::::::::::::+        D:::::D     D:::::D
-M::::::M  M::::M::::M  M::::::M      +:::::::::::::::::+        D:::::D     D:::::D
-M::::::M   M:::::::M   M::::::M      +++++++:::::+++++++        D:::::D     D:::::D
-M::::::M    M:::::M    M::::::M            +:::::+              D:::::D     D:::::D
-M::::::M     MMMMM     M::::::M            +:::::+              D:::::D    D:::::D
-M::::::M               M::::::M            +++++++            DDD:::::DDDDD:::::D
-M::::::M               M::::::M                               D:::::::::::::::DD
-M::::::M               M::::::M                               D::::::::::::DDD
-MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
-
-                              http://studentlife.uiowa.edu/md/
--->
 <!-- Typekit Fonts -->
 <% include Typekit %>
 <!-- CSS -->
