@@ -28,15 +28,21 @@
 
 	<div class="hero-wrapper">
 		<div class="slider fade slick-hero">
-			<div><img src="{$ThemeDir}/images/homecoming-slide-1.jpg" alt=""></div>
-			<div><img src="{$ThemeDir}/images/homecoming-slide-3.jpg" alt=""></div>
-			<div><img src="{$ThemeDir}/images/homecoming-slide-2.jpg" alt=""></div>
+			<% if $HeaderPhoto1 %>
+				<div class="home-heroimg" style="background-image: url($HeaderPhoto1.CroppedFocusedImage(1500,450).URL);"></div>
+			<% end_if %>
+			<% if $HeaderPhoto2 %>
+				<div class="home-heroimg" style="background-image: url($HeaderPhoto2.CroppedFocusedImage(1500,450).URL);"></div>
+			<% end_if %>
+			<% if $HeaderPhoto3 %>
+				<div class="home-heroimg" style="background-image: url($HeaderPhoto3.CroppedFocusedImage(1500,450).URL);"></div>
+			<% end_if %>
 		</div>
 	</div>
 
-	<section class="main" id="main-content" tabindex="-1" role="main">
+	<main class="main" id="main-content" tabindex="-1" role="main">
 		$Layout
-	</section>
+	</main>
 
 	<% include TodaysEvents %>
 

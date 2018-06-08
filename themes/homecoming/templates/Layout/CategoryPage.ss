@@ -11,7 +11,7 @@
 						<div class="clearfix list-item">
 							<% if $PagePhoto %>
 								<a href="$Link" class="img">
-									<img class="unveil" src="{$ThemeDir}/images/loader.gif" data-src="{$PagePhoto.CroppedImage(200,200).URL}" alt="$Title">
+									<img src="{$PagePhoto.CroppedFocusedImage(200,200).URL}" alt="$Title">
 								</a>
 							<% end_if %>
 							<div class="list-content">

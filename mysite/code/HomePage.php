@@ -13,6 +13,9 @@ class HomePage extends Page {
 
 	private static $has_one = array(
 		"HomePhoto" => "Image",
+		"HeaderPhoto1" => "Image",
+		"HeaderPhoto2" => "Image",
+		"HeaderPhoto3" => "Image",
 		"CalloutOnePhoto" => "Image",
 		"CalloutTwoPhoto" => "Image",
 		"CalloutThreePhoto" => "Image",
@@ -26,8 +29,14 @@ class HomePage extends Page {
 
     // $fields->removeByName("Content");
     $fields->removeByName("Metadata");
+    $fields->removeByName("HeaderPhoto");
+
     $fields->removeByName("PagePhoto");
-    $fields->addFieldToTab("Root.Main", new UploadField("HomePhoto", "Photo"));
+    $fields->addFieldToTab("Root.Main", new UploadField("HomePhoto", "Content Photo"));
+
+    $fields->addFieldToTab("Root.Main", new UploadField("HeaderPhoto1", "Header Photo"));
+    $fields->addFieldToTab("Root.Main", new UploadField("HeaderPhoto2", "Header Photo"));
+    $fields->addFieldToTab("Root.Main", new UploadField("HeaderPhoto3", "Header Photo"));
 
     $fields->addFieldToTab("Root.CalloutOne", new TextField("CalloutOne", "Title"));
     $fields->addFieldToTab("Root.CalloutOne", new TextField("CalloutOneDesc", "Description"));

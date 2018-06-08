@@ -33,14 +33,15 @@
 	<% include UiowaBar %>
 	<% include Header %>
 
+	<% if $HeaderPhoto %>
+		<div class="hero-wrapper" style="background-image: url($HeaderPhoto.CroppedFocusedImage(1500,450).URL);"></div>
+	<% else %>
+		<div class="hero-wrapper" style="background-image: url({$ThemeDir}/images/homecoming_bg.jpg);"></div>
+   <% end_if %>
 
-	<div class="hero-wrapper">
-		<img src="{$ThemeDir}/images/homecoming-slide-1.jpg" alt="">
-	</div>
-
-	<section class="main" id="main-content" tabindex="-1" role="main">
+	<main class="main" id="main-content" tabindex="-1" role="main">
 		$Layout
-	</section>
+	</main>
 
 	<% include TodaysEvents %>
 

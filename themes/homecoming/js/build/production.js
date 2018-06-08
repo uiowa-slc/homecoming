@@ -2018,64 +2018,6 @@
 	});
 
 }(window, document, jQuery));
-/**
- * jQuery Unveil
- * A very lightweight jQuery plugin to lazy load images
- * http://luis-almeida.github.com/unveil
- *
- * Licensed under the MIT license.
- * Copyright 2013 Luís Almeida
- * https://github.com/luis-almeida
- */
-
-;(function($) {
-
-  $.fn.unveil = function(threshold, callback) {
-
-    var $w = $(window),
-        th = threshold || 0,
-        retina = window.devicePixelRatio > 1,
-        attrib = retina? "data-src-retina" : "data-src",
-        images = this,
-        loaded;
-
-    this.one("unveil", function() {
-      var source = this.getAttribute(attrib);
-      source = source || this.getAttribute("data-src");
-      if (source) {
-        this.setAttribute("src", source);
-        if (typeof callback === "function") callback.call(this);
-      }
-    });
-
-    function unveil() {
-      var inview = images.filter(function() {
-        var $e = $(this);
-        if ($e.is(":hidden")) return;
-
-        var wt = $w.scrollTop(),
-            wb = wt + $w.height(),
-            et = $e.offset().top,
-            eb = et + $e.height();
-
-        return eb >= wt - th && et <= wb + th;
-      });
-
-      loaded = inview.trigger("unveil");
-      images = images.not(loaded);
-    }
-
-    $w.scroll(unveil);
-    $w.resize(unveil);
-
-    unveil();
-
-    return this;
-
-  };
-
-})(window.jQuery || window.Zepto);
-
 /*
      _ _      _       _
  ___| (_) ___| | __  (_)___
@@ -4383,7 +4325,7 @@
 }));
 
 $(document).ready(function() {
-	$('.main-nav').setup_navigation();
+	$('.mainnav__list').setup_navigation();
 });
 /*
 $(function(){
@@ -4610,7 +4552,7 @@ $(window).load(function() {
 	// Hero Carousel
 	$('.slick-hero').slick({
 		autoplay: true,
-		dots: false,
+		dots: true,
 		arrows: false,
 		fade: true,
 		speed: 800,
@@ -4652,12 +4594,9 @@ $(window).load(function() {
 		]
 	});
 
-	// Lazy load images
-	$(".unveil").unveil();
 
-
-	$('.nav-title a').click(function() {
-		$('.nav-main-wrapper').toggleClass('expand');
+	$('.mainnav__title a').click(function() {
+		$('.mainnav').toggleClass('expand');
 		return false;
 	});
 });

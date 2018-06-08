@@ -21,7 +21,7 @@ $(window).load(function() {
 	// Hero Carousel
 	$('.slick-hero').slick({
 		autoplay: true,
-		dots: false,
+		dots: true,
 		arrows: false,
 		fade: true,
 		speed: 800,
@@ -63,12 +63,9 @@ $(window).load(function() {
 		]
 	});
 
-	// Lazy load images
-	$(".unveil").unveil();
 
-
-	$('.nav-title a').click(function() {
-		$('.nav-main-wrapper').toggleClass('expand');
+	$('.mainnav__title a').click(function() {
+		$('.mainnav').toggleClass('expand');
 		return false;
 	});
 });

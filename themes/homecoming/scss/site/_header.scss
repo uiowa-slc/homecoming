@@ -1,87 +1,47 @@
 .header {
-	background-color: rgba(243,243,238,.85);
+	background-color: #181818;
 	box-shadow: 0 0 6px rgba(0,0,0,.5);
 	position: relative;
 	z-index: 10;
 }
-.header-top {
+.header-container {
 	padding: .5em;
-	@media screen and (min-width: $break-medium) {
-		border-bottom: 1px solid #d1d1d1;
-		padding: 1.2em 0;
+	@media screen and (min-width :$break-medium) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 }
 .logo {
-	float: left;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	line-height: 1;
-	z-index: 100;
-	width: 120px;
-	& img {
-		display: block;
-		width: 120px;
-		@media screen and (min-width: $break-medium) {
-			width: auto;
+	&__anchor {
+		display: flex;
+		align-items: center;
+		&:hover, &:focus {
+			text-decoration: none;
 		}
 	}
-	@media screen and (min-width: $break-medium) {
-		position: static;
-		width: auto;
+	&__img {
+		display: block;
+		margin-right: 1em;
+		width: 85px;
 	}
-}
-.logo a {
-	display: block;
-	@media screen and (min-width: $break-medium) {
-		position: absolute;
-		left: 50%;
-		margin-left: -69.5px;
-		display: inline;
-		padding: 0;
-		top: 2px;
-		width: 139px;
-		z-index: 10;
+	&__title {
+		margin: 0;
+		color: #fff;
+		font-size: 34px;
+		text-transform: uppercase;
+		line-height: 1;
+		letter-spacing: 1px;
+		@media screen and (min-width :$break-medium) {
+			font-size: 44px;
+		}
 	}
 }
 /* ---------------------------------------------------------------
 Header Top
 --------------------------------------------------------------- */
-.audience-wrapper {
-	margin-left: 145px;
-	@media screen and (min-width: $break-medium) {
-		margin-left: 0;
-		padding-left: 1em;
-		padding-right: 1em;
-	}
-}
-.audience-nav {
-	list-style: none;
-	margin: 0 0 13px;
-	padding: 0;
-	@media screen and (min-width: $break-medium) {
-		float: left;
-		margin-bottom: 0;
-	}
-}
-.audience-nav li {
-	margin: 0;
-	@media screen and (min-width: $break-medium) {
-		float: left;
-		margin: 0 1.5em 0 0;
-	}
-	& a {
-		color: #333;
-		display: block;
-		font-size: 14px;
-		padding: 3px 0;
-		text-decoration: underline;
-		@media screen and (min-width: $break-medium) {
-			padding: 0;
-		}
-	}
-}
 .header-date {
+	color: #ccc;
 	font-size: 14px;
 	margin: 0;
 	@media screen and (min-width: $break-medium) {

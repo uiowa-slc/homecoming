@@ -4,7 +4,7 @@
 		<div class="article">
 			<% if $PagePhoto %>
 				<div class="event-img">
-					<img src="{$PagePhoto.CroppedImage(738,460).URL}" alt="$Title"  />
+					<img src="{$PagePhoto.CroppedFocusedImage(770,460).URL}" alt="$Title"  />
 				</div>
 			<% end_if %>
 			<h1 class="page-title">$Title</h1>

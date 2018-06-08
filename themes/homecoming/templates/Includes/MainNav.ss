@@ -1,52 +1,23 @@
 <!-- Navigation -->
-	<div class="nav-holder">
-		<div class="container">
-			<nav role="navigation" class="nav-main-wrapper clearfix hide-print">
-				<h2 class="nav-title"><a href="/#">Menu <span></span></a></h2>
-				<ul class="main-nav nav-left clearfix">
-					<% loop Menu(1).Limit(4) %>
-						<li class="$FirstLast<% if $LinkOrSection = "section" %> active<% end_if %><% if Children %> parent<% end_if %>"><a href="$Link">$MenuTitle</a>
-							<% if Children %>
-								<ul>
-									<% loop Children %>
-										<li class="$FirstLast <% if $LinkOrCurrent = "current" %>active<% end_if %>"><a href="$Link">$MenuTitle</a></li>
-									<% end_loop %>
-								</ul>
-							<% end_if %>
-						</li>
-					<% end_loop %>
-				</ul>
-				<ul class="main-nav nav-right clearfix">
-					<% loop Menu(1).Limit(0,4) %>
-						<li class="$FirstLast<% if $LinkOrSection = "section" %> active<% end_if %><% if Children %> parent<% end_if %>"><a href="$Link">$MenuTitle</a>
-							<% if Children %>
-								<ul>
-									<% loop Children %>
-										<li class="$FirstLast <% if $LinkOrCurrent = "current" %>active<% end_if %>"><a href="$Link">$MenuTitle</a></li>
-									<% end_loop %>
-								</ul>
-							<% end_if %>
-						</li>
-					<% end_loop %>
-				</ul>
-			</nav>
-		</div>
+<div class="nav-holder">
+	<div class="container">
+		<nav role="navigation" class="mainnav clearfix hide-print">
+			<h2 class="mainnav__title"><a href="/#">Menu <button class="mainnav__expandcollapse"></button></a></h2>
+			<ul class="mainnav__list clearfix">
+				<% loop Menu(1) %>
+					<li class="mainnav__listitem $FirstLast <% if $LinkOrSection = "section" %>mainnav__listitem--active<% end_if %><% if Children %> mainnav__listitem--parent<% end_if %>"><a href="$Link" class="mainnav__anchor <% if Children %>mainnav__anchor--parent<% end_if %>">$MenuTitle</a>
+						<% if Children %>
+							<ul class="mainnav__sublist">
+								<% loop Children %>
+									<li class="mainnav__listitem $FirstLast <% if $LinkOrCurrent = "current" %>mainnav__listitem--active<% end_if %>"><a href="$Link" class="mainnav__anchor">$MenuTitle</a></li>
+								<% end_loop %>
+							</ul>
+						<% end_if %>
+					</li>
+				<% end_loop %>
+			</ul>
+		</nav>
 	</div>
-
-<!-- <nav role="navigation" class="nav-wrapper no-print" aria-label="Main menu">
-	<ul class="main-nav clearfix">
-		<% loop Menu(1) %>
-			<li class="$FirstLast<% if $LinkOrSection = "section" %> active<% end_if %><% if Children %> parent<% end_if %>"><a href="$Link">$MenuTitle</a>
-				<% if Children %>
-					<ul>
-						<% loop Children %>
-							<li class="$FirstLast <% if $LinkOrCurrent = "current" %>active<% end_if %>"><a href="$Link">$MenuTitle</a></li>
-						<% end_loop %>
-					</ul>
-				<% end_if %>
-			</li>
-		<% end_loop %>
-	</ul>
-</nav> -->
+</div>
 
 

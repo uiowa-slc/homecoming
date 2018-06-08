@@ -33,6 +33,13 @@ Division Bar
 	}
 }
 
+.uiowa-bar__search {
+	@media (max-width: 600px) {
+		display: none;
+	}
+}
+
+
 /* ---------------------------------------------------------------
 Layout
 --------------------------------------------------------------- */
@@ -133,17 +140,30 @@ Layout
 Hero Carousel
 --------------------------------------------------------------- */
 .hero-wrapper {
-	display: none;
+	display: block;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	z-index: 5;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	@media screen and (min-width: $break-medium) {
-		display: block;
-		max-height: 350px;
-		overflow: hidden;
-		position: relative;
-		z-index: 5;
+		height: 450px;
 	}
 }
-.hero-wrapper img {
-	width: 100%;
+.home-heroimg {
+	display: block;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	z-index: 5;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@media screen and (min-width: $break-medium) {
+		height: 450px;
+	}
 }
 
 
@@ -258,6 +278,11 @@ Council Members
 	vertical-align: middle;
 	margin-left: 5px;
 	color: #333;
+	opacity: .7;
+	text-decoration: underline;
+	&:hover, &:focus {
+		opacity: 1;
+	}
 }
 
 
@@ -351,7 +376,7 @@ Sponsors
 --------------------------------------------------------------- */
 .sponsors {
 	background: #fff;
-	padding: 1px 50px;
+	padding: 1em 50px 2em 50px;
 }
 .slick-sponsors {
 

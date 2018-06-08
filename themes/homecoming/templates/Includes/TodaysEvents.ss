@@ -2,7 +2,7 @@
 		<% with $Page(schedule) %>
 
 			<% if $EventsToday %>
-				<section class="todays-events">
+				<section class="todays-events" aria-label="Todays Events">
 					<div class="container container-padding">
 						<h3 class="title"><span>Today's Events</span></h3>
 						<ul class="justify justify-3">
@@ -10,7 +10,7 @@
 							<li class="justify-item">
 								<a href="$Link">
 									<div class="today-imgwrapper">
-										<img class="unveil" src="{$ThemeDir}/images/loader.gif" data-src="{$Event.PagePhoto.CroppedImage(400,250).URL}" alt="$Title" class="today-img">
+										<img src="{$Event.PagePhoto.CroppedFocusedImage(400,250).URL}" alt="$Title" class="today-img">
 									</div>
 									<div class="today-content">
 										<p class="today-date">$DateRange</p>
@@ -26,7 +26,7 @@
 
 			<% else_if $UpcomingEvents %>
 
-				<section class="todays-events">
+				<section class="todays-events" aria-label="Todays Events">
 					<div class="container container-padding">
 						<h3 class="title"><span>Upcoming Events</span></h3>
 						<ul class="justify justify-3">
@@ -34,7 +34,7 @@
 							<li class="justify-item">
 								<a href="$Link">
 									<div class="today-imgwrapper">
-										<img class="unveil" src="{$ThemeDir}/images/loader.gif" data-src="{$Event.PagePhoto.CroppedImage(400,250).URL}" alt="$Title" class="today-img">
+										<img src="{$Event.PagePhoto.CroppedFocusedImage(400,250).URL}" alt="$Title" class="today-img">
 									</div>
 									<div class="today-content">
 										<p class="today-date">$DateRange</p>

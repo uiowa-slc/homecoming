@@ -6,6 +6,7 @@ class Page extends SiteTree {
 
 	private static $has_one = array(
 		"PagePhoto" => "Image",
+		"HeaderPhoto" => "Image"
 	);
 
 	public function getCMSFields(){
@@ -13,7 +14,8 @@ class Page extends SiteTree {
 
 		$fields->removeByName("Metadata");
 
-		$fields->addFieldToTab("Root.Main", new UploadField("PagePhoto", "Photo"));
+		$fields->addFieldToTab("Root.Main", new UploadField("PagePhoto", "Content Image"));
+		$fields->addFieldToTab("Root.Main", new UploadField("HeaderPhoto", "Header Photo"));
 
 		return $fields;
 

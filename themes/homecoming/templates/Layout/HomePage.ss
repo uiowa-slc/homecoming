@@ -1,7 +1,7 @@
 <div class="container main-content">
 	<div class="content clearfix">
 		<div class="article">
-			<% if $HomePhoto %><img src="$HomePhoto.URL" alt=""><% end_if %>
+			<% if $HomePhoto %><img src="$HomePhoto.SetWidth(770).URL" alt=""><% end_if %>
 			$Content
 			$Form
 			<% if $CalloutOne || $CalloutTwo || $CalloutThree %>
@@ -10,7 +10,7 @@
 						<div class="home-callout">
 							<h5 class="title"><a href="$CalloutOneTree.Link">$CalloutOne</a></h5>
 							<a href="$CalloutOneTree.Link">
-								<img src="$CalloutOnePhoto.CroppedImage(100,100).URL" alt="$CalloutOne">
+								<img src="$CalloutOnePhoto.CroppedFocusedImage(100,100).URL" alt="$CalloutOne">
 							</a>
 							<p class="home-callout-content">$CalloutOneDesc</p>
 						</div>
@@ -19,7 +19,7 @@
 						<div class="home-callout">
 							<h5 class="title"><a href="$CalloutTwoTree.Link">$CalloutTwo</a></h5>
 							<a href="$CalloutTwoTree.Link">
-								<img src="$CalloutTwoPhoto.CroppedImage(100,100).URL" alt="$CalloutTwo">
+								<img src="$CalloutTwoPhoto.CroppedFocusedImage(100,100).URL" alt="$CalloutTwo">
 							</a>
 							<p class="home-callout-content">$CalloutTwoDesc</p>
 						</div>
@@ -28,7 +28,7 @@
 						<div class="home-callout">
 							<h5 class="title"><a href="$CalloutThreeTree.Link">$CalloutThree</a></h5>
 							<a href="$CalloutThreeTree.Link">
-								<img src="$CalloutThreePhoto.CroppedImage(100,100).URL" alt="$CalloutThree">
+								<img src="$CalloutThreePhoto.CroppedFocusedImage(100,100).URL" alt="$CalloutThree">
 							</a>
 							<p class="home-callout-content">$CalloutThreeDesc</p>
 						</div>

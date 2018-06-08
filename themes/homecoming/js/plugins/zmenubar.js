@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('.main-nav').setup_navigation();
+	$('.mainnav__list').setup_navigation();
 });
 /*
 $(function(){
