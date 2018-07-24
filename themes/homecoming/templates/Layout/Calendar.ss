@@ -9,6 +9,7 @@
 			<% end_if %>
 			$Content
 			<% if $CurrentAction(show) %>
+				<h2>$DateHeader events:</h2>
 				<% if Events %>
 					<div class="event-list">
 						<% loop Events %>

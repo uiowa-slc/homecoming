@@ -22,12 +22,19 @@ class CalendarExtension extends DataExtension {
 	}
 
 	public function AllDates() {
-		$dates = CalendarDateTime::get();
-		$datesArray = $dates->toArray();
+		// $dates = CalendarDateTime::get();
+		// $datesArray = $dates->toArray();
 
-		$datesArrayList = new ArrayList($datesArray);
+		// $datesArrayList = new ArrayList($datesArray);
+		// $datesArrayList->removeDuplicates('StartDate');
+		$calendar = $this->owner;
+		$datesArrayList = new ArrayList();
+
+		$dates = $calendar->getEventList('1900-01-01','3000-01-01');
+		foreach($dates as $date){
+			$datesArrayList->push($date);
+		} 
 		$datesArrayList->removeDuplicates('StartDate');
-
 		return $datesArrayList;
 	}
 
