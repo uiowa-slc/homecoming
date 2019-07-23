@@ -1,0 +1,15 @@
+.button-archive {
+	display: grid;
+    grid-gap: 25px;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) );
+	text-align: center;
+}
+.button-img, .button-img img {
+	display: block;
+
+}
+.button-year {
+	display: block;
+	margin: 5px 0;
+	text-align: center;
+}

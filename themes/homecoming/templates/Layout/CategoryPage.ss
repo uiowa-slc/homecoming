@@ -4,34 +4,48 @@
 			<h1 class="page-title">$Title</h1>
 			$Content
 			$Form
-			<h3 class="category-events-title">Events</h3>
 			<% with $Category %>
 				<div class="event-list">
 					<% loop $CalendarEvents %>
-						<div class="clearfix list-item">
+						<div class="eventcard py-4">
 							<% if $PagePhoto %>
-								<a href="$Link" class="img">
-									<img src="{$PagePhoto.CroppedFocusedImage(200,200).URL}" alt="$Title">
+								<a href="$Link" class="eventcard__img">
+									<img src="{$PagePhoto.CroppedFocusedImage(400,320).URL}" alt="$Title" loading="lazy">
 								</a>
 							<% end_if %>
-							<div class="list-content">
-								<h2 class="title"><a href="$Link">$Title</a></h2>
-								<p class="meta">
-								<% loop DateTimes %>
-									$DateRange<br>
-									<% if AllDay %>
-										<% _t('ALLDAY','All Day') %>
-									<% else %>
-									<% if StartTime %>
-										$TimeRange<br>
+							<div class="eventcard__body">
+								<h5 class="eventcard__title">$Title</h5>
+								<p class="eventcard__details">
+
+									<% loop DateTimes %>
+										$DateRange<br>
+										<% if AllDay %>
+											<% _t('ALLDAY','All Day') %>
+										<% else %>
+										<% if StartTime %>
+											$TimeRange<br>
+											<% end_if %>
 										<% end_if %>
+									<% end_loop %>
+
+									<!-- Location -->
+									<% if $EventLocation %>
+										$EventLocation
 									<% end_if %>
-								<% end_loop %>
-									$EventLocation
 								</p>
-								<a href="$Link" class="btn btn-default"><span class="glyphicon glyphicon-circle-arrow-right"></span> View Event Information</a>
+
+								<% with Event %>
+									<p class="eventcard__desc">$Content.LimitCharacters(120)</p>
+								<% end_with %>
+
+								<a href="$Link" class="btn btn-warning" aria-label="View event information for $Title">
+									<span class="glyphicon glyphicon-circle-arrow-right"></span> View Event Information
+								</a>
 							</div>
-						</div>
+						</div><!-- end .list-item -->
+
+
+
 					<% end_loop %>
 				</div>
 			<% end_with %>
@@ -45,3 +59,4 @@
 	</div>
 	$Breadcrumbs
 </div>
+

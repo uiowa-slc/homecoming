@@ -26,3 +26,45 @@ $break-small: 480px;
 $break-medium: 768px;
 $break-large: 1040px;
 $break-xlarge: 1200px;
+
+/*-------------------------------------------
+    Bootstrap Configuration
+-------------------------------------------*/
+$body-bg: #f3f3ee;
+
+// Colors
+$blue: #0056B3;
+
+// Navbar
+$navbar-dark-active-color: $yellow;
+// Type
+$font-size-base: 1.2rem;
+$font-family-base: "proxima-nova",sans-serif;
+$headings-font-family: "proxima-nova-alt-condensed",sans-serif;
+$headings-font-weight: 600;
+$enable-responsive-font-sizes: false !default;
+
+// breadcrumbs
+$breadcrumb-bg: #333;
+$breadcrumb-border-radius: 0;
+$breadcrumb-margin-bottom: 0;
+$breadcrumb-active-color: #eee;
+
+// border radius
+$border-radius: .20rem;
+
+// breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 730px,
+  lg: 960px,
+  xl: 1200px
+) !default;

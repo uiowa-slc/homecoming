@@ -1,6 +1,5 @@
 <!doctype html>
-<!--[if lt IE 9]>         <html lang="en" class="lt-ie9 no-js"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<html lang="en" class="no-js">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <% base_tag %>
@@ -13,18 +12,6 @@
 <% include Typekit %>
 <!-- CSS -->
 <link rel="stylesheet" href="{$ThemeDir}/css/master.css">
-<!-- JS -->
-<!--[if lt IE 9]>
-   <script src="{$ThemeDir}/js/ie/html5shiv.js"></script>
-   <script src="{$ThemeDir}/js/ie/respond.min.js"></script>
-<![endif]-->
-<!--[if gte IE 9]>
-  <style type="text/css">
-    .gradient {
-       filter: none;
-    }
-  </style>
-<![endif]-->
 </head>
 
 <body class="$ClassName">
@@ -43,17 +30,17 @@
 		$Layout
 	</main>
 
-	<% include TodaysEvents %>
+	<% include UpcomingEvents %>
 
 	<% include Sponsors %>
 	<% include Footer %>
 
 
 	<!-- JS -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="{$ThemeDir}/js/build/production.min.js"></script>
-	<script src="division-bar/js/division-bar.js"></script>
 	$Analytics
 
 </body>

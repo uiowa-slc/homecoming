@@ -1,7 +1,10 @@
 <div class="container main-content">
 	<div class="content clearfix">
 		<div class="article">
-			<% if $HomePhoto %><img src="$HomePhoto.SetWidth(770).URL" alt=""><% end_if %>
+			<% if $HomePhoto %>
+				<img src="$HomePhoto.SetWidth(770).URL" alt="">
+			<% end_if %>
+
 			$Content
 			$Form
 			<% if $CalloutOne || $CalloutTwo || $CalloutThree %>

@@ -1,6 +1,6 @@
 <div class="eventsbydate">
-  <h3 class="title">Events by Date</h3>
-  <ul class="unstyled">
+  <h3 class="title mt-4 text-uppercase">Events by Date</h3>
+  <ul class="list-unstyled">
     <% with $Page(schedule) %>
       <% loop AllDates %>
       	<% if Event %>

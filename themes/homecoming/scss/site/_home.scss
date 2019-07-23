@@ -1,0 +1,60 @@
+/* ---------------------------------------------------------------
+Homepage
+--------------------------------------------------------------- */
+.home-callout img {
+	float: left;
+	margin-right: .5em;
+	margin-bottom: .5em;
+}
+.home-callout-content {
+	font-size: 15px;
+	line-height: 1.3;
+	@include media-breakpoint-up(sm) {
+		font-size: 13px;
+	}
+}
+
+.hero-wrapper {
+	display: block;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	z-index: 5;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@include media-breakpoint-up(md) {
+		height: 450px;
+	}
+}
+.home-heroimg {
+	display: block;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	z-index: 5;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	@include media-breakpoint-up(md) {
+		height: 450px;
+	}
+}
+
+// Flickity page navigation dots
+.hero-carousel .flickity-page-dots {
+	bottom: 45px;
+}
+/* white circles */
+.hero-carousel .flickity-page-dots .dot {
+	width: 12px;
+	height: 12px;
+	opacity: 1;
+	background: transparent;
+	border: 2px solid white;
+}
+/* fill-in selected dot */
+.hero-carousel .flickity-page-dots .dot.is-selected {
+	background: white;
+}

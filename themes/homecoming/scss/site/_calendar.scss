@@ -1,72 +1,32 @@
 /* ---------------------------------------------------------------
 Schedule
 --------------------------------------------------------------- */
-.event-list {
-	border-top: 4px solid $yellow;
-	padding: 1em 0;
-}
-.list-item {
-	border-bottom: 1px solid #eee;
-	margin-bottom: 1em;
-	padding-bottom: 1em;
-}
-.list-item:last-of-type {
-	border-bottom: none;
-	margin-bottom: 0;
-	padding-bottom: 0;
-}
-.list-item .img {
-	background: #fff;
-	padding: 5px;
-	border: 1px solid #ddd;
-	overflow: hidden;
-	display: block;
-	float: left;
-	& img {
+.eventcard {
+	border-bottom: 1px solid $gray-200;
+	display: flex;
+	flex-direction: column;
+	&__img {
 		display: block;
-		width: 120px;
-		@media screen and (min-width: $break-medium) {
-			width: auto;
+		margin-bottom: 1em;
+		@include media-breakpoint-up(sm) {
+			width: 35%;
+			margin-bottom: 0;
 		}
 	}
-}
-.list-item .list-content {
-	margin-left: 155px;
-	@media screen and (min-width: $break-medium) {
-		margin-left: 270px;
+	&__body {
+		@include media-breakpoint-up(sm) {
+			width: 61%;
+		}
 	}
-}
-.list-item .title {
-	font-size: 20px;
-	line-height: 1.3;
-	margin: 0;
-	& a {
-		color: #333;
+	&__details {
+		font-size: 1rem;
 	}
-	@media screen and (min-width: $break-medium) {
-		font-size: 26px;
+	&__desc {
+		font-size: 1rem;
 	}
-}
-.list-item .meta {
-	font-size: 13px;
-	line-height: 1.5;
-	margin-bottom: 1em;
-	@media screen and (min-width: $break-medium) {
-		font-size: 15px;
+	@include media-breakpoint-up(sm) {
+		flex-direction: row;
+		justify-content: space-between;
 	}
-}
-.list-item .list-desc {
-	margin-bottom: 0;
-}
-.category-events-title {
-	margin-bottom: 0;
-}
-
-/* ---------------------------------------------------------------
-Event Page
---------------------------------------------------------------- */
-.event-img img {
-	display: block;
-	margin-bottom: 1.5em;
 }
 

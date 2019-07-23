@@ -7,7 +7,7 @@
 					<img src="{$PagePhoto.CroppedFocusedImage(770,460).URL}" alt="$Title"  />
 				</div>
 			<% end_if %>
-			<h1 class="page-title">$Title</h1>
+			<h1 class="page-title mt-3">$Title</h1>
 			<% with CurrentDate %>
 				<p>
 				<% if DateRange %>

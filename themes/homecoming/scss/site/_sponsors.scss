@@ -1,0 +1,23 @@
+
+.sponsors {
+	background: $white;
+	padding: 1em 50px 2em 50px;
+}
+.sponsors .title {
+	font-size: 20px;
+	text-align: center;
+}
+.sponsor-cell {
+	text-align: center;
+	width: 50%;
+	& a {
+		display: block;
+		padding: 10px;
+	}
+	@include media-breakpoint-up(md) {
+		width: 33%;
+	}
+	@include media-breakpoint-up(lg) {
+		width: 20%;
+	}
+}

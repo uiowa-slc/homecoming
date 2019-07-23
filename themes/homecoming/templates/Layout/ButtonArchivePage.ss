@@ -5,19 +5,17 @@
 			$Content
 			$Form
 
-			<ul class="justify button-archive">
+			<ul class="button-archive list-unstyled">
 			<% loop $Buttons %>
-				<li class="justify-item button-item">
-					<a href="$Photo.PaddedImage(800,800).URL" class="button-img fancybox" title="$Year" data-fancybox-group="thumb">
-						<img src="$Photo.PaddedImage(200,200).URL" alt="$Year Button">
+				<li class="button-item card">
+					<a href="$Photo.PaddedImage(800,800).URL" class="button-img" data-caption="$Year" data-fancybox="gallery">
+						<img src="$Photo.CroppedImage(240,240).URL" alt="$Year Button" loading="lazy">
 					</a>
-					<small class="button-year">$Year</small>
+					<div class="card-body">
+						<p class="card-text">$Year</p>
+					</div>
 				</li>
 				<% end_loop %>
-				<li class="justify-item button-item filler"></li>
-				<li class="justify-item button-item filler"></li>
-				<li class="justify-item button-item filler"></li>
-				<li class="justify-item button-item filler"></li>
 			</ul>
 		</div>
 	</div>

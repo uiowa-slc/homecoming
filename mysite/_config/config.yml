@@ -9,3 +9,4 @@ After:
 # Caution: Indentation through two spaces, not tabs
 SSViewer:
   theme: 'simple'
+  rewrite_hash_links: false

@@ -2,7 +2,7 @@
 <div class="naver">
 	<div class="side-navigation">
 		<nav class="sec-nav" aria-label="Secondary">
-			<ul class="first-level">
+			<ul class="first-level list-unstyled">
 				<% with Level(1) %>
 					<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>><a href="$Link">$MenuTitle</a></li>
 				<% end_with %>
@@ -11,7 +11,6 @@
 						<a href="$Link">$MenuTitle</a>
 					</li>
 				<% end_loop %>
-
 			</ul>
 		</nav>
 	</div><!-- end .subnavigation -->

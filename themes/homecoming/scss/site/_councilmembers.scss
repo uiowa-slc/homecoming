@@ -1,0 +1,30 @@
+.council-member {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+}
+.council-member:last-of-type {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.council-img {
+	@include media-breakpoint-up(sm) {
+		float: left;
+		margin: 0 1.2em 1.2em 0;
+	}
+}
+.council-pos, .council-bio {
+	font-size: $base-font-size * .9;
+}
+.council-email {
+	font-size: 14px;
+	vertical-align: middle;
+	margin-left: 5px;
+	color: #333;
+	opacity: .7;
+	text-decoration: underline;
+	&:hover, &:focus {
+		opacity: 1;
+	}
+}
