@@ -1,42 +1,23 @@
 /*-------------------------------------------
-    Colors
--------------------------------------------*/
-$link: #005885;
-$yellow: #ffce39;
-
-
-/*-------------------------------------------
-    Sizes
--------------------------------------------*/
-$base-font: 18;
-$base-font-size: 18px;
-
-
-/*-------------------------------------------
-    Fonts
--------------------------------------------*/
-$heading-font: "proxima-nova-alt-condensed",sans-serif;
-$body-font: "proxima-nova",sans-serif;
-
-
-/*-------------------------------------------
-    Media Queries
--------------------------------------------*/
-$break-small: 480px;
-$break-medium: 768px;
-$break-large: 1040px;
-$break-xlarge: 1200px;
-
-/*-------------------------------------------
     Bootstrap Configuration
+    variables are in node_modules/bootstrap/scss/_variables.scss
 -------------------------------------------*/
 $body-bg: #f3f3ee;
 
 // Colors
 $blue: #0056B3;
+$white: #fff;
+$yellow: #ffce39;
 
 // Navbar
 $navbar-dark-active-color: $yellow;
+$navbar-dark-color: rgba($white, .75);
+$navbar-dark-hover-color: rgba($white, .95);
+
+
+// Nav Tabs
+$nav-tabs-link-active-bg: #fff;
+
 // Type
 $font-size-base: 1.2rem;
 $font-family-base: "proxima-nova",sans-serif;
