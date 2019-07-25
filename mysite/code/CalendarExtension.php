@@ -38,4 +38,54 @@ class CalendarExtension extends DataExtension {
 		return $datesArrayList;
 	}
 
+	public function EventsByCategory($categoryName){
+		$category = Category::get()->filter(array('Title' => $categoryName))->First();
+		$catEvents = new ArrayList();
+
+		if($category){
+
+			$catEventsTemp = $category->CalendarEvents();
+
+
+			foreach($catEventsTemp as $catEventTemp){
+
+				if($catEventTemp->UpcomingDates()->First()){
+					$catEvents->push($catEventTemp);
+				}
+			}
+
+		}
+
+		// print_r($catEvents);
+
+		return $catEvents;
+		
+
+	}
+
+	// public function EventsByCategory($categoryName){
+	// 	$category = Category::get()->filter(array('Title' => $categoryName))->First();
+	// 	$allEvents = $this->AllEvents();
+
+	// 	if($category){
+
+	// 		$catEventsTemp = $category->CalendarEvents();
+
+
+	// 		foreach($catEventsTemp as $catEventTemp){
+
+	// 			if($catEventTemp->UpcomingDates()->First()){
+	// 				$catEvents->push($catEventTemp);
+	// 			}
+	// 		}
+
+	// 	}
+
+	// 	// print_r($catEvents);
+
+	// 	return $catEvents;
+		
+
+	// }
+
 }

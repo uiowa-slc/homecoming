@@ -9,6 +9,19 @@
 			<% end_if %>
 			$Content
 
+
+
+			<% if $CurrentAction(show) %>
+				<h2>$DateHeader events:</h2>
+				<% if Events %>
+					<div class="event-list">
+						<% loop Events %>
+							<% include EventList %>
+						<% end_loop %>
+					</div>
+				<% end_if %>
+			<% else %>
+
 			<!-- Nav tabs -->
 			<ul class="nav nav-tabs" id="myTab" role="tablist">
 				<li class="nav-item">
@@ -23,36 +36,41 @@
 			</ul>
 			<div class="tab-content" id="myTabContent">
 				<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-					1
+					<% if $AllEvents %>
+						<div class="event-list">
+							<% loop $AllEvents %>
+								<% include EventList %>
+							<% end_loop %>
+						</div>
+					<% else %>
+						<p><% _t('NOEVENTS','There are no events') %>.</p>
+					<% end_if %>
 				</div>
 				<div class="tab-pane fade" id="students" role="tabpanel" aria-labelledby="students-tab">
-					2
+					<% if $EventsByCategory("students") %>
+						<div class="event-list">
+							<% loop $EventsByCategory("students") %>
+								<% include EventList_category %>
+							<% end_loop %>
+						</div>
+					<% else %>
+						<p><% _t('NOEVENTS','There are no events') %>.</p>
+					<% end_if %>
 				</div>
 				<div class="tab-pane fade" id="alumni" role="tabpanel" aria-labelledby="alumni-tab">
-					3
+					<% if $EventsByCategory("alumni-friends") %>
+						<div class="event-list">
+							<% loop $EventsByCategory("alumni-friends") %>
+								<% include EventList_category %>
+							<% end_loop %>
+						</div>
+					<% else %>
+						<p><% _t('NOEVENTS','There are no events') %>.</p>
+					<% end_if %>
 				</div>
 			</div>
 
-
-			<% if $CurrentAction(show) %>
-				<h2>$DateHeader events:</h2>
-				<% if Events %>
-					<div class="event-list">
-						<% loop Events %>
-							<% include EventList %>
-						<% end_loop %>
-					</div>
-				<% end_if %>
-			<% else %>
-				<% if AllEvents %>
-					<div class="event-list">
-						<% loop AllEvents %>
-							<% include EventList %>
-						<% end_loop %>
-					</div>
-				<% else %>
-					<p><% _t('NOEVENTS','There are no events') %>.</p>
-				<% end_if %>
+	
 			<% end_if %>
 		</div>
 

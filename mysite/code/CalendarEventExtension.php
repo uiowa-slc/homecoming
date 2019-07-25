@@ -13,6 +13,13 @@ class CalendarEventExtension extends DataExtension {
 		"Categories" => "Category"
 	);
 
+	public function UpcomingDates($limit = 3) {
+		return DataList::create($this->owner->data()->getDateTimeClass())
+			->filter("EventID", $this->owner->ID)
+			->where("\"StartDate\" >= DATE(NOW())")
+			->sort("\"StartDate\" ASC")
+			->limit($limit);
+	}
 	public function updateCMSFields(FieldList $fields) {
 
 		$categoriesMap = array();
