@@ -14,12 +14,10 @@
 }
 .footer-nav {
 	padding: 1em 0 0;
+	column-count: 2;
+	column-gap: 10px;
 	& li {
 		margin-bottom: 0;
-	}
-	@include media-breakpoint-down(xs) {
-		column-count: 2;
-		column-gap: 10px;
 	}
 	@include media-breakpoint-up(sm) {
 		border-left: 1px solid $gray-900;

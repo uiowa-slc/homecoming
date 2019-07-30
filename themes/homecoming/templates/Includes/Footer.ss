@@ -19,13 +19,6 @@
 							<% end_loop %>
 						</ul>
 					</div>
-					<div class="col-sm">
-						<ul class="list-unstyled footer-nav">
-							<li><a href="/students/">Students</a></li>
-							<li><a href="/faculty-and-staff/">Faculty &amp; Staff</a></li>
-							<li><a href="/alumni-and-friends/">Alumni &amp; Friends</a></li>
-						</ul>
-					</div>
 				</div>
 			</div>
 			<div class="col-sm">
