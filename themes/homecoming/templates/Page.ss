@@ -11,7 +11,7 @@
 <!-- Typekit Fonts -->
 <% include Typekit %>
 <!-- CSS -->
-<link rel="stylesheet" href="{$ThemeDir}/css/master.css">
+<link rel="stylesheet" href="{$ThemeDir}/css/main.css">
 </head>
 
 <body class="$ClassName">

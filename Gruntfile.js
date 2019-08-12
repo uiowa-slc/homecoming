@@ -39,7 +39,7 @@ module.exports = function(grunt) {
           sourceMap: true
         },
         files: {
-          '<%= project.src %>/css/master.css': '<%= project.src %>/scss/master.scss',
+          '<%= project.src %>/css/main.css': '<%= project.src %>/scss/main.scss',
           '<%= project.src %>/css/editor.css': '<%= project.src %>/scss/editor.scss'
         }
       }
