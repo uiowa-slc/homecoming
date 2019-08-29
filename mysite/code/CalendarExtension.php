@@ -50,15 +50,17 @@ class CalendarExtension extends DataExtension {
 			foreach($catEventsTemp as $catEventTemp){
 
 				if($catEventTemp->UpcomingDates()->First()){
-					$catEvents->push($catEventTemp);
+					$catEvents->push($catEventTemp->UpcomingDates()->First());
 				}
 			}
 
 		}
 
+		$catEventsSorted = $catEvents->sort('StartDate ASC');
+
 		// print_r($catEvents);
 
-		return $catEvents;
+		return $catEventsSorted;
 		
 
 	}

@@ -50,7 +50,7 @@
 					<% if $EventsByCategory("students") %>
 						<div class="event-list">
 							<% loop $EventsByCategory("students") %>
-								<% include EventList_category %>
+								<% include EventList %>
 							<% end_loop %>
 						</div>
 					<% else %>
@@ -61,7 +61,7 @@
 					<% if $EventsByCategory("alumni-friends") %>
 						<div class="event-list">
 							<% loop $EventsByCategory("alumni-friends") %>
-								<% include EventList_category %>
+								<% include EventList %>
 							<% end_loop %>
 						</div>
 					<% else %>
