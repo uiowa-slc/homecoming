@@ -38,32 +38,7 @@ class CalendarExtension extends DataExtension {
 		return $datesArrayList;
 	}
 
-	public function EventsByCategory($categoryName){
-		$category = Category::get()->filter(array('Title' => $categoryName))->First();
-		$catEvents = new ArrayList();
 
-		if($category){
-
-			$catEventsTemp = $category->CalendarEvents();
-
-
-			foreach($catEventsTemp as $catEventTemp){
-
-				if($catEventTemp->UpcomingDates()->First()){
-					$catEvents->push($catEventTemp->UpcomingDates()->First());
-				}
-			}
-
-		}
-
-		$catEventsSorted = $catEvents->sort('StartDate ASC');
-
-		// print_r($catEvents);
-
-		return $catEventsSorted;
-		
-
-	}
 
 	// public function EventsByCategory($categoryName){
 	// 	$category = Category::get()->filter(array('Title' => $categoryName))->First();

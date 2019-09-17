@@ -16,6 +16,33 @@ class CategoryPage extends Page {
 		return $fields;
 	}
 
+	public function Events(){
+
+		$category = $this->Category();
+		$catEvents = new ArrayList();
+
+		if($category){
+
+			$catEventsTemp = $category->CalendarEvents();
+
+
+			foreach($catEventsTemp as $catEventTemp){
+
+				if($catEventTemp->UpcomingDates()->First()){
+					$catEvents->push($catEventTemp->UpcomingDates()->First());
+				}
+			}
+
+		}
+
+		$catEventsSorted = $catEvents->sort('StartDate ASC');
+
+		// print_r($catEvents);
+
+		return $catEventsSorted;
+
+	}
+
 }
 class CategoryPage_Controller extends Page_Controller {
 
