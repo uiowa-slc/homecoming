@@ -39,7 +39,7 @@ class Page extends SiteTree {
 
 		}
 
-		$catEventsSorted = $catEvents->sort('StartDate ASC');
+		$catEventsSorted = $catEvents->sort(array("StartDate" => "ASC", "StartTime" => "ASC"));
 
 		// print_r($catEvents);
 
