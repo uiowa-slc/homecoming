@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b7b7a0bf2f60c9e805b3e4bc33384dd",
+    "content-hash": "f368f878d947b28d07c5789f0310da94",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -761,16 +761,16 @@
         },
         {
             "name": "silverstripe/cms",
-            "version": "3.6.7",
+            "version": "3.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-cms.git",
-                "reference": "878443d478f201ab47b6196beb7fc5fa932c7141"
+                "reference": "338c512e154a37936185dd24bf9073c9186f0543"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/878443d478f201ab47b6196beb7fc5fa932c7141",
-                "reference": "878443d478f201ab47b6196beb7fc5fa932c7141",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/338c512e154a37936185dd24bf9073c9186f0543",
+                "reference": "338c512e154a37936185dd24bf9073c9186f0543",
                 "shasum": ""
             },
             "require": {
@@ -784,11 +784,6 @@
                 "phpunit/phpunit": "^3 || ^4 || ^5"
             },
             "type": "silverstripe-module",
-            "extra": {
-                "branch-alias": {
-                    "3.x-dev": "3.6.x-dev"
-                }
-            },
             "autoload": {
                 "classmap": [
                     "tests/behat/",
@@ -815,7 +810,7 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2018-03-18T09:15:16+00:00"
+            "time": "2018-10-03T11:35:49+00:00"
         },
         {
             "name": "silverstripe/event-calendar",
@@ -863,32 +858,27 @@
         },
         {
             "name": "silverstripe/framework",
-            "version": "3.6.8",
+            "version": "3.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "9e16c3dbd35a180b7b8de0368c375069501eb6f6"
+                "reference": "b1dc89ef8a6325aba23ccaaaa805a6e94054eece"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/9e16c3dbd35a180b7b8de0368c375069501eb6f6",
-                "reference": "9e16c3dbd35a180b7b8de0368c375069501eb6f6",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/b1dc89ef8a6325aba23ccaaaa805a6e94054eece",
+                "reference": "b1dc89ef8a6325aba23ccaaaa805a6e94054eece",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~1.0",
                 "mustangostang/spyc": "^0.6.2",
-                "php": ">= 5.3.3, <7.2"
+                "php": "^5.3.3 || ^7"
             },
             "require-dev": {
                 "phpunit/phpunit": "^3 || ^4 || ^5"
             },
             "type": "silverstripe-module",
-            "extra": {
-                "branch-alias": {
-                    "3.x-dev": "3.6.x-dev"
-                }
-            },
             "autoload": {
                 "psr-0": {
                     "SilverStripe\\": "src/",
@@ -921,7 +911,8 @@
                 "exclude-from-classmap": [
                     "view/SSTemplateParser.php.inc",
                     "dev/phpunit/PhpUnitWrapper.php",
-                    "model/fieldtypes/compat"
+                    "model/fieldtypes/compat",
+                    "core/compat"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -944,7 +935,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2019-09-24T05:13:46+00:00"
+            "time": "2019-09-24T04:51:42+00:00"
         },
         {
             "name": "silverstripe/reports",
