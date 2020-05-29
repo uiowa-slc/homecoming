@@ -9,7 +9,7 @@
 		"silverstripe/event-calendar": "*",
 		"colymba/gridfield-bulk-editing-tools": "*",
 		"silverstripe/tagfield": "*",
-		"md/uiowa-bar" : "*",
+		"md/uiowa-bar" : "dev-2.x-ss3",
 		"jonom/focuspoint" : "*",
 		"md/division-bar" : "*",
 		"unclecheese/betterbuttons" : "1.3.*",
