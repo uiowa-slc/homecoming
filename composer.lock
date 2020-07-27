@@ -388,12 +388,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar.git",
-                "reference": "efc6fdd1d26b2805a4fb10532073b0e01bc33a3b"
+                "reference": "4756dd9051d81f085b661934c7809e34651ed464"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/uiowa-bar/zipball/efc6fdd1d26b2805a4fb10532073b0e01bc33a3b",
-                "reference": "efc6fdd1d26b2805a4fb10532073b0e01bc33a3b",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/uiowa-bar/zipball/4756dd9051d81f085b661934c7809e34651ed464",
+                "reference": "4756dd9051d81f085b661934c7809e34651ed464",
                 "shasum": ""
             },
             "require": {
@@ -412,7 +412,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar/tree/2.x-ss3",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar/issues"
             },
-            "time": "2020-05-29T21:28:15+00:00"
+            "time": "2020-06-03T15:04:31+00:00"
         },
         {
             "name": "mustangostang/spyc",
@@ -698,16 +698,16 @@
         },
         {
             "name": "silverstripe/framework",
-            "version": "3.7.4",
+            "version": "3.7.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "b1dc89ef8a6325aba23ccaaaa805a6e94054eece"
+                "reference": "f2b8946407b7f44d09dd3bbccadb3db4e30357f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/b1dc89ef8a6325aba23ccaaaa805a6e94054eece",
-                "reference": "b1dc89ef8a6325aba23ccaaaa805a6e94054eece",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/f2b8946407b7f44d09dd3bbccadb3db4e30357f7",
+                "reference": "f2b8946407b7f44d09dd3bbccadb3db4e30357f7",
                 "shasum": ""
             },
             "require": {
@@ -775,7 +775,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2019-09-24T04:51:42+00:00"
+            "time": "2020-07-14T01:39:39+00:00"
         },
         {
             "name": "silverstripe/reports",
