@@ -7,10 +7,10 @@
                 <div class="sponsor-cell">
                     <% if $SponsorUrl %>
                         <a href="$SponsorUrl">
-                            <img src="$SponsorPhoto.PaddedImage(210, 120).URL" alt="$Title" loading="lazy">
+                            <img src="$SponsorPhoto.PaddedImage(210, 120).URL" alt="$Title" >
                         </a>
                     <% else %>
-                        <img src="$SponsorPhoto.PaddedImage(210, 120).URL" alt="$Title" loading="lazy">
+                        <img src="$SponsorPhoto.PaddedImage(210, 120).URL" alt="$Title">
                     <% end_if %>
                 </div>
             <% end_loop %>

@@ -1,4 +1,4 @@
-<div class="container main-content full-width">
+<div class="container-xl main-content full-width">
 	<div class="content clearfix">
 		<div class="article">
 			<h1 class="page-title">$Title</h1>

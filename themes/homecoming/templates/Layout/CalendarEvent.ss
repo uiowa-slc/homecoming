@@ -1,26 +1,39 @@
-<div class="container main-content">
+<div class="container-xl main-content">
 	<div class="content clearfix">
 
 		<div class="article">
 			<% if $PagePhoto %>
-				<div class="event-img">
-					<img src="{$PagePhoto.CroppedFocusedImage(770,460).URL}" alt="$Title"  />
+				<div class="event-img float-lg-right mb-lg-3 ml-lg-3">
+					<img src="{$PagePhoto.CroppedFocusedImage(300,300).URL}" alt="$Title" class=""  />
 				</div>
-			<% end_if %>
-			<h1 class="page-title mt-3">$Title</h1>
-			<% with CurrentDate %>
-				<p>
-				<% if DateRange %>
-					<strong>Date:</strong> $DateRange<br>
-				<% end_if %>
-				<% if StartTime %>
-					<strong>Time:</strong> $TimeRange<br>
-				<% end_if %>
-			<% end_with %>
-			<% if EventLocation %>
-				<strong>Location:</strong> $EventLocation</p>
-			<% end_if %>
+            <% end_if %>
+            
+            <h1 class="page-title mt-0">
+                $Title <% if $VirtualEventLink %>(Virtual)<% end_if %>
+            </h1>
 
+            <p>
+                <% with CurrentDate %>
+                    <% if DateRange %>
+                        <strong>Date:</strong> $DateRange<br>
+                    <% end_if %>
+                    <% if StartTime %>
+                        <strong>Time:</strong> $TimeRange<br>
+                    <% end_if %>
+                <% end_with %>
+                <% if EventLocation %>
+                    <strong>Location:</strong> $EventLocation
+                <% end_if %>
+            </p>
+
+             <!-- Virtual Event URL -->
+            <% if $VirtualEventLink %>
+                <p>
+                    <a href="$VirtualEventLink" class="btn btn-primary" target="_blank" rel="noopener norefferer">Join Virtual Event</a>
+                </p><br>
+            <% end_if %>
+
+            <hr />
 			$Content
 
 			<% if OtherDates %>

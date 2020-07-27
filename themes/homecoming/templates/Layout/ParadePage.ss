@@ -1,4 +1,4 @@
-<div class="container main-content">
+<div class="container-xl main-content">
   <div class="content clearfix">
     <% if $ParadePhoto %>
       <img src="$ParadePhoto.URL" alt="$Name">

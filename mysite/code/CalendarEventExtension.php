@@ -2,7 +2,8 @@
 class CalendarEventExtension extends DataExtension {
 
 	private static $db = array(
-	'EventLocation' => 'Text',
+    'EventLocation' => 'Text',
+    'VirtualEventLink' => 'Text',
 	);
 
 	private static $has_one = array(
@@ -21,6 +22,7 @@ class CalendarEventExtension extends DataExtension {
 			->limit($limit);
 	}
 	public function updateCMSFields(FieldList $fields) {
+        $fields->removeByName('Location');
 
 		$categoriesMap = array();
 		foreach(Category::get() as $category) {
@@ -37,7 +39,8 @@ class CalendarEventExtension extends DataExtension {
 				'Add Tags'
 			);
 
-		  $fields->addFieldToTab("Root.Main", new TextField("EventLocation", "Location"));
+          $fields->addFieldToTab("Root.Main", new TextField("EventLocation", "Location"), 'Content');
+          $fields->addFieldToTab("Root.Main", new TextField("VirtualEventLink", "Virtual Event URL"), 'Content');
 
 		  $fields->addFieldToTab("Root.Main", $tagField, "Content");
 

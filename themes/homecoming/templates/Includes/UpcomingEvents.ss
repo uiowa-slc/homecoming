@@ -13,7 +13,7 @@
 								<img src="{$Event.PagePhoto.CroppedFocusedImage(400,250).URL}" class="card-img-top" alt="$Title" loading="lazy">
 							</a>
 							<div class="card-body">
-								<h5 class="card-title">$Title</h5>
+								<h5 class="card-title">$Title <% if $Event.VirtualEventLink %>(Virtual)<% end_if %></h5>
 								<p class="text-muted my-0">
 									$DateRange<br>
 									<% if AllDay %>
@@ -28,7 +28,10 @@
 								</p>
 							</div>
 							<div class="card-footer">
-								<a href="$Link" class="btn btn-warning" aria-label="View Details for $Title">View Details</a>
+                                <a href="$Link" class="btn btn-warning my-1" aria-label="View Details for $Title">View Details</a>
+                                <% if $Event.VirtualEventLink %>
+                                    <a href="$Event.VirtualEventLink" class="btn btn-primary my-1" target="_blank" rel="noopener norefferer">Join Virtual Event</a>
+                                <% end_if %>
 							</div>
 						</li>
 					<% end_loop %>

@@ -1,5 +1,5 @@
 
-<div class="container main-content">
+<div class="container-xl main-content">
 	<div class="content clearfix">
 		<div class="article">
 			<% if $CurrentAction(show) && Events %>
