@@ -44,3 +44,6 @@ division-analytics
 uiowa-bar
 focuspoint
 .phpintel
+/cache
+/gridfieldajaxrefresh/
+/staticpublishqueue/

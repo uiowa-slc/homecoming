@@ -1,0 +1,18 @@
+---
+Name: mysiteconfig_redirector
+After: 'staticpublishqueue/*'
+---
+RedirectorPage:
+  extensions:
+    - PublishableRedirectorPage
+---
+Name: mysiteconfig_staticpublishqueue
+After: 'staticpublishqueue/*','#mysiteconfig_redirector'
+---
+SiteTree:
+  extensions:
+    - PublishableSiteTree
+    - SiteTreePublishingEngine
+    - FilesystemPublisher('cache', 'html')
+FilesystemPublisher:
+  static_base_url: http://localhost
