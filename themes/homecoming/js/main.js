@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	// $(".main").fitVids();
+	$(".main").fitVids();
 	// Sponsors Carousel
 	$('.sponsor-carousel').flickity({
 		// options
