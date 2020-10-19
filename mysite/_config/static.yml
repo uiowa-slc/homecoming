@@ -1,18 +1,9 @@
 ---
-Name: mysiteconfig_redirector
-After: 'staticpublishqueue/*'
+Name: mystaticpublishqueue
+After: '#staticpublishqueue'
 ---
-RedirectorPage:
-  extensions:
-    - PublishableRedirectorPage
----
-Name: mysiteconfig_staticpublishqueue
-After: 'staticpublishqueue/*','#mysiteconfig_redirector'
----
-SiteTree:
-  extensions:
-    - PublishableSiteTree
-    - SiteTreePublishingEngine
-    - FilesystemPublisher('cache', 'html')
-FilesystemPublisher:
-  static_base_url: http://localhost
+SilverStripe\Core\Injector\Injector:
+  SilverStripe\StaticPublishQueue\Publisher:
+    class: SilverStripe\StaticPublishQueue\Publisher\FilesystemPublisher
+    properties:
+      fileExtension: php

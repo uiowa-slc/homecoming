@@ -1,12 +1,5 @@
 ---
-Name: mysite
-After:
-  - 'framework/*'
-  - 'cms/*'
+Name: myproject
 ---
-# YAML configuration for SilverStripe
-# See http://doc.silverstripe.org/framework/en/topics/configuration
-# Caution: Indentation through two spaces, not tabs
-SSViewer:
-  theme: 'simple'
-  rewrite_hash_links: false
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: mysite

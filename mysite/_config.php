@@ -1,23 +1,10 @@
 <?php
 
-global $project;
-$project = 'mysite';
+use SilverStripe\Security\Member;
+use SilverStripe\Security\PasswordValidator;
+// remove PasswordValidator for SilverStripe 5.0
+$validator = new PasswordValidator();
 
-global $database;
-$database = 'homecoming';
-
-// Use _ss_environment.php file for configuration
-require_once ("conf/ConfigureFromEnv.php");
-
-Calendar::add_extension('CalendarExtension');
-CalendarEvent::add_extension('CalendarEventExtension');
-
-// Set the site locale
-i18n::set_locale('en_US');
-Authenticator::unregister('MemberAuthenticator');
-Authenticator::set_default_authenticator('SAMLAuthenticator');
-if(Director::isLive()) {
-	Director::forceSSL();
-}
-
-SiteConfig::add_extension('SiteConfigExtension');
+$validator->minLength(8);
+$validator->checkHistoricalPasswords(6);
+Member::set_password_validator($validator);

@@ -1,0 +1,9 @@
+---
+Name: mytheme
+---
+SilverStripe\View\SSViewer:
+  themes:
+    - '$public'
+    - 'homecoming'
+    - '$default'
+  rewrite_hash_links: false
