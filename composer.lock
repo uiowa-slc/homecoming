@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8bb85e75b92cbb6b66ab2599e76cd4c0",
+    "content-hash": "b42f59ca1b314939e015c9cce6193df9",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -1591,53 +1591,6 @@
             "time": "2020-09-05T13:00:25+00:00"
         },
         {
-            "name": "silverstripe-themes/simple",
-            "version": "3.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-simple.git",
-                "reference": "5a6b34cd00a71047e905a8cb5d4b73713ca510c3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-simple/zipball/5a6b34cd00a71047e905a8cb5d4b73713ca510c3",
-                "reference": "5a6b34cd00a71047e905a8cb5d4b73713ca510c3",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "*",
-                "silverstripe/framework": ">=3.5"
-            },
-            "type": "silverstripe-theme",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2.x-dev"
-                },
-                "expose": [
-                    "css",
-                    "images",
-                    "javascript",
-                    "webfonts"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sara Tušar (Innovaif)",
-                    "homepage": "http://www.saratusar.com"
-                }
-            ],
-            "description": "The SilverStripe simple theme (default SilverStripe 3 theme)",
-            "keywords": [
-                "silverstripe",
-                "theme"
-            ],
-            "time": "2018-06-25T20:55:43+00:00"
-        },
-        {
             "name": "silverstripe/admin",
             "version": "1.6.1",
             "source": {
@@ -2177,16 +2130,16 @@
         },
         {
             "name": "silverstripe/login-forms",
-            "version": "4.1.2",
+            "version": "4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-login-forms.git",
-                "reference": "6ae4225dbbe1c360a4df6fb87a17b271886d4191"
+                "reference": "3b362c9340225890ad5dbdeb29ae00b44c8aea1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-login-forms/zipball/6ae4225dbbe1c360a4df6fb87a17b271886d4191",
-                "reference": "6ae4225dbbe1c360a4df6fb87a17b271886d4191",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-login-forms/zipball/3b362c9340225890ad5dbdeb29ae00b44c8aea1f",
+                "reference": "3b362c9340225890ad5dbdeb29ae00b44c8aea1f",
                 "shasum": ""
             },
             "require": {
@@ -2198,9 +2151,6 @@
             },
             "type": "silverstripe-vendormodule",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "4.x-dev"
-                },
                 "expose": [
                     "client/dist"
                 ]
@@ -2223,7 +2173,7 @@
                 "styling",
                 "template"
             ],
-            "time": "2020-02-13T01:04:47+00:00"
+            "time": "2020-08-17T23:04:37+00:00"
         },
         {
             "name": "silverstripe/mimevalidator",
@@ -5344,7 +5294,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "silverstripe/recipe-cms": 0,
-        "silverstripe/login-forms": 0,
         "md/saml": 20
     },
     "prefer-stable": true,
