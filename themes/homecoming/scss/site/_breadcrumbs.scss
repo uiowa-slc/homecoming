@@ -4,8 +4,9 @@
 		color: #eee;
 	}
 	@include media-breakpoint-up(md) {
-		margin-right: -15px;
-		margin-left: -15px;
+        margin-right: -15px;
+        margin-left: -15px;
+
 	}
 }
 

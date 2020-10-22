@@ -1,4 +1,3 @@
-
 /* Configuration
 -------------------------------------------*/
 @import "_config";
@@ -50,8 +49,9 @@
 
 /* Division Top Bar
 --------------------------------------------*/
-@import "../../../division-bar/scss/division-bar";
-@import "../../../uiowa-bar/scss/uiowa-bar.scss";
+// @import "../../../division-bar/scss/division-bar";
+
+@import "../../../vendor/md/uiowa-bar/scss/uiowa-bar.scss";
 
 
 /* Global Settings
@@ -91,7 +91,3 @@
 /* Site specific styles
 -------------------------------------------*/
 @import "site/site";
-
-
-
-

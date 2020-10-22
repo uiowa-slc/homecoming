@@ -1,4 +1,7 @@
 <?php
+
+use SilverStripe\Assets\Image;
+use SilverStripe\ORM\DataObject;
 class Button extends DataObject {
 
   private static $db = array(
@@ -7,7 +10,7 @@ class Button extends DataObject {
   );
 
   private static $has_one = array(
-    "Photo" => "Image",
+    "Photo" => Image::class,
   );
 
   private static $summary_fields = array(

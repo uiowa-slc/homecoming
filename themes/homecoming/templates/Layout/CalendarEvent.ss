@@ -4,10 +4,10 @@
 		<div class="article">
 			<% if $PagePhoto %>
 				<div class="event-img float-lg-right mb-lg-3 ml-lg-3">
-					<img src="{$PagePhoto.CroppedFocusedImage(300,300).URL}" alt="$Title" class=""  />
+					<img src="{$PagePhoto.FocusFill(300,300).URL}" alt="$Title" class=""  />
 				</div>
             <% end_if %>
-            
+
             <h1 class="page-title mt-0">
                 $Title <% if $VirtualEventLink %>(Virtual)<% end_if %>
             </h1>

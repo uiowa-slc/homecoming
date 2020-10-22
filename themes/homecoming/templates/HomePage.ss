@@ -29,13 +29,13 @@
 	<div class="hero-wrapper">
 		<div class="hero-carousel">
 			<% if $HeaderPhoto1 %>
-				<div class="home-heroimg carousel-cell" data-flickity-bg-lazyload="$HeaderPhoto1.CroppedFocusedImage(1500,450).URL"></div>
+				<div class="home-heroimg carousel-cell" data-flickity-bg-lazyload="$HeaderPhoto1.FocusFill(1500,450).URL"></div>
 			<% end_if %>
 			<% if $HeaderPhoto2 %>
-				<div class="home-heroimg carousel-cell" data-flickity-bg-lazyload="$HeaderPhoto2.CroppedFocusedImage(1500,450).URL"></div>
+				<div class="home-heroimg carousel-cell" data-flickity-bg-lazyload="$HeaderPhoto2.FocusFill(1500,450).URL"></div>
 			<% end_if %>
 			<% if $HeaderPhoto3 %>
-				<div class="home-heroimg carousel-cell" data-flickity-bg-lazyload="$HeaderPhoto3.CroppedFocusedImage(1500,450).URL"></div>
+				<div class="home-heroimg carousel-cell" data-flickity-bg-lazyload="$HeaderPhoto3.FocusFill(1500,450).URL"></div>
 			<% end_if %>
 		</div>
 	</div>

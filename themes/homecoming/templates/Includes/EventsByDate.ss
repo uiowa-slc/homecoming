@@ -4,7 +4,7 @@
     <% with $Page(schedule) %>
       <% loop AllDates %>
       	<% if Event %>
-        <li><span class="glyphicon glyphicon-chevron-right"></span><a href="schedule/show/{$StartDate.Format('Ymd')}">{$StartDate.Day}, {$StartDate.Month} {$StartDate.DayOfMonth}</a></li>
+        <li><span class="glyphicon glyphicon-chevron-right"></span><a href="schedule/show/{$StartDate.Format('y-MM-dd')}">{$StartDate.Format("eeee, MMMM d")}</a></li>
         <% end_if %>
       <% end_loop %>
     <% end_with %>

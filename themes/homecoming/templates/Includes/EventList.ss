@@ -1,9 +1,9 @@
 <div class="eventcard py-4">
 	<a href="$Link" class="eventcard__img">
-		<img src="{$Event.PagePhoto.CroppedFocusedImage(400,320).URL}" alt="$Title" loading="lazy">
+		<img src="{$Event.PagePhoto.FocusFill(400,320).URL}" alt="$Title" loading="lazy">
 	</a>
 	<div class="eventcard__body">
-		<h5 class="eventcard__title"><a href="$Link">$Title <% if $Event.VirtualEventLink %>(Virtual)<% end_if %></a></h5>
+		<h5 class="eventcard__title"><a href="$Link">$Event.Title <% if $Event.VirtualEventLink %>(Virtual)<% end_if %></a></h5>
 		<p class="eventcard__details">
 			<!-- Date -->
 			<% if $DateRange %>
@@ -21,7 +21,7 @@
 				<% end_if %>
 				<br>
             <% end_if %>
-            
+
 			<!-- Location -->
 			<% if $Event.EventLocation %>
 				$Event.EventLocation
@@ -40,7 +40,7 @@
 		<a href="$Link" class="btn btn-warning my-1" aria-label="View event information for $Title">
 			<span class="glyphicon glyphicon-circle-arrow-right"></span> View Event Information
         </a>
-        
+
         <!-- Virtual Event URL -->
         <% if $Event.VirtualEventLink %>
             <a href="$Event.VirtualEventLink" class="btn btn-primary my-1" target="_blank" rel="noopener norefferer">Join Virtual Event</a>

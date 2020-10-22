@@ -2,7 +2,7 @@
 	<div class="content">
 		<div class="article">
 			<% if $PagePhoto %>
-				<img src="$PagePhoto.SetWidth(770).URL" alt="Title">
+				<img src="$PagePhoto.ScaleWidth(770).URL" alt="Title">
 			<% end_if %>
 			<h1 class="page-title text-uppercase">$Title</h1>
 			$Content

@@ -17,8 +17,9 @@ Layout
 	flex-direction: column;
 	@include media-breakpoint-up(md) {
 		flex-direction: row;
-		margin-right: -15px;
-		margin-left: -15px;
+        margin-right: -15px;
+        margin-left: -15px;
+
 	}
 }
 .article {

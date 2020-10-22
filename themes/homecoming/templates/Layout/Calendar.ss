@@ -2,17 +2,16 @@
 <div class="container-xl main-content">
 	<div class="content clearfix">
 		<div class="article">
-			<% if $CurrentAction(show) && Events %>
-				<h1 class="page-title">Schedule: $DateHeader</h1>
-			<% else %>
-				<h1 class="page-title">$Title</h1>
-			<% end_if %>
+
+
+			<h1 class="page-title">$Title</h1>
+
 			$Content
 
 
 
-			<% if $CurrentAction(show) %>
-				<h2>$DateHeader events:</h2>
+			<% if $Action == "show" %>
+				<h2>$DateHeader</h2>
 				<% if Events %>
 					<div class="event-list">
 						<% loop Events %>
@@ -70,7 +69,7 @@
 				</div>
 			</div>
 
-	
+
 			<% end_if %>
 		</div>
 

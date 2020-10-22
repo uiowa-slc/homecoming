@@ -1,4 +1,8 @@
 <?php
+
+use SilverStripe\ORM\ArrayList;
+use SilverStripe\ORM\DataExtension;
+
 class CalendarExtension extends DataExtension {
 
 	private static $db = array(
@@ -7,17 +11,16 @@ class CalendarExtension extends DataExtension {
 	private static $has_one = array(
 	);
 
-
-	public function EventsToday(){
+	public function EventsToday() {
 		$calendar = $this->owner;
 		$today = sfDate::getInstance()->date();
-		$events = $calendar->getEventList($today,$today);
+		$events = $calendar->getEventList($today, $today);
 		return $events;
 	}
 
-	public function AllEvents(){
+	public function AllEvents() {
 		$calendar = $this->owner;
-		$events = $calendar->getEventList('1900-01-01','3000-01-01');
+		$events = $calendar->getEventList('1900-01-01', '3000-01-01');
 		return $events;
 	}
 
@@ -30,15 +33,13 @@ class CalendarExtension extends DataExtension {
 		$calendar = $this->owner;
 		$datesArrayList = new ArrayList();
 
-		$dates = $calendar->getEventList('1900-01-01','3000-01-01');
-		foreach($dates as $date){
+		$dates = $calendar->getEventList('1900-01-01', '3000-01-01');
+		foreach ($dates as $date) {
 			$datesArrayList->push($date);
-		} 
+		}
 		$datesArrayList->removeDuplicates('StartDate');
 		return $datesArrayList;
 	}
-
-
 
 	// public function EventsByCategory($categoryName){
 	// 	$category = Category::get()->filter(array('Title' => $categoryName))->First();
@@ -47,7 +48,6 @@ class CalendarExtension extends DataExtension {
 	// 	if($category){
 
 	// 		$catEventsTemp = $category->CalendarEvents();
-
 
 	// 		foreach($catEventsTemp as $catEventTemp){
 
@@ -61,7 +61,6 @@ class CalendarExtension extends DataExtension {
 	// 	// print_r($catEvents);
 
 	// 	return $catEvents;
-		
 
 	// }
 

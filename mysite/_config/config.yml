@@ -3,3 +3,9 @@ Name: myproject
 ---
 SilverStripe\Core\Manifest\ModuleManifest:
   project: mysite
+Calendar:
+  extensions:
+    - CalendarExtension
+CalendarEvent:
+  extensions:
+    - CalendarEventExtension

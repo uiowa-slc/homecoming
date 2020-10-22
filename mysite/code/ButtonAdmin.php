@@ -1,5 +1,10 @@
 <?php
 
+use SilverStripe\Forms\GridField\GridFieldFilterHeader;
+use Colymba\BulkUpload\BulkUploader;
+use Colymba\BulkManager\BulkManager;
+use SilverStripe\Admin\ModelAdmin;
+
 class ButtonAdmin extends ModelAdmin {
   private static $managed_models = array('Button'); // Can manage multiple models
   private static $url_segment = 'buttons'; // Linked as /admin/products/
@@ -9,8 +14,8 @@ class ButtonAdmin extends ModelAdmin {
         $form = parent::getEditForm($id, $fields);
         $gridField = $form->Fields()->fieldByName($this->sanitiseClassName($this->modelClass));
         $gridField->getConfig()->addComponent(new GridFieldFilterHeader());
-        $gridField->getConfig()->addComponent(new GridFieldBulkUpload());
-        $gridField->getConfig()->addComponent(new GridFieldBulkManager());
+        $gridField->getConfig()->addComponent(new BulkUploader());
+        $gridField->getConfig()->addComponent(new BulkManager());
 
         return $form;
     }

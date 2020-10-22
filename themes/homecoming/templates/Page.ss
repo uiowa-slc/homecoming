@@ -21,7 +21,7 @@
 	<% include Header %>
 
 	<% if $HeaderPhoto %>
-		<div class="hero-wrapper" style="background-image: url($HeaderPhoto.CroppedFocusedImage(1500,450).URL);"></div>
+		<div class="hero-wrapper" style="background-image: url($HeaderPhoto.FocusFill(1500,450).URL);"></div>
 	<% else %>
 		<div class="hero-wrapper" style="background-image: url({$ThemeDir}/images/homecoming_bg.jpg);"></div>
    <% end_if %>
@@ -43,7 +43,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="{$ThemeDir}/js/build/production.min.js"></script>
 
-	
+
 	$Analytics
 
 </body>

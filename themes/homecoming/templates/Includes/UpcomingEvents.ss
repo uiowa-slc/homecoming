@@ -10,7 +10,7 @@
 					<% loop $UpcomingEvents.Limit(3) %>
 						<li class="card upcoming__card">
 							<a href="$Link">
-								<img src="{$Event.PagePhoto.CroppedFocusedImage(400,250).URL}" class="card-img-top" alt="$Title" loading="lazy">
+								<img src="{$Event.PagePhoto.FocusFill(400,250).URL}" class="card-img-top" alt="$Title" loading="lazy">
 							</a>
 							<div class="card-body">
 								<h5 class="card-title">$Title <% if $Event.VirtualEventLink %>(Virtual)<% end_if %></h5>

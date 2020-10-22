@@ -10,7 +10,7 @@
     "silverstripe-themes/simple": "~3.2.0",
     "silverstripe/login-forms": "4.1.2@stable",
     "colymba/gridfield-bulk-editing-tools": "*",
-    "silverstripe/tagfield": "*",
+    "silverstripe/tagfield": "^2.4",
     "md/uiowa-bar": "2.*",
     "jonom/focuspoint": "*",
     "undefinedoffset/sortablegridfield": "*",
@@ -46,6 +46,12 @@
       ".htaccess",
       "index.php",
       "web.config"
+    ],
+    "expose": [
+      "themes/homecoming/css",
+      "themes/homecoming/images",
+      "themes/homecoming/fonts",
+      "themes/homecoming/js"
     ]
   },
   "repositories": [
