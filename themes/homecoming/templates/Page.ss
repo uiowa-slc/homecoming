@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
+    $GlobalAnalytics
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <% base_tag %>
 <meta charset="utf-8">

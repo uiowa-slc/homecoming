@@ -28,6 +28,6 @@
 			</div>
 		</div>
 		<hr>
-		<p>&copy; $Now.Year <a href="http://www.uiowa.edu/" target="_blank" class="universitylink">The University of Iowa</a>. All Rights Reserved.</p>
+          <p class="footer__copyright">&copy; $Now.Year <a href="http://www.uiowa.edu/" target="_blank">The University of Iowa</a>. All Rights Reserved. <a href="http://www.uiowa.edu/homepage/online-privacy-information" class="footer__bar-link" target="_blank" rel="noopener">Privacy Information</a> <a href="https://opsmanual.uiowa.edu/community-policies/nondiscrimination-statement" class="footer__bar-link" target="_blank" rel="noopener">Nondiscrimination Statement</a> <a href="https://uiowa.edu/accessibility" target="_blank" class="footer__bar-link" >Accessibility</a> Created by <a href="https://slc.studentlife.uiowa.edu/" target="_blank" rel="noopener">Student Life Communications</a></p>
 	</div>
 </footer>

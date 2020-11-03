@@ -2,6 +2,7 @@
 <!--[if lt IE 9]>         <html lang="en" class="lt-ie9 no-js"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
+    $GlobalAnalytics
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <% base_tag %>
 <meta charset="utf-8">
