@@ -9,3 +9,10 @@ Calendar:
 CalendarEvent:
   extensions:
     - CalendarEventExtension
+SilverStripe\Assets\Flysystem\AssetAdapter:
+  file_permissions:
+    'file':
+      'public': '0644'
+      'private': '0600'
+SilverStripe\Assets\InterventionBackend:
+  flush_enabled: false
