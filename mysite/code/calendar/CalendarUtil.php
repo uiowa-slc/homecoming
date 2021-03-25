@@ -74,6 +74,7 @@ class CalendarUtil {
 		global $customDateTemplates;
 		if (is_array($customDateTemplates) && isset($customDateTemplates[$key])) {
 			$template = $customDateTemplates[$key];
+
 		} else {
 			$template = _t("Calendar.$key", "Date");
 		}
