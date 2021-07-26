@@ -22,7 +22,7 @@
 				</div>
 			</div>
 			<div class="col-sm">
-				<h4 class="text-uppercase">T-shirt and Buttons</h4>
+				<h5 class="">T-shirt and Buttons</h5>
 				<p>Show your school spirit and help celebrate Hawkeye Homecoming by buying your t-shirts and buttons now! All proceeds benefit Homecoming programming.</p>
 				<a href="/merchandise" class="btn btn-outline-light btn-block">Order Now</a>
 			</div>

@@ -1,23 +1,19 @@
 <!doctype html>
-<!--[if lt IE 9]>         <html lang="en" class="lt-ie9 no-js"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<html lang="en">
 <head>
-    $GlobalAnalytics
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<% base_tag %>
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title><% if $ClassName == 'HomePage' %>Homecoming at Iowa<% else %>$Title | Homecoming at Iowa<% end_if %></title>
-<!-- Typekit Fonts -->
-<% include Typekit %>
-<!-- CSS -->
-<link rel="stylesheet" href="{$ThemeDir}/css/main.css">
-<!-- JS -->
-<!--[if lt IE 9]>
-   <script src="{$ThemeDir}/js/ie/html5shiv.js"></script>
-   <script src="{$ThemeDir}/js/ie/respond.min.js"></script>
-<![endif]-->
+	$GlobalAnalytics
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<% base_tag %>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title><% if $ClassName == 'HomePage' %>Homecoming at Iowa<% else %>$Title | Homecoming at Iowa<% end_if %></title>
+
+	<!-- Google Fonts -->
+	<% include GoogleFonts %>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{$ThemeDir}/css/main.css">
 </head>
 
 <body class="$ClassName">
@@ -25,8 +21,6 @@
 <%-- 	<% include DivisionBar %>--%>
 	<% include UiowaBar %>
 	<% include Header %>
-
-
 	<div class="hero-wrapper">
 		<div class="hero-carousel">
 			<% if $HeaderPhoto1 %>
