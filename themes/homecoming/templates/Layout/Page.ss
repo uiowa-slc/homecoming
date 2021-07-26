@@ -4,7 +4,7 @@
 			<% if $PagePhoto %>
 				<img src="$PagePhoto.ScaleWidth(770).URL" alt="Title">
 			<% end_if %>
-			<h1 class="page-title text-uppercase">$Title</h1>
+			<h1 class="page-title">$Title</h1>
 			$Content
 			$Form
 		</div>

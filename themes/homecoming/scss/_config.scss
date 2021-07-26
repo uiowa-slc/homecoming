@@ -5,25 +5,31 @@
 $body-bg: #f3f3ee;
 
 // Colors
-$blue: #0056B3;
+$blue: #0056b3;
 $white: #fff;
 $yellow: #ffce39;
+$black: #000;
 
 // Navbar
 $navbar-dark-active-color: $yellow;
-$navbar-dark-color: rgba($white, .75);
-$navbar-dark-hover-color: rgba($white, .95);
+$navbar-dark-color: rgba($white, 0.75);
+$navbar-dark-hover-color: rgba($white, 0.95);
 
+$navbar-light-color: rgba($black, 0.7);
+$navbar-light-hover-color: rgba($black, 0.8);
+
+$navbar-nav-link-padding-x: 1.25rem;
 
 // Nav Tabs
 $nav-tabs-link-active-bg: #fff;
 
 // Type
 $font-size-base: 1.2rem;
-$font-family-base: "proxima-nova",sans-serif;
-$headings-font-family: "proxima-nova-alt-condensed",sans-serif;
-$headings-font-weight: 600;
+$font-family-base: "Roboto", sans-serif;
+$headings-font-family: "Lora", serif;
+$headings-font-weight: 700;
 $enable-responsive-font-sizes: false !default;
+$line-height-base: 1.7;
 
 // breadcrumbs
 $breadcrumb-bg: #333;
@@ -32,20 +38,20 @@ $breadcrumb-margin-bottom: 0;
 $breadcrumb-active-color: #eee;
 
 // border radius
-$border-radius: .20rem;
+$border-radius: 0.2rem;
 
 // breakpoints
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1260px
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1260px,
 );
 
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1200px
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1200px,
 );
