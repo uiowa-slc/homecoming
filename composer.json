@@ -5,7 +5,7 @@
     "require": {
         "php": ">=7.1.0",
         "silverstripe/recipe-plugin": "^1.2",
-        "silverstripe/recipe-cms": "4.7.*@stable",
+        "silverstripe/recipe-cms": "4.8.*@stable",
         "silverstripe/login-forms": "*",
         "colymba/gridfield-bulk-editing-tools": "*",
         "silverstripe/tagfield": "^2.4",
