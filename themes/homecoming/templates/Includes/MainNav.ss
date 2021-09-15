@@ -13,6 +13,7 @@
 							<a class="nav-link <% if Children && ClassName != 'Calendar' %>dropdown-toggle<% end_if %>" href="$Link" <% if Children && ClassName != 'Calendar' %>id="navbarDropdown$Pos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"<% end_if %>>$MenuTitle <% if $LinkOrSection = 'section' %><span class="sr-only">(current)</span><% end_if %></a>
 							<% if Children && ClassName != 'Calendar' %>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown$Pos">
+									<a class="dropdown-item" href="$Link">$MenuTitle</a>
 									<% loop Children %>
 										<a class="dropdown-item" href="$Link">$MenuTitle</a>
 									<% end_loop %>
