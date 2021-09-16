@@ -7,15 +7,18 @@ class CalendarController extends PageController {
 
 	private static $allowed_actions = array(
 		// 'year'
+        'index',
 		'show',
 		'ics',
 	);
 
 	private static $url_handlers = array(
-		'show',
+        'index',
+		'show'
 		// // 'year//$Year' => 'year',
 		// 'ics' => 'ics'
 	);
+
 
 	public function show(HTTPRequest $r) {
 		$this->parseURL($r);
@@ -30,7 +33,7 @@ class CalendarController extends PageController {
 	public function DateHeader() {
 		switch ($this->view) {
 		case "day":
-			return CalendarUtil::localize($this->startDate->get(), null, CalendarUtil::ONE_DAY_HEADER);
+			return 'Date: '.CalendarUtil::localize($this->startDate->get(), null, CalendarUtil::ONE_DAY_HEADER);
 			break;
 
 		case "month":
