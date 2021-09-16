@@ -1,7 +1,10 @@
 <?php
 
 namespace {
-
+    use SilverStripe\AssetAdmin\Forms\UploadField;
+    use SilverStripe\Assets\Image;
+    use SilverStripe\CMS\Model\SiteTree;
+    use SilverStripe\ORM\ArrayList;
 	use SilverStripe\CMS\Controllers\ContentController;
 
 	class PageController extends ContentController {
@@ -34,5 +37,48 @@ namespace {
 			}
 
 		}
+
+        public function EventsByCategoryDate($categoryName) {
+            $request = $this->getRequest();
+            //print_r($request->param("ID"));
+            $filterDate = $request->param("ID");
+            $category = Category::get()->filter(array('Title' => $categoryName))->First();
+            $catEvents = new ArrayList();
+
+            if ($category) {
+
+                $catEventsTemp = $category->CalendarEvents();
+
+                foreach ($catEventsTemp as $catEventTemp) {
+
+                    if ($catEventTemp->UpcomingDates()->First()) {
+
+                        $eventDate = $catEventTemp->UpcomingDates()->First();
+
+
+                        if($eventDate->StartDate == $filterDate){
+                            $catEvents->push($catEventTemp->UpcomingDates()->First());
+                        }
+
+
+
+                    }
+                }
+
+            }
+
+            $catEventsSorted = $catEvents->sort(array("StartDate" => "ASC", "StartTime" => "ASC"));
+            return $catEventsSorted;
+
+        }
+        public function AllEventsDate() {
+            $calendar = Calendar::get()->First();
+            $request = $this->getRequest();
+            $filterDate = $request->param("ID");
+
+            $events = $calendar->getEventList($filterDate, $filterDate);
+            return $events;
+        }
+
 	}
 }

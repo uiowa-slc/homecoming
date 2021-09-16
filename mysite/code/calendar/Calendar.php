@@ -1,6 +1,8 @@
 <?php
 use SilverStripe\ORM\DataList;
-
+use SilverStripe\Assets\Image;
+use SilverStripe\CMS\Model\SiteTree;
+use SilverStripe\ORM\ArrayList;
 class Calendar extends Page {
 
 	private static $allowed_children = array(
