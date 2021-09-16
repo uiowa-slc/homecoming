@@ -10,7 +10,7 @@
 		<title>
 				<% if $ClassName == 'HomePage' %>Homecoming at Iowa<% else %>$Title	| Homecoming at Iowa<% end_if %>
 		</title>
-
+        $OpenGraph
 		<!-- Google Fonts -->
 		<% include GoogleFonts %>
 

@@ -42,8 +42,8 @@ class HomePage extends Page {
 		$fields->addFieldToTab("Root.Main", new UploadField("HomePhoto", "Content Photo"));
 
 		$fields->addFieldToTab("Root.Main", new UploadField("HeaderPhoto1", "Header Photo"));
-		$fields->addFieldToTab("Root.Main", new UploadField("HeaderPhoto2", "Header Photo"));
-		$fields->addFieldToTab("Root.Main", new UploadField("HeaderPhoto3", "Header Photo"));
+		// $fields->addFieldToTab("Root.Main", new UploadField("HeaderPhoto2", "Header Photo"));
+		// $fields->addFieldToTab("Root.Main", new UploadField("HeaderPhoto3", "Header Photo"));
 
 		$fields->addFieldToTab("Root.CalloutOne", new TextField("CalloutOne", "Title"));
 		$fields->addFieldToTab("Root.CalloutOne", new TextField("CalloutOneDesc", "Description"));
