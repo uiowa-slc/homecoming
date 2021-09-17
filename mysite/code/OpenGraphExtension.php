@@ -154,7 +154,7 @@ class OpenGraphExtension extends DataExtension {
         if ($im) {
             return $this->getCanonicalURL($im->URL);
         } else {
-            return Director::absoluteBaseURL() . "_resources/vendor/md/bootstrap-project/client/images/og-dsl.png";
+            return 'https://homecoming.uiowa.edu/assets/Uploads/15407675348-ba1e48d857-k__FocusFillWyIwLjAxIiwiMC4yMCIsMTUwMCw0NTBd.jpg';
         }
     }
     public function getOpenGraph_title() {
