@@ -31,6 +31,17 @@ class HomePage extends Page {
 		"CalloutThreeTree" => SiteTree::class,
 	);
 
+  private static $owns = array(
+        "HomePhoto",
+        "HeaderPhoto1",
+        "HeaderPhoto2",
+        "HeaderPhoto3",
+        "CalloutOnePhoto",
+        "CalloutTwoPhoto",
+        "CalloutThreePhoto"
+  );
+
+
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 

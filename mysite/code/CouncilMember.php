@@ -14,6 +14,10 @@ class CouncilMember extends Page {
 
 	);
 
+    private static $owns = array(
+        'CouncilPhoto'
+    );
+
 	private static $has_one = array(
 		"CouncilPhoto" => Image::class,
 	);

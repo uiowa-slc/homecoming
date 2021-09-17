@@ -13,6 +13,10 @@ class Page extends SiteTree {
 		"PagePhoto" => Image::class,
 		"HeaderPhoto" => Image::class,
 	);
+    private static $owns = array(
+        "PagePhoto",
+        "HeaderPhoto"
+    );
 
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();

@@ -13,6 +13,10 @@ class Button extends DataObject {
     "Photo" => Image::class,
   );
 
+  private static $owns = array(
+    'Photo'
+  );
+
   private static $summary_fields = array(
       'Year',
       'Thumbnail'

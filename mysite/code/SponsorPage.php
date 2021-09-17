@@ -14,6 +14,10 @@ class SponsorPage extends Page {
 		"SponsorPhoto" => Image::class,
 	);
 
+    private static $owns = array(
+        "SponsorPhoto"
+    );
+
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 
