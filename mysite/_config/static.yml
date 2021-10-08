@@ -7,3 +7,5 @@ SilverStripe\Core\Injector\Injector:
     class: SilverStripe\StaticPublishQueue\Publisher\FilesystemPublisher
     properties:
       fileExtension: php
+Symbiote\QueuedJobs\Services\QueuedJobService:
+  memory_limit: 2147483648
