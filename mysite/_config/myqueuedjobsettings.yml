@@ -1,0 +1,11 @@
+---
+Name: myqueuedjobsettings
+After: '#queuedjobsettings'
+---
+# Force memory limit to 256 megabytes
+Symbiote\QueuedJobs\Services\QueuedJobService:
+  # Accepts b, k, m, or b suffixes
+  memory_limit: 2g
+  time_limit: 300
+Symbiote\QueuedJobs\Jobs\CleanupJob:
+  is_enabled: true
