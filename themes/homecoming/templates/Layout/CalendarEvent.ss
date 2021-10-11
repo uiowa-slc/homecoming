@@ -52,7 +52,6 @@
 		</div>
 
 		<div class="sidebar">
-			<% include SideNav %>
 			<% include EventsByDate %>
 			<% include Announcements %>
 		</div>
