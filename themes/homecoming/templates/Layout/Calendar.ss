@@ -28,7 +28,7 @@
                                 <% end_loop %>
                             </div>
                         <% else %>
-                            <p><% _t('NOEVENTS','There are no events') %>.</p>
+                            <p><% _t('NOEVENTS','There are no upcoming events listed.') %>.</p>
                         <% end_if %>
 
                     </div>
@@ -40,7 +40,7 @@
                                 <% end_loop %>
                             </div>
                         <% else %>
-                            <p><% _t('NOEVENTS','There are no events') %>.</p>
+                            <p><% _t('NOEVENTS','There are no upcoming events listed') %>.</p>
                         <% end_if %>
                     </div>
 
