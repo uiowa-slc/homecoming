@@ -22,6 +22,18 @@ class CouncilMember extends Page {
 		"CouncilPhoto" => Image::class,
 	);
 
+    public function getFirstName(){
+        $name = $this->Title;
+        $arr = explode(' ',$name);
+        return $arr[0];
+
+    }
+
+    public function getLastName(){
+        $name = $this->Title;
+        $arr = explode(' ', $name);
+        return $arr[1];
+    }
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 

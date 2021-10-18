@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff07ba64ffacf7f5d8d95f890ada5765",
+    "content-hash": "01b37af4f32b1fa895884569150b745f",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -1139,12 +1139,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-saml.git",
-                "reference": "67a863457752f5d9b7b74d6c67e28d848a0daaa3"
+                "reference": "45f8bc87c664145489fa602740f5ee0855076003"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/silverstripe-saml/zipball/67a863457752f5d9b7b74d6c67e28d848a0daaa3",
-                "reference": "67a863457752f5d9b7b74d6c67e28d848a0daaa3",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/silverstripe-saml/zipball/45f8bc87c664145489fa602740f5ee0855076003",
+                "reference": "45f8bc87c664145489fa602740f5ee0855076003",
                 "shasum": ""
             },
             "require": {
@@ -1199,7 +1199,35 @@
             "support": {
                 "source": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-saml/tree/md"
             },
-            "time": "2021-04-22T14:19:14+00:00"
+            "time": "2021-10-14T20:23:01+00:00"
+        },
+        {
+            "name": "md/silverstripe-migration-tools",
+            "version": "dev-homecoming",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-migration-tools.git",
+                "reference": "0dd0d61d9750fd3e256f44b42a6e4fc4435acf5b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/silverstripe-migration-tools/zipball/0dd0d61d9750fd3e256f44b42a6e4fc4435acf5b",
+                "reference": "0dd0d61d9750fd3e256f44b42a6e4fc4435acf5b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "silverstripe/cms": "4.*",
+                "silverstripe/framework": "4.*",
+                "thunderer/shortcode": "^0.7"
+            },
+            "type": "silverstripe-vendormodule",
+            "description": "Exports SilverStripe content to WordPress eXtended RSS",
+            "support": {
+                "source": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-migration-tools/tree/homecoming",
+                "issues": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-migration-tools/issues"
+            },
+            "time": "2021-10-18T14:52:30+00:00"
         },
         {
             "name": "md/uiowa-bar",
@@ -2079,6 +2107,73 @@
             "time": "2021-03-19T20:53:41+00:00"
         },
         {
+            "name": "silverstripe/blog",
+            "version": "3.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-blog.git",
+                "reference": "41bf42184376d28aa7673a000936dc6a52908a43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-blog/zipball/41bf42184376d28aa7673a000936dc6a52908a43",
+                "reference": "41bf42184376d28aa7673a000936dc6a52908a43",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/asset-admin": "^1.0",
+                "silverstripe/assets": "^1.0",
+                "silverstripe/cms": "^4.0",
+                "silverstripe/lumberjack": "^2.0",
+                "silverstripe/tagfield": "^2.0"
+            },
+            "replace": {
+                "micmania1/silverstripe-blog": "*"
+            },
+            "require-dev": {
+                "sminnee/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "suggest": {
+                "silverstripe/comments": "This module adds comments to your blog.",
+                "silverstripe/widgets": "Some widgets come with the blog which are compatible with the widgets module."
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "client/dist",
+                    "client/images"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\Blog\\": "src/",
+                    "SilverStripe\\Blog\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Strong",
+                    "email": "github@michaelstrong.co.uk"
+                }
+            ],
+            "description": "A fresh take on blogging in Silverstripe set out to tackle the issue of a cluttered Site Tree.",
+            "keywords": [
+                "blog",
+                "news",
+                "silverstripe"
+            ],
+            "support": {
+                "issues": "https://github.com/silverstripe/silverstripe-blog/issues",
+                "source": "https://github.com/silverstripe/silverstripe-blog/tree/3.8.0"
+            },
+            "time": "2021-10-05T01:25:05+00:00"
+        },
+        {
             "name": "silverstripe/campaign-admin",
             "version": "1.8.0",
             "source": {
@@ -2542,6 +2637,58 @@
             "time": "2021-10-05T01:25:05+00:00"
         },
         {
+            "name": "silverstripe/lumberjack",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-lumberjack.git",
+                "reference": "0e26ab2db00203096e9158395d112b46715b7f91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-lumberjack/zipball/0e26ab2db00203096e9158395d112b46715b7f91",
+                "reference": "0e26ab2db00203096e9158395d112b46715b7f91",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "^4.0",
+                "silverstripe/framework": "^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "css",
+                    "javascript"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\Lumberjack\\": "src/",
+                    "SilverStripe\\Lumberjack\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Strong",
+                    "email": "mstrong@silverstripe.org"
+                }
+            ],
+            "description": "A module to make managing pages in a GridField easy without losing any of the functionality that you're used to in the CMS.",
+            "support": {
+                "issues": "https://github.com/silverstripe/silverstripe-lumberjack/issues",
+                "source": "https://github.com/silverstripe/silverstripe-lumberjack/tree/2.0"
+            },
+            "time": "2020-01-17T03:56:22+00:00"
+        },
+        {
             "name": "silverstripe/mimevalidator",
             "version": "2.1.1",
             "source": {
@@ -2940,16 +3087,16 @@
         },
         {
             "name": "silverstripe/tagfield",
-            "version": "2.7.0",
+            "version": "2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-tagfield.git",
-                "reference": "43ccb16deff6138395038a7e824089263d89bc8e"
+                "reference": "b81546d55553c33ff7f0ae49cc737295768fb1dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-tagfield/zipball/43ccb16deff6138395038a7e824089263d89bc8e",
-                "reference": "43ccb16deff6138395038a7e824089263d89bc8e",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-tagfield/zipball/b81546d55553c33ff7f0ae49cc737295768fb1dc",
+                "reference": "b81546d55553c33ff7f0ae49cc737295768fb1dc",
                 "shasum": ""
             },
             "require": {
@@ -2991,9 +3138,9 @@
             ],
             "support": {
                 "issues": "http://github.com/silverstripe/silverstripe-tagfield/issues",
-                "source": "https://github.com/silverstripe/silverstripe-tagfield/tree/2.7.0"
+                "source": "https://github.com/silverstripe/silverstripe-tagfield/tree/2.7.1"
             },
-            "time": "2021-08-26T05:00:02+00:00"
+            "time": "2021-10-15T00:57:33+00:00"
         },
         {
             "name": "silverstripe/vendor-plugin",
@@ -4514,6 +4661,62 @@
                 }
             ],
             "time": "2021-07-27T16:19:30+00:00"
+        },
+        {
+            "name": "thunderer/shortcode",
+            "version": "v0.7.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thunderer/Shortcode.git",
+                "reference": "79a219febd774ba1ee66a2992fee1145b4367561"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thunderer/Shortcode/zipball/79a219febd774ba1ee66a2992fee1145b4367561",
+                "reference": "79a219febd774ba1ee66a2992fee1145b4367561",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.1",
+                "symfony/yaml": ">=2.0"
+            },
+            "suggest": {
+                "ext-dom": "if you want to use XML serializer",
+                "ext-json": "if you want to use JSON serializer",
+                "symfony/yaml": "if you want to use YAML serializer"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Thunder\\Shortcode\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomasz Kowalczyk",
+                    "email": "tomasz@kowalczyk.cc"
+                }
+            ],
+            "description": "Advanced shortcode (BBCode) parser and engine for PHP",
+            "keywords": [
+                "bbcode",
+                "engine",
+                "library",
+                "parser",
+                "shortcode"
+            ],
+            "support": {
+                "issues": "https://github.com/thunderer/Shortcode/issues",
+                "source": "https://github.com/thunderer/Shortcode/tree/v0.7.4"
+            },
+            "time": "2020-03-08T11:25:13+00:00"
         },
         {
             "name": "undefinedoffset/sortablegridfield",
@@ -6108,6 +6311,7 @@
                 "issues": "https://github.com/sebastianbergmann/resource-operations/issues",
                 "source": "https://github.com/sebastianbergmann/resource-operations/tree/master"
             },
+            "abandoned": true,
             "time": "2015-07-28T20:34:47+00:00"
         },
         {
@@ -6288,7 +6492,8 @@
     "stability-flags": {
         "silverstripe/recipe-cms": 0,
         "md/saml": 20,
-        "silverstripe/staticpublishqueue": 20
+        "silverstripe/staticpublishqueue": 20,
+        "md/silverstripe-migration-tools": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
